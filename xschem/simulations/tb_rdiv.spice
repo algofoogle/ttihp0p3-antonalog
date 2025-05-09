@@ -1,0 +1,33 @@
+** sch_path: /home/anton/projects/ttihp0p3-antonalog/xschem/tb_rdiv.sch
+**.subckt tb_rdiv
+x1 net2 net1 GND rdiv
+R1 aout net1 500R m=1
+C1 aout GND 10p m=1
+V1 ain GND pulse(0 1.2 1u 0 0 1u 2u)
+R2 ain net2 500R m=1
+C2 ain GND 10p m=1
+**** begin user architecture code
+
+.control
+tran 10n 256u
+write tb_rdiv.raw
+.endc
+
+
+.lib /home/anton/asic/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  rdiv.sym # of pins=3
+** sym_path: /home/anton/projects/ttihp0p3-antonalog/xschem/rdiv.sym
+** sch_path: /home/anton/projects/ttihp0p3-antonalog/xschem/rdiv.sch
+.subckt rdiv a x b
+*.iopin a
+*.iopin b
+*.iopin x
+XR1 x a rhigh w=1.0e-6 l=7.5e-6 m=1 b=0
+XR2 b x rhigh w=1.0e-6 l=7.5e-6 m=1 b=0
+.ends
+
+.end

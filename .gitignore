@@ -9,3 +9,14 @@ test/sim_build
 test/__pycache__/
 test/results.xml
 test/gate_level_netlist.v
+*~
+.*.swp
+JUNK
+sim/spice/sim_out/*.raw
+xschem/simulation/*.raw
+*.raw.bz2
+# tt subdir is typically created by: git clone -b WHATEVER_TT_SHUTTLE https://github.com/TinyTapeout/tt-support-tools tt
+tt/
+magic/*.lvs.spice
+magic/lvs.report
+

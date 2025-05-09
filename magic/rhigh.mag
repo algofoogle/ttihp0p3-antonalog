@@ -1,0 +1,29 @@
+magic
+tech ihp-sg13g2
+timestamp 1746807485
+<< poly >>
+rect 0 636 100 643
+rect 0 620 7 636
+rect 93 620 100 636
+rect 0 600 100 620
+rect 0 -20 100 0
+rect 0 -36 7 -20
+rect 93 -36 100 -20
+rect 0 -43 100 -36
+<< polycont >>
+rect 7 620 93 636
+rect 7 -36 93 -20
+<< xpolyres >>
+rect 0 0 100 600
+<< metal1 >>
+rect 2 636 98 641
+rect 2 620 7 636
+rect 93 620 98 636
+rect 2 615 98 620
+rect 2 -20 98 -15
+rect 2 -36 7 -20
+rect 93 -36 98 -20
+rect 2 -41 98 -36
+<< labels >>
+flabel comment s 50 300 50 300 0 FreeSans 100 90 0 0 rpnd r=8660.000
+<< end >>

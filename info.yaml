@@ -59,6 +59,8 @@ pinout:
   ua[1]: "g"
   ua[2]: "b"
   ua[3]: ""
+  ua[4]: ""
+  ua[5]: ""
 
 # Do not change!
 yaml_version: 6

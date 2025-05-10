@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1746810912
+timestamp 1746839692
 << pwell >>
 rect 830 1624 1338 1740
 rect 834 446 1046 630
@@ -66,7 +66,7 @@ rect 6446 170 6670 442
 rect 6751 341 6965 548
 rect 7044 332 7554 444
 use resistors  resistors_0
-timestamp 1746808658
+timestamp 1746839677
 transform 1 0 2660 0 1 1006
 box -2802 -1024 5262 1056
 << labels >>

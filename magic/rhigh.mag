@@ -1,6 +1,6 @@
 magic
 tech ihp-sg13g2
-timestamp 1746807485
+timestamp 1746838591
 << poly >>
 rect 0 636 100 643
 rect 0 620 7 636
@@ -26,4 +26,8 @@ rect 93 -36 98 -20
 rect 2 -41 98 -36
 << labels >>
 flabel comment s 50 300 50 300 0 FreeSans 100 90 0 0 rpnd r=8660.000
+<< properties >>
+string GDS_END 1666
+string GDS_FILE rhigh-8660.gds
+string GDS_START 100
 << end >>

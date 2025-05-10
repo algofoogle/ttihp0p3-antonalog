@@ -1,5 +1,6 @@
 `default_nettype none
 
+
 module controller(
   input   wire        clk,
   input   wire        rst_n,
@@ -41,7 +42,12 @@ module controller(
   // wire _unused = &{uio_in, 1'b0};
 
   // Buffered digital RGB888 outputs.
-  (* keep_hierarchy *) sg13g2_buf_16 rgb_buffers [23:0] (.A({r,g,b}), .X({dr,dg,db}));
+  // (* keep_hierarchy *) sg13g2_buf_16 rgb_buffers [23:0] (.A({r,g,b}), .X({dr,dg,db}));
+  // (* keep_hierarchy *) rgb_output_buffer rgb_buffers [23:0] (.A({r,g,b}), .X({dr,dg,db}));
+
+  wire [23:0] rgb_buffer_intermediate;
+  (* keep_hierarchy *) sg13g2_buf_8 rgb_output_prebuffer [23:0] (.A({r,g,b}), .X(rgb_buffer_intermediate));
+  (* keep_hierarchy *) sg13g2_buf_8 rgb_output_postbuffer [23:0] (.A(rgb_buffer_intermediate), .X({dr,dg,db}));
 
   // assign {rn, gn, bn} = ~{r, g, b}; // Inverted outputs for current steering DACs.
 

@@ -1,0 +1,29 @@
+** sch_path: /home/anton/projects/antonalog--REPO/xschem/r2r_dac.sch
+.subckt r2r_dac IN[7] IN[6] IN[5] IN[4] IN[3] IN[2] IN[1] IN[0] OUT GND
+*.PININFO IN[7:0]:I GND:B OUT:O
+XR0a net1 IN[0] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR0b net3 net1 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR1c net3 net4 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR0c net2 net3 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR0d GND net2 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR1a net5 IN[1] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR1b net4 net5 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR2c net4 net6 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR2a net7 IN[2] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR2b net6 net7 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR3c net6 net8 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR3a net9 IN[3] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR3b net8 net9 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR4c net8 net10 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR4a net11 IN[4] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR4b net10 net11 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR5c net10 net12 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR5a net13 IN[5] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR5b net12 net13 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR6c net12 net14 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR6a net15 IN[6] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR6b net14 net15 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR7c net14 OUT rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR7a net16 IN[7] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+XR7b OUT net16 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+.ends

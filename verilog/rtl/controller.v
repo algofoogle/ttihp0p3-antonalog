@@ -42,14 +42,9 @@ module controller(
   // wire _unused = &{uio_in, 1'b0};
 
   // Buffered digital RGB888 outputs.
-  // (* keep_hierarchy *) sg13g2_buf_16 rgb_buffers [23:0] (.A({r,g,b}), .X({dr,dg,db}));
-  // (* keep_hierarchy *) rgb_output_buffer rgb_buffers [23:0] (.A({r,g,b}), .X({dr,dg,db}));
-
-  wire [23:0] rgb_buffer_intermediate;
-  (* keep_hierarchy *) sg13g2_buf_8 rgb_output_prebuffer [23:0] (.A({r,g,b}), .X(rgb_buffer_intermediate));
-  (* keep_hierarchy *) sg13g2_buf_8 rgb_output_postbuffer [23:0] (.A(rgb_buffer_intermediate), .X({dr,dg,db}));
-
+  //(* keep_hierarchy *) sg13g2_buf_8 rgb_buffers [23:0] (.A({r,g,b}), .X({dr,dg,db}));
   // assign {rn, gn, bn} = ~{r, g, b}; // Inverted outputs for current steering DACs.
+  assign {dr,dg,db} = {r,g,b};
 
   wire [9:0] h, v;
   wire hmax, vmax, visible; // Used to detect end of frame.
@@ -140,7 +135,7 @@ module controller(
 
   // Direct outputs to DACs (with blanking):
   wire ungated_mode0 = (mode == MODE_PASS && !gate);
-  wire enable_out = visible || ungated_mode0; //NOTE: mode 0 (PASS) can optionally disable gating.
+  wire enable_out = ena && (visible || ungated_mode0); //NOTE: mode 0 (PASS) can optionally disable gating.
   assign {r,g,b} = enable_out ? {tr,tg,tb} : 0;
 
   // Intermediate video values (before blanking, etc):
@@ -170,10 +165,11 @@ module controller(
     (mode == MODE_PASS) ? grey_pass :
     (mode == MODE_RAMP) ? mode_ramp_base :
     (mode == MODE_BARS) ? ( mode_ramp_base ^ ( v<256 ? {24{ramphdiv[0]}} : {24{h[0]}} ) ) :
+    /*mode== MODE_3*/
     (mode == MODE_XOR1) ? x1rgb :
     (mode == MODE_XOR2) ? x2rgb :
     (mode == MODE_XOR3) ? x3rgb :
-                          {8'b0, rampa, 8'b0};
+    /*mode== MODE_7*/     {8'b0, rampa, 8'b0};
 
   wire [23:0] x1rgb, x2rgb, x3rgb;
   mode_xor1 xor1(h, vv, t, x1rgb);

@@ -1,5 +1,5 @@
 ** sch_path: /home/anton/projects/antonalog--REPO/xschem/r2r_dac.sch
-.subckt r2r_dac IN[7] IN[6] IN[5] IN[4] IN[3] IN[2] IN[1] IN[0] OUT GND
+.subckt r2r_dac GND IN[0] IN[1] IN[2] IN[3] IN[4] IN[5] IN[6] IN[7] OUT
 *.PININFO IN[7:0]:I GND:B OUT:O
 XR0a net1 IN[0] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
 XR0b net3 net1 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0

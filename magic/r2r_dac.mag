@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1746839692
+timestamp 1747399132
 << pwell >>
 rect 830 1624 1338 1740
 rect 834 446 1046 630
@@ -90,4 +90,20 @@ flabel metal1 7386 1768 7520 1858 0 FreeSans 320 0 0 0 IN[7]
 port 8 nsew
 flabel metal1 6856 1772 7158 1864 0 FreeSans 320 0 0 0 OUT
 port 9 nsew
+flabel metal1 238 1630 746 1752 0 FreeSans 800 0 0 0 wg0
+flabel metal1 834 550 1636 762 0 FreeSans 800 0 0 0 wJ0
+flabel metal1 830 1624 1338 1740 0 FreeSans 800 0 0 0 wi0
+flabel metal1 1730 1278 2514 1478 0 FreeSans 800 0 0 0 wJ1
+flabel metal1 2612 544 3414 760 0 FreeSans 800 0 0 0 wJ2
+flabel metal1 3510 1272 4301 1482 0 FreeSans 800 0 0 0 wJ3
+flabel metal1 4394 548 5187 762 0 FreeSans 800 0 0 0 wJ4
+flabel metal1 5282 1262 6070 1470 0 FreeSans 800 0 0 0 wJ5
+flabel metal1 6170 548 6965 762 0 FreeSans 800 0 0 0 wJ6
+flabel metal1 1716 324 2232 426 0 FreeSans 800 0 0 0 wi1
+flabel metal1 2608 1626 3120 1740 0 FreeSans 800 0 0 0 wi2
+flabel metal1 3482 336 4010 464 0 FreeSans 800 0 0 0 wi3
+flabel metal1 4376 1620 4896 1744 0 FreeSans 800 0 0 0 wi4
+flabel metal1 5270 340 5778 452 0 FreeSans 800 0 0 0 wi5
+flabel metal1 6154 1622 6670 1732 0 FreeSans 800 0 0 0 wi6
+flabel metal1 7044 332 7554 444 0 FreeSans 800 0 0 0 wi7
 << end >>

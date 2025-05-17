@@ -4,15 +4,14 @@
 
 # ANTONalog -- A ttihp0p3 (Tiny Tapeout IHP) test project 
 
-This isn't really anything yet. It will hopefully be Anton's Analog experiment on Tiny Tapeout IHP.
+Anton's Analog experiment (analog VGA generator) on Tiny Tapeout IHP.
 
 - [Read the documentation for this project](docs/info.md)
 
 
 # Outstanding
 
-*   I didn't do any LVS
-*   Output buffer cells going into the DACs are meant to be buf_16, but OpenLane is resizing them even though I configured it not to.
+*   I didn't complete LVS, due to 2 main issues: `rhigh` extraction seems to have problems, possibly because the resistor is not understood by netgen to be symmetrical (so pin matching fails?); and `sg13g2_tiehi` also seems to have a problem with Magic extraction (and/or Netgen LVS). It might be possible hack both of these, though.
 *   No simulation done (though the Verilog was mostly tested in preparing TT08)
 
 

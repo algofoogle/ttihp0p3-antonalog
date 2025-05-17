@@ -28,6 +28,6 @@ rect 2 -41 98 -36
 flabel comment s 50 300 50 300 0 FreeSans 100 90 0 0 rpnd r=8660.000
 << properties >>
 string GDS_END 1666
-string GDS_FILE rhigh-8660.gds
+string GDS_FILE ../gds/rhigh.gds
 string GDS_START 100
 << end >>

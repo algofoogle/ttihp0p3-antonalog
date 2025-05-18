@@ -1,4 +1,5 @@
 PROJECT_NAME ?= tt_um_algofoogle_antonalog
+PROJECT_LVS_VERILOG ?= ../src/LVS-project.v
 # MAGIC_RC := $(PDK_ROOT)/sky130A/libs.tech/magic/sky130A.magicrc
 # TEMPLATE_FILE := tt_analog_2x2.def
 #TEMPLATE_FILE := tt_analog_1x2_3v3.def
@@ -20,10 +21,6 @@ PROJECT_NAME ?= tt_um_algofoogle_antonalog
 # start: $(TEMPLATE_FILE)
 # 	magic -rcfile $(MAGIC_RC) -noconsole -dnull tcl/tt-analog-draw.tcl $(TEMPLATE_FILE) $(PROJECT_NAME)
 
-$(PROJECT_NAME).lvs.spice: $(PROJECT_NAME).mag
-	magic -noconsole -dnull tcl/extract_for_lvs.tcl $(PROJECT_NAME)
-	rm -f *.ext
-
 antenna:
 	magic -noconsole -dnull tcl/antenna.tcl $(PROJECT_NAME)
 	rm -f *.ext
@@ -31,12 +28,21 @@ antenna:
 drc:
 	magic -noconsole -dnull tcl/drc.tcl $(PROJECT_NAME)
 	
-$(PROJECT_NAME).sim.spice: $(PROJECT_NAME).mag
-	magic -noconsole -dnull tcl/extract_for_sim.tcl $(PROJECT_NAME)
+%.lvs.spice: %.mag
+	magic -noconsole -dnull tcl/extract_for_lvs.tcl $*
 	rm -f *.ext
 
-lvs.report: $(PROJECT_NAME).lvs.spice ../src/project.v
-	netgen -batch eval "set project $(PROJECT_NAME) ; source tcl/lvs_netgen.tcl"
+%.sim.spice: %.mag
+	magic -noconsole -dnull tcl/extract_for_sim.tcl $*
+	rm -f *.ext
+
+lvs.report: $(PROJECT_NAME).lvs.spice $(PROJECT_LVS_VERILOG)
+	netgen -batch eval 'set project $(PROJECT_NAME) ; set report_file "lvs.report" ; source tcl/lvs_netgen.tcl'
+
+%.lvs.report: %.lvs.spice
+	cp $*.lvs.spice $*.lvs.spice.backup
+	netgen -batch eval 'set project $* ; set report_file "$@" ; source tcl/lvs_netgen.tcl'
+
 
 lvs: lvs.report
 	@bash -c 'propOk=OK; match=FAIL; port=OK; \
@@ -71,4 +77,4 @@ update_gds:
 	magic -noconsole -dnull tcl/update_gds_lef.tcl $(PROJECT_NAME)
 
 clean:
-	rm -f lvs.report *.lvs.spice *.nodes
+	rm -f *lvs.report *.lvs.spice *.nodes

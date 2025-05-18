@@ -17,6 +17,6 @@ xschem/simulation/*.raw
 *.raw.bz2
 # tt subdir is typically created by: git clone -b WHATEVER_TT_SHUTTLE https://github.com/TinyTapeout/tt-support-tools tt
 tt/
-magic/*.lvs.spice
+#magic/*.lvs.spice
 magic/lvs.report
 

@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1746816402
+timestamp 1747537721
 << nwell >>
 rect -48 350 816 834
 << pwell >>
@@ -377,7 +377,7 @@ flabel metal1 s 368 315 518 385 0 FreeSans 400 0 0 0 B
 port 6 nsew
 << properties >>
 string FIXED_BBOX 0 0 768 756
-string GDS_END 161942
+string GDS_END 220936
 string GDS_FILE ../gds/controller.gds
-string GDS_START 156398
+string GDS_START 215392
 << end >>

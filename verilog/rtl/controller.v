@@ -5,24 +5,23 @@ module controller(
   input   wire        clk,
   input   wire        rst_n,
   input   wire [7:0]  ui_in,              //NOTE: See https://github.com/algofoogle/journal/blob/master/0215-2024-08-21.md#explanation-of-digital-block-control-inputs
-  //input   wire [7:0]  uio_in,             // Unused.
+  //input   wire [7:0]  uio_in,             // Unused in this macro.
   output  wire        hsync, vsync,       // Polarity determined by vga_sync module per vga_timing_mode.
   output  wire        r7,g7,b7, r6,g6,b6, // Extra convenience outputs to wire up to digital outs on the north side of the macro.
   output  wire        vblank, hblank,     // High during blanking.
   output  wire        uio_out2, uio_out3, uio_out4, uio_out5, uio_out6, uio_out7, // Unused, but wired up to 0.
   output  wire [1:0]  uio_oe,             // Left off the upper 6 bits to save horizontal pin space.
   output  wire [7:0]  dr, dg, db,         // Positive colour channel bits. Primarily goes to DACs.
-  // output  wire [7:0]  rn, gn, bn,        // INVERTED channel bits (for current steering).
   input   wire        ena                 // Tiny Tapeout 'ena' signal; if low, our design is not meant to be selected, so hold it in reset.
 );
   localparam MODE_PASS = 0;
   localparam MODE_RAMP = 1;
   localparam MODE_BARS = 2;
-  localparam MODE_3    = 3;
+  // localparam MODE_3    = 3;
   localparam MODE_XOR1 = 4;
   localparam MODE_XOR2 = 5;
   localparam MODE_XOR3 = 6;
-  localparam MODE_7    = 7;
+  // localparam MODE_7    = 7;
 
   // Optional offset that some modes can apply to the line rendering logic:
   reg [7:0] voffset;
@@ -33,27 +32,26 @@ module controller(
   wire [7:0] g;
   wire [7:0] b;
 
+  // Upper 2 bits of each 8-bit output form the Tiny-VGA-compatible RGB222 output:
   assign {r7,r6, g7,g6, b7,b6} = {r[7:6], g[7:6], b[7:6]};
 
-  assign {uio_out2, uio_out3, uio_out4, uio_out5, uio_out6, uio_out7} = 0; // Unused, but need to be connected.
+  // Unused, but need to be connected:
+  assign {uio_out2, uio_out3, uio_out4, uio_out5, uio_out6, uio_out7} = 0;
 
-  assign uio_oe = 2'b11; // Lowest two bidir pins are configured as outputs (carrying hblank and vblank).
+  // Lowest two bidir pins are configured as outputs (carrying hblank and vblank):
+  assign uio_oe = 2'b11;
 
-  // wire _unused = &{uio_in, 1'b0};
-
-  // Buffered digital RGB888 outputs.
-  // (* keep_hierarchy *) sg13g2_buf_16 rgb_buffers [23:0] (.A({r,g,b}), .X({dr,dg,db}));
-  // (* keep_hierarchy *) rgb_output_buffer rgb_buffers [23:0] (.A({r,g,b}), .X({dr,dg,db}));
-
-  wire [23:0] rgb_buffer_intermediate;
-  (* keep_hierarchy *) sg13g2_buf_8 rgb_output_prebuffer [23:0] (.A({r,g,b}), .X(rgb_buffer_intermediate));
-  (* keep_hierarchy *) sg13g2_buf_8 rgb_output_postbuffer [23:0] (.A(rgb_buffer_intermediate), .X({dr,dg,db}));
-
+  // Digital RGB888 outputs. Just pass thru in this version:
+  assign {dr,dg,db} = {r,g,b};
+  // I have a separate macro (rgb_buffers) which buffers them, basically like this:
+  //(* keep_hierarchy *) sg13g2_buf_8 rgb_buffers [23:0] (.A({r,g,b}), .X({dr,dg,db}));
+  // For CDAC implementation, might need inverted outputs too:
   // assign {rn, gn, bn} = ~{r, g, b}; // Inverted outputs for current steering DACs.
 
   wire [9:0] h, v;
   wire hmax, vmax, visible; // Used to detect end of frame.
 
+  // Design can be reset directly, or will be held in reset if this TT project is not enabled:
   wire reset = (~rst_n) || (!ena);
 
   // VGA sync generator:
@@ -80,7 +78,7 @@ module controller(
 
   // Select mode and other parameters at reset:
   reg [7:0] mode_params;
-  wire vga_timing_mode  = mode_params[7];
+  wire vga_timing_mode  = mode_params[7]; // 640x480, or 1440x900?
   wire [2:0] mode       = mode_params[6:4];
   always @(posedge clk) begin
     if (reset) begin
@@ -140,7 +138,7 @@ module controller(
 
   // Direct outputs to DACs (with blanking):
   wire ungated_mode0 = (mode == MODE_PASS && !gate);
-  wire enable_out = visible || ungated_mode0; //NOTE: mode 0 (PASS) can optionally disable gating.
+  wire enable_out = ena && (visible || ungated_mode0); //NOTE: mode 0 (PASS) can optionally disable gating.
   assign {r,g,b} = enable_out ? {tr,tg,tb} : 0;
 
   // Intermediate video values (before blanking, etc):
@@ -170,10 +168,11 @@ module controller(
     (mode == MODE_PASS) ? grey_pass :
     (mode == MODE_RAMP) ? mode_ramp_base :
     (mode == MODE_BARS) ? ( mode_ramp_base ^ ( v<256 ? {24{ramphdiv[0]}} : {24{h[0]}} ) ) :
+    /*mode== MODE_3*/
     (mode == MODE_XOR1) ? x1rgb :
     (mode == MODE_XOR2) ? x2rgb :
     (mode == MODE_XOR3) ? x3rgb :
-                          {8'b0, rampa, 8'b0};
+    /*mode== MODE_7*/     {8'b0, rampa, 8'b0};
 
   wire [23:0] x1rgb, x2rgb, x3rgb;
   mode_xor1 xor1(h, vv, t, x1rgb);

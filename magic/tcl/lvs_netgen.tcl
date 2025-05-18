@@ -41,7 +41,8 @@ if {$project eq "tt_um_algofoogle_antonalog"} {
     lvs "$layout $project" "$source $project" \
         ../magic/tcl/lvs_setup_script.tcl \
         $report_file \
-        -blackbox
+        -blackbox \
+        -noflatten={sg13g2_tiehi}
 
 }
 

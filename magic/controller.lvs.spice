@@ -1,0 +1,2640 @@
+* NGSPICE file created from controller.ext - technology: ihp-sg13g2
+
+.subckt sg13g2_dfrbp_1 RESET_B D Q_N CLK VSS VDD Q
+X0 VSS CLK a_373_436# VSS sg13_lv_nmos ad=0.83709p pd=4.3575u as=0.30944p ps=3.2577u w=0.74u l=0.13u
+**devattr s=10064,432 d=6176,247
+X1 a_928_162# a_569_436# a_801_507# VSS sg13_lv_nmos ad=0 pd=0 as=0.20504p ps=2.352u w=0.42u l=0.13u
+**devattr s=3192,160 d=2184,136
+X2 VDD a_1336_117# a_2145_118# VDD sg13_lv_pmos ad=0.66917p pd=3.76882u as=0.53683p ps=4.17583u w=0.84u l=0.13u
+**devattr s=11424,472 d=8064,300
+X3 VDD a_952_445# a_903_507# VDD sg13_lv_pmos ad=0.33458p pd=1.88441u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=2058,133 d=4714,205
+X4 a_569_436# a_373_436# VSS VSS sg13_lv_nmos ad=0.7986p pd=8.61632u as=0.83709p ps=4.3575u w=0.74u l=0.13u
+**devattr s=6176,247 d=10064,432
+X5 Q_N a_1336_117# VSS VSS sg13_lv_nmos ad=0.40726p pd=2.50645u as=0.83709p ps=4.3575u w=0.74u l=0.13u
+**devattr s=10064,432 d=11100,446
+X6 VSS RESET_B a_170_122# VSS sg13_lv_nmos ad=0.4751p pd=2.47317u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=2016,132 d=5712,304
+X7 a_952_445# a_801_507# VDD VDD sg13_lv_pmos ad=0.2942p pd=3.14329u as=0.79663p ps=4.4867u w=1u l=0.13u
+**devattr s=13600,536 d=7600,276
+X8 a_76_122# D VDD VDD sg13_lv_pmos ad=0.29572p pd=3.502u as=0.33458p ps=1.88441u w=0.42u l=0.13u
+**devattr s=5712,304 d=3192,160
+X9 a_1336_117# a_373_436# a_952_445# VDD sg13_lv_pmos ad=0.36149p pd=4u as=0.2942p ps=3.14329u w=1u l=0.13u
+**devattr s=7600,276 d=7078,312
+X10 a_1720_117# RESET_B VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.4751p ps=2.47317u w=0.42u l=0.13u
+**devattr s=3612,170 d=1890,129
+X11 VDD RESET_B a_76_122# VDD sg13_lv_pmos ad=0.33458p pd=1.88441u as=0.29572p ps=3.502u w=0.42u l=0.13u
+**devattr s=3192,160 d=5712,304
+X12 VDD a_1582_81# a_1561_515# VDD sg13_lv_pmos ad=0.33458p pd=1.88441u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=1722,125 d=3192,160
+X13 a_1561_515# a_569_436# a_1336_117# VDD sg13_lv_pmos ad=0 pd=0 as=0.15183p ps=1.68u w=0.42u l=0.13u
+**devattr s=7078,312 d=1722,125
+X14 a_1582_81# RESET_B VDD VDD sg13_lv_pmos ad=0.27307p pd=3.13u as=0.33458p ps=1.88441u w=0.42u l=0.13u
+**devattr s=3192,160 d=3192,160
+X15 VDD a_1336_117# a_1582_81# VDD sg13_lv_pmos ad=0.33458p pd=1.88441u as=0.27307p ps=3.13u w=0.42u l=0.13u
+**devattr s=3192,160 d=8652,310
+X16 VSS a_1336_117# a_2145_118# VSS sg13_lv_nmos ad=0.62216p pd=3.23868u as=0.3515p ps=2.73417u w=0.55u l=0.13u
+**devattr s=7480,356 d=5802,230
+X17 a_801_507# RESET_B VDD VDD sg13_lv_pmos ad=0.20504p pd=2.352u as=0.33458p ps=1.88441u w=0.42u l=0.13u
+**devattr s=4714,205 d=6132,314
+X18 VSS a_1582_81# a_1530_117# VSS sg13_lv_nmos ad=0.4751p pd=2.47317u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=2184,136 d=3612,170
+X19 VSS RESET_B a_1006_162# VSS sg13_lv_nmos ad=0.4751p pd=2.47317u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=1932,130 d=7300,265
+X20 a_1336_117# a_569_436# a_952_445# VSS sg13_lv_nmos ad=0.23135p pd=2.56u as=0.18829p ps=2.01171u w=0.64u l=0.13u
+**devattr s=7759,258 d=8068,296
+X21 Q_N a_1336_117# VDD VDD sg13_lv_pmos ad=0.61639p pd=3.79355u as=0.89223p ps=5.0251u w=1.12u l=0.13u
+**devattr s=8652,310 d=30464,720
+X22 Q a_2145_118# VSS VSS sg13_lv_nmos ad=0.30227p pd=2.44677u as=0.83709p ps=4.3575u w=0.74u l=0.13u
+**devattr s=5802,230 d=10064,432
+X23 Q a_2145_118# VDD VDD sg13_lv_pmos ad=0.45748p pd=3.70323u as=0.89223p ps=5.0251u w=1.12u l=0.13u
+**devattr s=8064,300 d=15232,584
+X24 a_1006_162# a_952_445# a_928_162# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.42u l=0.13u
+**devattr s=2184,136 d=1932,130
+X25 a_952_445# a_801_507# VSS VSS sg13_lv_nmos ad=0.18829p pd=2.01171u as=0.72397p ps=3.76865u w=0.64u l=0.13u
+**devattr s=7300,265 d=7759,258
+X26 VDD CLK a_373_436# VDD sg13_lv_pmos ad=0.79663p pd=4.4867u as=0.41816p ps=4.4023u w=1u l=0.13u
+**devattr s=13600,536 d=7600,276
+X27 a_801_507# a_569_436# a_76_122# VDD sg13_lv_pmos ad=0.20504p pd=2.352u as=0.29572p ps=3.502u w=0.42u l=0.13u
+**devattr s=5712,304 d=3192,160
+X28 a_569_436# a_373_436# VDD VDD sg13_lv_pmos ad=1.0792p pd=11.64368u as=0.79663p ps=4.4867u w=1u l=0.13u
+**devattr s=7600,276 d=13600,536
+X29 a_903_507# a_373_436# a_801_507# VDD sg13_lv_pmos ad=0 pd=0 as=0.20504p ps=2.352u w=0.42u l=0.13u
+**devattr s=3192,160 d=2058,133
+X30 a_1530_117# a_373_436# a_1336_117# VSS sg13_lv_nmos ad=0 pd=0 as=0.15183p ps=1.68u w=0.42u l=0.13u
+**devattr s=8068,296 d=2184,136
+X31 a_1582_81# a_1336_117# a_1720_117# VSS sg13_lv_nmos ad=0.27307p pd=3.13u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=1890,129 d=5712,304
+X32 a_170_122# D a_76_122# VSS sg13_lv_nmos ad=0 pd=0 as=0.29572p ps=3.502u w=0.42u l=0.13u
+**devattr s=5712,304 d=2016,132
+X33 a_801_507# a_373_436# a_76_122# VSS sg13_lv_nmos ad=0.20504p pd=2.352u as=0.29572p ps=3.502u w=0.42u l=0.13u
+**devattr s=5712,304 d=3192,160
+.ends
+
+.subckt sg13g2_decap_4 VDD VSS
+X0 VDD VSS VDD VDD sg13_lv_pmos ad=1.11242p pd=5.475u as=1.11242p ps=5.475u w=1u l=1u
+**devattr d=13600,536
+X1 VSS VDD VSS VSS sg13_lv_nmos ad=0.92306p pd=4.66u as=0.92306p ps=4.66u w=0.42u l=1u
+**devattr d=5712,304
+.ends
+
+.subckt sg13g2_and2_1 X VSS VDD B A
+X0 X a_45_160# VDD VDD sg13_lv_pmos ad=0.57704p pd=3.72731u as=0.65224p ps=4.04u w=1.12u l=0.13u
+**devattr s=7672,300 d=15232,584
+X1 X a_45_160# VSS VSS sg13_lv_nmos ad=0.38126p pd=2.46269u as=0.69662p ps=4.04855u w=0.74u l=0.13u
+**devattr s=5324,224 d=10064,432
+X2 a_45_160# A VDD VDD sg13_lv_pmos ad=0.30734p pd=2.85672u as=0.48918p ps=3.03u w=0.84u l=0.13u
+**devattr s=11424,472 d=6384,244
+X3 VDD B a_45_160# VDD sg13_lv_pmos ad=0.48918p pd=3.03u as=0.30734p ps=2.85672u w=0.84u l=0.13u
+**devattr s=6384,244 d=7672,300
+X4 a_139_160# A a_45_160# VSS sg13_lv_nmos ad=0 pd=0 as=0.23417p ps=2.17655u w=0.64u l=0.13u
+**devattr s=8704,392 d=4864,204
+X5 VSS B a_139_160# VSS sg13_lv_nmos ad=0.60248p pd=3.50145u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=4864,204 d=5324,224
+.ends
+
+.subckt sg13g2_xnor2_1 Y B VDD A VSS
+X0 a_192_429# A VDD VDD sg13_lv_pmos ad=0.38321p pd=4.22172u as=0.55453p ps=3.34286u w=0.84u l=0.13u
+**devattr s=18144,552 d=6384,244
+X1 VSS A a_341_118# VSS sg13_lv_nmos ad=0.73099p pd=4.13981u as=82.86666f ps=1.05333u w=0.74u l=0.13u
+**devattr s=10064,432 d=7592,272
+X2 VDD B a_192_429# VDD sg13_lv_pmos ad=0.55453p pd=3.34286u as=0.38321p ps=4.22172u w=0.84u l=0.13u
+**devattr s=6384,244 d=11564,339
+X3 a_435_412# A VDD VDD sg13_lv_pmos ad=0 pd=0 as=0.73937p ps=4.45714u w=1.12u l=0.13u
+**devattr s=11564,339 d=5712,275
+X4 a_155_160# A VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.63221p ps=3.58038u w=0.64u l=0.13u
+**devattr s=9088,398 d=3136,177
+X5 a_341_118# B VSS VSS sg13_lv_nmos ad=82.86666f pd=1.05333u as=0.73099p ps=4.13981u w=0.74u l=0.13u
+**devattr s=7592,272 d=5624,224
+X6 Y a_192_429# a_341_118# VSS sg13_lv_nmos ad=0.22797p pd=1.91208u as=82.86666f ps=1.05333u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+X7 VDD a_192_429# Y VDD sg13_lv_pmos ad=0.73937p pd=4.45714u as=0.34504p ps=2.89396u w=1.12u l=0.13u
+**devattr s=9632,310 d=15232,584
+X8 Y B a_435_412# VDD sg13_lv_pmos ad=0.34504p pd=2.89396u as=0 ps=0 w=1.12u l=0.13u
+**devattr s=5712,275 d=9632,310
+X9 a_192_429# B a_155_160# VSS sg13_lv_nmos ad=0.29197p pd=3.21655u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=3136,177 d=8704,392
+.ends
+
+.subckt sg13g2_o21ai_1 VSS VDD Y B1 A2 A1
+X0 VSS A1 a_22_110# VSS sg13_lv_nmos ad=0.5776p pd=3.46u as=0.1248p ps=1.66667u w=0.74u l=0.15u
+**devattr s=10064,432 d=5624,224
+X1 a_120_432# A1 VDD VDD sg13_lv_pmos ad=0 pd=0 as=0.7024p ps=5.02u w=1.12u l=0.15u
+**devattr s=15232,584 d=8512,300
+X2 a_22_110# A2 VSS VSS sg13_lv_nmos ad=0.1248p pd=1.66667u as=0.5776p ps=3.46u w=0.74u l=0.15u
+**devattr s=5624,224 d=5624,224
+X3 Y B1 a_22_110# VSS sg13_lv_nmos ad=0.12952p pd=1.69852u as=0.1248p ps=1.66667u w=0.74u l=0.15u
+**devattr s=5624,224 d=10064,432
+X4 Y A2 a_120_432# VDD sg13_lv_pmos ad=0.19604p pd=2.57074u as=0 ps=0 w=1.12u l=0.15u
+**devattr s=8512,300 d=8512,300
+X5 VDD B1 Y VDD sg13_lv_pmos ad=0.7024p pd=5.02u as=0.19604p ps=2.57074u w=1.12u l=0.15u
+**devattr s=8512,300 d=15232,584
+.ends
+
+.subckt sg13g2_nor2_1 A VDD Y VSS B
+X0 Y A VSS VSS sg13_lv_nmos ad=0.19606p pd=1.86992u as=0.6993p ps=4.49u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+X1 VSS B Y VSS sg13_lv_nmos ad=0.6993p pd=4.49u as=0.19606p ps=1.86992u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+X2 a_170_412# A VDD VDD sg13_lv_pmos ad=0 pd=0 as=1.188p ps=7.36u w=1.12u l=0.13u
+**devattr s=16128,592 d=4704,266
+X3 Y B a_170_412# VDD sg13_lv_pmos ad=0.29675p pd=2.83015u as=0 ps=0 w=1.12u l=0.13u
+**devattr s=4704,266 d=15232,584
+.ends
+
+.subckt sg13g2_decap_8 VDD VSS
+X0 VSS VDD VSS VSS sg13_lv_nmos ad=0.78172p pd=3.895u as=0.78172p ps=3.895u w=0.42u l=1u
+**devattr d=5712,304
+X1 VDD VSS VDD VDD sg13_lv_pmos ad=1.03279p pd=4.295u as=1.03279p ps=4.295u w=1u l=1u
+**devattr d=7600,276
+X2 VSS VDD VSS VSS sg13_lv_nmos ad=0.78172p pd=3.895u as=0.78172p ps=3.895u w=0.42u l=1u
+**devattr d=3192,160
+X3 VDD VSS VDD VDD sg13_lv_pmos ad=1.03279p pd=4.295u as=1.03279p ps=4.295u w=1u l=1u
+**devattr d=13600,536
+.ends
+
+.subckt sg13g2_a221oi_1 VSS VDD C1 Y B2 B1 A2 A1
+X0 a_550_140# A1 Y VSS sg13_lv_nmos ad=0 pd=0 as=0.49283p ps=4.45772u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+X1 VSS A2 a_550_140# VSS sg13_lv_nmos ad=0.69493p pd=3.86667u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+X2 a_142_412# C1 Y VDD sg13_lv_pmos ad=0.1325p pd=1.32333u as=0.74591p ps=6.74683u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X3 a_244_412# B2 a_142_412# VDD sg13_lv_pmos ad=0.12615p pd=1.2475u as=0.1325p ps=1.32333u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X4 a_142_412# B1 a_244_412# VDD sg13_lv_pmos ad=0.1325p pd=1.32333u as=0.12615p ps=1.2475u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X5 a_244_412# A1 VDD VDD sg13_lv_pmos ad=0.12615p pd=1.2475u as=1.06775p ps=5.995u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X6 VDD A2 a_244_412# VDD sg13_lv_pmos ad=1.06775p pd=5.995u as=0.12615p ps=1.2475u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X7 VSS C1 Y VSS sg13_lv_nmos ad=0.69493p pd=3.86667u as=0.49283p ps=4.45772u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+X8 a_244_140# B2 VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.69493p ps=3.86667u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X9 Y B1 a_244_140# VSS sg13_lv_nmos ad=0.49283p pd=4.45772u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+.ends
+
+.subckt sg13g2_nand3b_1 A_N Y VDD VSS B C
+X0 Y a_94_160# a_437_122# VSS sg13_lv_nmos ad=0.2466p pd=1.8518u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=4366,207 d=13616,480
+X1 VSS A_N a_94_160# VSS sg13_lv_nmos ad=0.71551p pd=3.87132u as=0.39733p ps=4.01223u w=0.55u l=0.13u
+**devattr s=7480,356 d=7356,251
+X2 a_437_122# B a_317_122# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+**devattr s=6956,242 d=4366,207
+X3 VDD A_N a_94_160# VDD sg13_lv_pmos ad=0.41918p pd=2.47u as=0.60682p ps=6.12777u w=0.84u l=0.13u
+**devattr s=11424,472 d=8792,306
+X4 Y C VDD VDD sg13_lv_pmos ad=0.37323p pd=2.80273u as=0.55891p ps=3.29333u w=1.12u l=0.13u
+**devattr s=8792,306 d=8512,300
+X5 VDD B Y VDD sg13_lv_pmos ad=0.55891p pd=3.29333u as=0.37323p ps=2.80273u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X6 Y a_94_160# VDD VDD sg13_lv_pmos ad=0.37323p pd=2.80273u as=0.55891p ps=3.29333u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X7 a_317_122# C VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.96269p ps=5.20868u w=0.74u l=0.13u
+**devattr s=7356,251 d=6956,242
+.ends
+
+.subckt sg13g2_buf_2 VSS VDD X A
+X0 a_21_304# A VSS VSS sg13_lv_nmos ad=0.48968p pd=5.10049u as=0.46243p ps=2.81962u w=0.64u l=0.13u
+**devattr s=5484,224 d=8704,392
+X1 a_21_304# A VDD VDD sg13_lv_pmos ad=0.76512p pd=7.96951u as=0.49485p ps=3.05247u w=1u l=0.13u
+**devattr s=8344,300 d=13600,536
+X2 X a_21_304# VSS VSS sg13_lv_nmos ad=0.11389p pd=0.82156u as=0.53468p ps=3.26019u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+X3 X a_21_304# VDD VDD sg13_lv_pmos ad=0.17238p pd=1.24344u as=0.55423p ps=3.41877u w=1.12u l=0.13u
+**devattr s=29344,710 d=8512,300
+X4 VSS a_21_304# X VSS sg13_lv_nmos ad=0.53468p pd=3.26019u as=0.11389p ps=0.82156u w=0.74u l=0.13u
+**devattr s=5624,224 d=5484,224
+X5 VDD a_21_304# X VDD sg13_lv_pmos ad=0.55423p pd=3.41877u as=0.17238p ps=1.24344u w=1.12u l=0.13u
+**devattr s=8512,300 d=8344,300
+.ends
+
+.subckt sg13g2_mux2_1 A1 X S VDD VSS A0
+X0 a_559_412# A1 a_382_118# VDD sg13_lv_pmos ad=0 pd=0 as=0.40487p ps=4.24713u w=1u l=0.13u
+**devattr s=8900,289 d=11900,319
+X1 VDD S a_59_156# VDD sg13_lv_pmos ad=0.56153p pd=3.24121u as=0.95916p ps=9.84432u w=0.84u l=0.13u
+**devattr s=11424,472 d=10120,306
+X2 VSS S a_59_156# VSS sg13_lv_nmos ad=0.50248p pd=2.76191u as=0.62802p ps=6.44568u w=0.55u l=0.13u
+**devattr s=7480,356 d=7578,254
+X3 X a_382_118# VSS VSS sg13_lv_nmos ad=0.41253p pd=2.68946u as=0.67606p ps=3.71603u w=0.74u l=0.13u
+**devattr s=5920,228 d=16132,514
+X4 X a_382_118# VDD VDD sg13_lv_pmos ad=0.62437p pd=4.07054u as=0.7487p ps=4.32162u w=1.12u l=0.13u
+**devattr s=8792,304 d=24192,664
+X5 a_285_118# S VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.67606p ps=3.71603u w=0.74u l=0.13u
+**devattr s=7578,254 d=5254,219
+X6 a_285_412# S VDD VDD sg13_lv_pmos ad=0 pd=0 as=0.66848p ps=3.85859u w=1u l=0.13u
+**devattr s=10120,306 d=13300,333
+X7 VSS a_59_156# a_496_118# VSS sg13_lv_nmos ad=0.67606p pd=3.71603u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=13468,330 d=5920,228
+X8 VDD a_59_156# a_559_412# VDD sg13_lv_pmos ad=0.66848p pd=3.85859u as=0 ps=0 w=1u l=0.13u
+**devattr s=11900,319 d=8792,304
+X9 a_382_118# A1 a_285_118# VSS sg13_lv_nmos ad=0.2996p pd=3.14287u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=5254,219 d=6512,236
+X10 a_496_118# A0 a_382_118# VSS sg13_lv_nmos ad=0 pd=0 as=0.2996p ps=3.14287u w=0.74u l=0.13u
+**devattr s=6512,236 d=13468,330
+X11 a_382_118# A0 a_285_412# VDD sg13_lv_pmos ad=0.40487p pd=4.24713u as=0 ps=0 w=1u l=0.13u
+**devattr s=13300,333 d=8900,289
+.ends
+
+.subckt sg13g2_a21oi_1 VDD VSS A2 A1 B1 Y
+X0 a_151_412# B1 Y VDD sg13_lv_pmos ad=0.28123p pd=1.77u as=0.26354p ps=2.67938u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X1 VDD A1 a_151_412# VDD sg13_lv_pmos ad=0.6138p pd=3.5u as=0.28123p ps=1.77u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X2 a_151_412# A2 VDD VDD sg13_lv_pmos ad=0.28123p pd=1.77u as=0.6138p ps=3.5u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X3 Y B1 VSS VSS sg13_lv_nmos ad=0.17413p pd=1.77031u as=0.7698p ps=4.7u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+X4 a_253_140# A1 Y VSS sg13_lv_nmos ad=0 pd=0 as=0.17413p ps=1.77031u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X5 VSS A2 a_253_140# VSS sg13_lv_nmos ad=0.7698p pd=4.7u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+.ends
+
+.subckt sg13g2_nand2_1 Y VDD A VSS B
+X0 a_169_118# B VSS VSS sg13_lv_nmos ad=0 pd=0 as=1.1113p ps=6.77u w=0.74u l=0.13u
+**devattr s=10064,432 d=2664,184
+X1 Y A a_169_118# VSS sg13_lv_nmos ad=0.17489p pd=1.54705u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=2664,184 d=10064,432
+X2 Y B VDD VDD sg13_lv_pmos ad=0.26469p pd=2.34148u as=0.7955p ps=5.23u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X3 VDD A Y VDD sg13_lv_pmos ad=0.7955p pd=5.23u as=0.26469p ps=2.34148u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+.ends
+
+*.subckt sg13g2_tiehi L_HI VDD VSS
+*X0 L_HI a_222_366# a_23_615# VDD sg13_lv_pmos ad=0.2223p pd=2.13u as=0 ps=0 w=1.155u l=0.13u
+***devattr s=18628,508 d=15708,598
+*X1 a_23_615# a_23_195# a_23_429# VDD sg13_lv_pmos ad=0 pd=0 as=0.41347p ps=4.16u w=0.66u l=0.13u
+***devattr s=9768,412 d=18628,508
+*X2 a_222_366# a_23_429# a_117_195# VSS sg13_lv_nmos ad=0.26537p pd=2.48u as=0 ps=0 w=0.795u l=0.13u
+***devattr s=9228,323 d=10971,456
+*X3 a_117_195# a_23_195# a_23_195# VSS sg13_lv_nmos ad=0 pd=0 as=0.1573p ps=1.73u w=0.3u l=0.13u
+***devattr s=4080,256 d=9228,323
+*.ends
+
+.subckt sg13g2_nand2_2 Y VDD A VSS B
+X0 VSS B a_57_115# VSS sg13_lv_nmos ad=0.71615p pd=3.955u as=0.21231p ps=1.985u w=0.72u l=0.13u
+**devattr s=10800,438 d=5472,220
+X1 a_57_115# B VSS VSS sg13_lv_nmos ad=0.21231p pd=1.985u as=0.71615p ps=3.955u w=0.72u l=0.13u
+**devattr s=5472,220 d=5616,222
+X2 Y B VDD VDD sg13_lv_pmos ad=0.20217p pd=1.82757u as=0.54397p ps=3.4075u w=1.12u l=0.13u
+**devattr s=16128,592 d=8512,300
+X3 VDD B Y VDD sg13_lv_pmos ad=0.54397p pd=3.4075u as=0.20217p ps=1.82757u w=1.12u l=0.13u
+**devattr s=8512,300 d=8736,302
+X4 Y A a_57_115# VSS sg13_lv_nmos ad=0.12996p pd=1.17486u as=0.21231p ps=1.985u w=0.72u l=0.13u
+**devattr s=5616,222 d=5472,220
+X5 a_57_115# A Y VSS sg13_lv_nmos ad=0.21231p pd=1.985u as=0.12996p ps=1.17486u w=0.72u l=0.13u
+**devattr s=5472,220 d=9792,424
+X6 Y A VDD VDD sg13_lv_pmos ad=0.20217p pd=1.82757u as=0.54397p ps=3.4075u w=1.12u l=0.13u
+**devattr s=8736,302 d=8512,300
+X7 VDD A Y VDD sg13_lv_pmos ad=0.54397p pd=3.4075u as=0.20217p ps=1.82757u w=1.12u l=0.13u
+**devattr s=8512,300 d=15680,588
+.ends
+
+.subckt sg13g2_dlygate4sd3_1 A VDD VSS X
+X0 VDD A a_56_118# VDD sg13_lv_pmos ad=0.28906p pd=1.61831u as=0.45247p ps=4.22u w=0.42u l=0.13u
+**devattr s=5712,304 d=6092,276
+X1 VSS a_326_118# a_438_182# VSS sg13_lv_nmos ad=0.46844p pd=2.5221u as=0.20593p ps=2.19465u w=0.42u l=0.5u
+**devattr s=5712,304 d=5704,232
+X2 VDD a_326_118# a_438_182# VDD sg13_lv_pmos ad=0.68825p pd=3.85311u as=0.49032p ps=5.22535u w=1u l=0.5u
+**devattr s=13600,536 d=9016,306
+X3 X a_438_182# VDD VDD sg13_lv_pmos ad=0.51975p pd=3.77548u as=0.77084p ps=4.31548u w=1.12u l=0.13u
+**devattr s=9016,306 d=17024,600
+X4 a_326_118# a_56_118# VDD VDD sg13_lv_pmos ad=0.56243p pd=4.9507u as=0.68825p ps=3.85311u w=1u l=0.5u
+**devattr s=6092,276 d=13600,536
+X5 VSS A a_56_118# VSS sg13_lv_nmos ad=0.46844p pd=2.5221u as=0.45247p ps=4.22u w=0.42u l=0.13u
+**devattr s=5712,304 d=3192,160
+X6 X a_438_182# VSS VSS sg13_lv_nmos ad=0.3434p pd=2.49452u as=0.82534p ps=4.4437u w=0.74u l=0.13u
+**devattr s=5704,232 d=10064,432
+X7 a_326_118# a_56_118# VSS VSS sg13_lv_nmos ad=0.23622p pd=2.0793u as=0.46844p ps=2.5221u w=0.42u l=0.5u
+**devattr s=3192,160 d=5712,304
+.ends
+
+.subckt sg13g2_xor2_1 X VDD B A VSS
+X0 VSS a_209_168# X VSS sg13_lv_nmos ad=0.76653p pd=4.04132u as=0.20251p ps=1.961u w=0.74u l=0.13u
+**devattr s=6512,236 d=12432,464
+X1 VDD A a_380_412# VDD sg13_lv_pmos ad=0.76336p pd=4.33827u as=0.15103p ps=1.59667u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X2 a_380_412# B VDD VDD sg13_lv_pmos ad=0.15103p pd=1.59667u as=0.76336p ps=4.33827u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X3 X a_209_168# a_380_412# VDD sg13_lv_pmos ad=0.3065p pd=2.968u as=0.15103p ps=1.59667u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X4 a_177_436# A VDD VDD sg13_lv_pmos ad=0 pd=0 as=0.68157p ps=3.87346u w=1u l=0.13u
+**devattr s=14400,544 d=4900,249
+X5 a_209_168# A VSS VSS sg13_lv_nmos ad=0.31654p pd=2.81548u as=0.56972p ps=3.00368u w=0.55u l=0.13u
+**devattr s=14960,492 d=6985,237
+X6 a_209_168# B a_177_436# VDD sg13_lv_pmos ad=0.57552p pd=5.11905u as=0 ps=0 w=1u l=0.13u
+**devattr s=4900,249 d=13600,536
+X7 VSS B a_209_168# VSS sg13_lv_nmos ad=0.56972p pd=3.00368u as=0.31654p ps=2.81548u w=0.55u l=0.13u
+**devattr s=6985,237 d=6098,234
+X8 a_474_130# A VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.76653p ps=4.04132u w=0.74u l=0.13u
+**devattr s=6098,234 d=3552,196
+X9 X B a_474_130# VSS sg13_lv_nmos ad=0.20251p pd=1.961u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=3552,196 d=6512,236
+.ends
+
+.subckt sg13g2_a22oi_1 Y A2 VDD B1 VSS A1 B2
+X0 a_398_96# A1 Y VSS sg13_lv_nmos ad=0 pd=0 as=0.10274p ps=1.04237u w=0.74u l=0.13u
+**devattr s=10656,292 d=3848,200
+X1 Y B2 a_127_96# VSS sg13_lv_nmos ad=0.10274p pd=1.04237u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=5550,223 d=10656,292
+X2 VDD A2 a_127_436# VDD sg13_lv_pmos ad=0.98075p pd=5.94u as=0.1629p ps=1.4125u w=1.12u l=0.13u
+**devattr s=10976,322 d=15232,584
+X3 Y B1 a_127_436# VDD sg13_lv_pmos ad=0.15551p pd=1.57763u as=0.1629p ps=1.4125u w=1.12u l=0.13u
+**devattr s=10864,321 d=8512,300
+X4 a_127_436# B2 Y VDD sg13_lv_pmos ad=0.1629p pd=1.4125u as=0.15551p ps=1.57763u w=1.12u l=0.13u
+**devattr s=8512,300 d=10976,322
+X5 a_127_96# B1 VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.8754p ps=5.18u w=0.74u l=0.13u
+**devattr s=10212,434 d=5550,223
+X6 a_127_436# A1 VDD VDD sg13_lv_pmos ad=0.1629p pd=1.4125u as=0.98075p ps=5.94u w=1.12u l=0.13u
+**devattr s=15232,584 d=10864,321
+X7 VSS A2 a_398_96# VSS sg13_lv_nmos ad=0.8754p pd=5.18u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=3848,200 d=10064,432
+.ends
+
+.subckt sg13g2_mux2_2 A1 X S VDD VSS A0
+X0 a_559_412# A1 a_382_118# VDD sg13_lv_pmos ad=0 pd=0 as=0.40422p ps=4.24713u w=1u l=0.13u
+**devattr s=8900,289 d=11900,319
+X1 VDD S a_59_156# VDD sg13_lv_pmos ad=0.52159p pd=3.1748u as=0.95916p ps=9.84432u w=0.84u l=0.13u
+**devattr s=11424,472 d=10120,306
+X2 VSS S a_59_156# VSS sg13_lv_nmos ad=0.47404p pd=2.67165u as=0.62802p ps=6.44568u w=0.55u l=0.13u
+**devattr s=7480,356 d=7578,254
+X3 X a_382_118# VSS VSS sg13_lv_nmos ad=0.20627p pd=1.34473u as=0.6378p ps=3.59459u w=0.74u l=0.13u
+**devattr s=5920,228 d=8140,258
+X4 X a_382_118# VDD VDD sg13_lv_pmos ad=0.31218p pd=2.03527u as=0.69546p ps=4.23307u w=1.12u l=0.13u
+**devattr s=8792,304 d=12320,334
+X5 a_285_118# S VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.6378p ps=3.59459u w=0.74u l=0.13u
+**devattr s=7578,254 d=5254,219
+X6 a_285_412# S VDD VDD sg13_lv_pmos ad=0 pd=0 as=0.62094p ps=3.77953u w=1u l=0.13u
+**devattr s=10120,306 d=13300,333
+X7 VSS a_382_118# X VSS sg13_lv_nmos ad=0.6378p pd=3.59459u as=0.20627p ps=1.34473u w=0.74u l=0.13u
+**devattr s=8140,258 d=12580,466
+X8 VDD a_382_118# X VDD sg13_lv_pmos ad=0.69546p pd=4.23307u as=0.31218p ps=2.03527u w=1.12u l=0.13u
+**devattr s=12320,334 d=19040,618
+X9 VSS a_59_156# a_496_118# VSS sg13_lv_nmos ad=0.6378p pd=3.59459u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=13468,330 d=5920,228
+X10 VDD a_59_156# a_559_412# VDD sg13_lv_pmos ad=0.62094p pd=3.77953u as=0 ps=0 w=1u l=0.13u
+**devattr s=11900,319 d=8792,304
+X11 a_382_118# A1 a_285_118# VSS sg13_lv_nmos ad=0.29912p pd=3.14287u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=5254,219 d=6512,236
+X12 a_496_118# A0 a_382_118# VSS sg13_lv_nmos ad=0 pd=0 as=0.29912p ps=3.14287u w=0.74u l=0.13u
+**devattr s=6512,236 d=13468,330
+X13 a_382_118# A0 a_285_412# VDD sg13_lv_pmos ad=0.40422p pd=4.24713u as=0 ps=0 w=1u l=0.13u
+**devattr s=13300,333 d=8900,289
+.ends
+
+.subckt sg13g2_inv_1 Y A VSS VDD
+X0 Y A VSS VSS sg13_lv_nmos ad=0.23608p pd=2.23591u as=0.9561p ps=5.91u w=0.74u l=0.13u
+**devattr s=10360,436 d=10360,436
+X1 Y A VDD VDD sg13_lv_pmos ad=0.35732p pd=3.38409u as=1.00622p ps=6.47u w=1.12u l=0.13u
+**devattr s=15680,588 d=15680,588
+.ends
+
+.subckt sg13g2_nor3_1 A Y B C VDD VSS
+X0 a_254_412# B a_165_412# VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+**devattr s=7056,287 d=7280,289
+X1 Y C a_254_412# VDD sg13_lv_pmos ad=0.48189p pd=3.54939u as=0 ps=0 w=1.12u l=0.13u
+**devattr s=7280,289 d=15232,584
+X2 Y A VSS VSS sg13_lv_nmos ad=0.3313p pd=2.4402u as=0.48229p ps=2.98667u w=0.77u l=0.13u
+**devattr s=10472,444 d=6776,242
+X3 a_165_412# A VDD VDD sg13_lv_pmos ad=0 pd=0 as=1.39475p ps=8.39u w=1.12u l=0.13u
+**devattr s=15232,584 d=7056,287
+X4 VSS B Y VSS sg13_lv_nmos ad=0.48229p pd=2.98667u as=0.3313p ps=2.4402u w=0.77u l=0.13u
+**devattr s=6776,242 d=5852,230
+X5 Y C VSS VSS sg13_lv_nmos ad=0.3313p pd=2.4402u as=0.48229p ps=2.98667u w=0.77u l=0.13u
+**devattr s=5852,230 d=10472,444
+.ends
+
+.subckt sg13g2_a21o_1 B1 X VDD VSS A1 A2
+X0 VDD A1 a_358_436# VDD sg13_lv_pmos ad=0.67343p pd=3.97115u as=0.2106p ps=1.97u w=1u l=0.13u
+**devattr s=8500,285 d=7600,276
+X1 VSS A2 a_494_160# VSS sg13_lv_nmos ad=0.62154p pd=3.98257u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=3264,179 d=8704,392
+X2 a_358_436# A2 VDD VDD sg13_lv_pmos ad=0.2106p pd=1.97u as=0.67343p ps=3.97115u w=1u l=0.13u
+**devattr s=7600,276 d=13600,536
+X3 a_115_308# B1 VSS VSS sg13_lv_nmos ad=0.25219p pd=2.22596u as=0.62154p ps=3.98257u w=0.64u l=0.13u
+**devattr s=6298,235 d=4864,204
+X4 a_494_160# A1 a_115_308# VSS sg13_lv_nmos ad=0 pd=0 as=0.25219p ps=2.22596u w=0.64u l=0.13u
+**devattr s=4864,204 d=3264,179
+X5 a_358_436# B1 a_115_308# VDD sg13_lv_pmos ad=0.2106p pd=1.97u as=0.39405p ps=3.47807u w=1u l=0.13u
+**devattr s=14000,540 d=8500,285
+X6 VDD a_115_308# X VDD sg13_lv_pmos ad=0.75424p pd=4.44769u as=0.51288p ps=4.04043u w=1.12u l=0.13u
+**devattr s=15232,584 d=15232,584
+X7 VSS a_115_308# X VSS sg13_lv_nmos ad=0.71866p pd=4.60485u as=0.33887p ps=2.66957u w=0.74u l=0.13u
+**devattr s=9404,432 d=6298,235
+.ends
+
+.subckt sg13g2_nor4_1 VSS VDD B C Y A D
+X0 Y D a_348_412# VDD sg13_lv_pmos ad=0.36326p pd=2.8851u as=0 ps=0 w=1.12u l=0.13u
+**devattr s=9856,312 d=16128,592
+X1 a_234_412# B a_150_412# VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+**devattr s=6496,282 d=9856,312
+X2 Y A VSS VSS sg13_lv_nmos ad=0.24001p pd=1.90623u as=0.48377p ps=2.925u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+X3 a_150_412# A VDD VDD sg13_lv_pmos ad=0 pd=0 as=1.6416p ps=9.52u w=1.12u l=0.13u
+**devattr s=15232,584 d=6496,282
+X4 VSS B Y VSS sg13_lv_nmos ad=0.48377p pd=2.925u as=0.24001p ps=1.90623u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X5 a_348_412# C a_234_412# VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+**devattr s=9856,312 d=9856,312
+X6 Y C VSS VSS sg13_lv_nmos ad=0.24001p pd=1.90623u as=0.48377p ps=2.925u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X7 VSS D Y VSS sg13_lv_nmos ad=0.48377p pd=2.925u as=0.24001p ps=1.90623u w=0.74u l=0.13u
+**devattr s=5624,224 d=9503,432
+.ends
+
+.subckt sg13g2_nand3_1 VDD Y B C VSS A
+X0 Y C VDD VDD sg13_lv_pmos ad=0.39551p pd=2.84371u as=0.55783p ps=3.47667u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X1 VDD B Y VDD sg13_lv_pmos ad=0.55783p pd=3.47667u as=0.39551p ps=2.84371u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X2 Y A VDD VDD sg13_lv_pmos ad=0.39551p pd=2.84371u as=0.55783p ps=3.47667u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X3 a_146_122# C VSS VSS sg13_lv_nmos ad=0 pd=0 as=1.2558p ps=7.16u w=0.74u l=0.13u
+**devattr s=11544,452 d=6882,241
+X4 a_265_122# B a_146_122# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+**devattr s=6882,241 d=4366,207
+X5 Y A a_265_122# VSS sg13_lv_nmos ad=0.26132p pd=1.87888u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=4366,207 d=13172,474
+.ends
+
+.subckt sg13g2_or2_1 A VSS B X VDD
+X0 X a_22_492# VDD VDD sg13_lv_pmos ad=0.35334p pd=3.66108u as=0.80366p ps=4.75429u w=1.12u l=0.13u
+**devattr s=8904,307 d=15904,590
+X1 X a_22_492# VSS VSS sg13_lv_nmos ad=0.23346p pd=2.41892u as=0.58886p ps=3.54717u w=0.74u l=0.13u
+**devattr s=5876,231 d=10064,432
+X2 VSS A a_22_492# VSS sg13_lv_nmos ad=0.43767p pd=2.63641u as=0.23376p ps=2.36727u w=0.55u l=0.13u
+**devattr s=4180,186 d=5876,231
+X3 VDD A a_116_492# VDD sg13_lv_pmos ad=0.60274p pd=3.56571u as=0 ps=0 w=0.84u l=0.13u
+**devattr s=6384,244 d=8904,307
+X4 a_116_492# B a_22_492# VDD sg13_lv_pmos ad=0 pd=0 as=0.35701p ps=3.61546u w=0.84u l=0.13u
+**devattr s=11424,472 d=6384,244
+X5 a_22_492# B VSS VSS sg13_lv_nmos ad=0.23376p pd=2.36727u as=0.43767p ps=2.63641u w=0.55u l=0.13u
+**devattr s=7480,356 d=4180,186
+.ends
+
+.subckt sg13g2_a21oi_2 Y A2 VDD A1 B1 VSS
+X0 VDD A2 a_47_412# VDD sg13_lv_pmos ad=0.5017p pd=2.75u as=0.21233p ps=1.72u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X1 a_47_412# A1 VDD VDD sg13_lv_pmos ad=0.21233p pd=1.72u as=0.5017p ps=2.75u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X2 VDD A1 a_47_412# VDD sg13_lv_pmos ad=0.5017p pd=2.75u as=0.21233p ps=1.72u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X3 a_47_412# A2 VDD VDD sg13_lv_pmos ad=0.21233p pd=1.72u as=0.5017p ps=2.75u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X4 Y B1 a_47_412# VDD sg13_lv_pmos ad=0.20487p pd=1.764u as=0.21233p ps=1.72u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X5 a_47_412# B1 Y VDD sg13_lv_pmos ad=0.21233p pd=1.72u as=0.20487p ps=1.764u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X6 a_141_140# A2 VSS VSS sg13_lv_nmos ad=0.1123p pd=1.0625u as=0.6278p ps=3.72u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+X7 Y A1 a_141_140# VSS sg13_lv_nmos ad=0.13536p pd=1.1655u as=0.1123p ps=1.0625u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X8 a_141_140# A1 Y VSS sg13_lv_nmos ad=0.1123p pd=1.0625u as=0.13536p ps=1.1655u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X9 VSS A2 a_141_140# VSS sg13_lv_nmos ad=0.6278p pd=3.72u as=0.1123p ps=1.0625u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X10 Y B1 VSS VSS sg13_lv_nmos ad=0.13536p pd=1.1655u as=0.6278p ps=3.72u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X11 VSS B1 Y VSS sg13_lv_nmos ad=0.6278p pd=3.72u as=0.13536p ps=1.1655u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+.ends
+
+.subckt sg13g2_nor2b_2 A B_N VDD Y VSS
+X0 Y A a_252_412# VDD sg13_lv_pmos ad=0.2086p pd=1.92938u as=0.16193p ps=1.5325u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X1 a_252_412# A Y VDD sg13_lv_pmos ad=0.16193p pd=1.5325u as=0.2086p ps=1.92938u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X2 VDD a_50_160# a_252_412# VDD sg13_lv_pmos ad=0.77709p pd=4.67358u as=0.16193p ps=1.5325u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X3 VSS B_N a_50_160# VSS sg13_lv_nmos ad=0.41535p pd=2.50909u as=0.23134p ps=2.17756u w=0.64u l=0.13u
+**devattr s=8704,392 d=5792,226
+X4 Y a_50_160# VSS VSS sg13_lv_nmos ad=0.1341p pd=1.24031u as=0.46726p ps=2.82273u w=0.72u l=0.13u
+**devattr s=5792,226 d=5472,220
+X5 VSS A Y VSS sg13_lv_nmos ad=0.46726p pd=2.82273u as=0.1341p ps=1.24031u w=0.72u l=0.13u
+**devattr s=5472,220 d=5472,220
+X6 Y A VSS VSS sg13_lv_nmos ad=0.1341p pd=1.24031u as=0.46726p ps=2.82273u w=0.72u l=0.13u
+**devattr s=5472,220 d=5472,220
+X7 VSS a_50_160# Y VSS sg13_lv_nmos ad=0.46726p pd=2.82273u as=0.1341p ps=1.24031u w=0.72u l=0.13u
+**devattr s=5472,220 d=9792,424
+X8 VDD B_N a_50_160# VDD sg13_lv_pmos ad=0.69383p pd=4.17284u as=0.36146p ps=3.40244u w=1u l=0.13u
+**devattr s=13600,536 d=9016,306
+X9 a_252_412# a_50_160# VDD VDD sg13_lv_pmos ad=0.16193p pd=1.5325u as=0.77709p ps=4.67358u w=1.12u l=0.13u
+**devattr s=9016,306 d=8512,300
+.ends
+
+.subckt sg13g2_mux4_1 X A1 A2 S0 VDD VSS S1 A0 A3
+X0 a_886_118# a_71_118# a_810_118# VSS sg13_lv_nmos ad=0.30763p pd=2.76553u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=3200,178 d=7104,239
+X1 VDD S0 a_71_118# VDD sg13_lv_pmos ad=0.76301p pd=3.98315u as=1.43855p ps=13.84146u w=1u l=0.13u
+**devattr s=13600,536 d=8926,311
+X2 X a_1377_160# VSS VSS sg13_lv_nmos ad=0.29328p pd=2.31548u as=0.84958p ps=4.41092u w=0.74u l=0.13u
+**devattr s=6172,236 d=10064,432
+X3 X a_1377_160# VDD VDD sg13_lv_pmos ad=0.44389p pd=3.50452u as=0.85457p ps=4.46112u w=1.12u l=0.13u
+**devattr s=13747,355 d=15232,584
+X4 a_1023_118# S0 a_886_118# VSS sg13_lv_nmos ad=0 pd=0 as=0.30763p ps=2.76553u w=0.64u l=0.13u
+**devattr s=7104,239 d=3072,176
+X5 VSS S1 a_1453_124# VSS sg13_lv_nmos ad=0.73477p pd=3.81485u as=0.33842p ps=2.5561u w=0.64u l=0.13u
+**devattr s=9216,400 d=6172,236
+X6 VSS A3 a_1023_118# VSS sg13_lv_nmos ad=0.73477p pd=3.81485u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=3072,176 d=8704,392
+X7 VSS S0 a_71_118# VSS sg13_lv_nmos ad=0.73477p pd=3.81485u as=0.92067p ps=8.85854u w=0.64u l=0.13u
+**devattr s=8704,392 d=7488,245
+X8 a_810_118# A2 VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.73477p ps=3.81485u w=0.64u l=0.13u
+**devattr s=7296,242 d=3200,178
+X9 a_886_118# S0 a_805_385# VDD sg13_lv_pmos ad=0.48067p pd=4.32114u as=0 ps=0 w=1u l=0.13u
+**devattr s=8305,321 d=17700,377
+X10 VDD S1 a_1453_124# VDD sg13_lv_pmos ad=0.76301p pd=3.98315u as=0.52878p ps=3.9939u w=1u l=0.13u
+**devattr s=13600,536 d=13747,355
+X11 a_382_118# S0 a_295_385# VDD sg13_lv_pmos ad=0.46873p pd=4.49797u as=0 ps=0 w=1u l=0.13u
+**devattr s=16600,366 d=7600,276
+X12 a_1109_431# a_71_118# a_886_118# VDD sg13_lv_pmos ad=0 pd=0 as=0.48067p ps=4.32114u w=1u l=0.13u
+**devattr s=17700,377 d=5400,254
+X13 a_295_385# A0 VDD VDD sg13_lv_pmos ad=0 pd=0 as=0.76301p ps=3.98315u w=1u l=0.13u
+**devattr s=8926,311 d=16600,366
+X14 VDD A1 a_589_385# VDD sg13_lv_pmos ad=0.76301p pd=3.98315u as=0 ps=0 w=1u l=0.13u
+**devattr s=6400,264 d=11710,357
+X15 a_1377_160# S1 a_382_118# VDD sg13_lv_pmos ad=0.39763p pd=3.77134u as=0.46873p ps=4.49797u w=1u l=0.13u
+**devattr s=13600,536 d=8900,289
+X16 a_308_118# A0 VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.73477p ps=3.81485u w=0.64u l=0.13u
+**devattr s=7488,245 d=3072,176
+X17 a_500_118# S0 a_382_118# VSS sg13_lv_nmos ad=0 pd=0 as=0.29999p ps=2.8787u w=0.64u l=0.13u
+**devattr s=5888,220 d=9216,272
+X18 a_589_385# a_71_118# a_382_118# VDD sg13_lv_pmos ad=0 pd=0 as=0.46873p ps=4.49797u w=1u l=0.13u
+**devattr s=7600,276 d=6400,264
+X19 a_1377_160# S1 a_886_118# VSS sg13_lv_nmos ad=0.25448p pd=2.41366u as=0.30763p ps=2.76553u w=0.64u l=0.13u
+**devattr s=21675,684 d=4864,204
+X20 VDD A3 a_1109_431# VDD sg13_lv_pmos ad=0.76301p pd=3.98315u as=0 ps=0 w=1u l=0.13u
+**devattr s=5400,254 d=13600,536
+X21 a_382_118# a_71_118# a_308_118# VSS sg13_lv_nmos ad=0.29999p pd=2.8787u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=3072,176 d=5888,220
+X22 VSS A1 a_500_118# VSS sg13_lv_nmos ad=0.73477p pd=3.81485u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=9216,272 d=7296,242
+X23 a_382_118# a_1453_124# a_1377_160# VSS sg13_lv_nmos ad=0.29999p pd=2.8787u as=0.25448p ps=2.41366u w=0.64u l=0.13u
+**devattr s=4864,204 d=8704,392
+X24 a_805_385# A2 VDD VDD sg13_lv_pmos ad=0 pd=0 as=0.76301p ps=3.98315u w=1u l=0.13u
+**devattr s=11710,357 d=8305,321
+X25 a_886_118# a_1453_124# a_1377_160# VDD sg13_lv_pmos ad=0.48067p pd=4.32114u as=0.39763p ps=3.77134u w=1u l=0.13u
+**devattr s=8900,289 d=13600,536
+.ends
+
+.subckt sg13g2_inv_2 VSS VDD Y A
+X0 Y A VDD VDD sg13_lv_pmos ad=0.15323p pd=1.68903u as=0.75864p ps=5.2u w=1.12u l=0.13u
+**devattr s=15232,584 d=8624,301
+X1 VDD A Y VDD sg13_lv_pmos ad=0.75864p pd=5.2u as=0.15323p ps=1.68903u w=1.12u l=0.13u
+**devattr s=8624,301 d=15232,584
+X2 Y A VSS VSS sg13_lv_nmos ad=0.10124p pd=1.11597u as=0.6713p ps=4.525u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+X3 VSS A Y VSS sg13_lv_nmos ad=0.6713p pd=4.525u as=0.10124p ps=1.11597u w=0.74u l=0.13u
+**devattr s=5624,224 d=10212,434
+.ends
+
+.subckt sg13g2_nor2b_1 A B_N VDD Y VSS
+X0 VDD B_N a_46_156# VDD sg13_lv_pmos ad=0.56456p pd=3.29571u as=0.45771p ps=4.07309u w=0.84u l=0.13u
+**devattr s=11424,472 d=10472,326
+X1 VSS B_N a_46_156# VSS sg13_lv_nmos ad=0.40692p pd=2.46823u as=0.29969p ps=2.66691u w=0.55u l=0.13u
+**devattr s=7480,356 d=6902,250
+X2 Y a_46_156# VSS VSS sg13_lv_nmos ad=0.19606p pd=1.86992u as=0.54749p ps=3.32089u w=0.74u l=0.13u
+**devattr s=6902,250 d=5624,224
+X3 VSS A Y VSS sg13_lv_nmos ad=0.54749p pd=3.32089u as=0.19606p ps=1.86992u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+X4 a_268_412# a_46_156# VDD VDD sg13_lv_pmos ad=0 pd=0 as=0.75274p ps=4.39429u w=1.12u l=0.13u
+**devattr s=10472,326 d=4704,266
+X5 Y A a_268_412# VDD sg13_lv_pmos ad=0.29675p pd=2.83015u as=0 ps=0 w=1.12u l=0.13u
+**devattr s=4704,266 d=15232,584
+.ends
+
+.subckt sg13g2_and3_1 X B VDD VSS C A
+X0 a_170_160# A a_76_160# VSS sg13_lv_nmos ad=0 pd=0 as=0.23862p ps=2.27848u w=0.64u l=0.13u
+**devattr s=8704,392 d=4864,204
+X1 a_272_160# B a_170_160# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.64u l=0.13u
+**devattr s=4864,204 d=4864,204
+X2 VSS C a_272_160# VSS sg13_lv_nmos ad=0.79657p pd=4.37797u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=4864,204 d=5484,224
+X3 VDD A a_76_160# VDD sg13_lv_pmos ad=0.52182p pd=2.57308u as=0.31319p ps=2.99051u w=0.84u l=0.13u
+**devattr s=11424,472 d=6384,244
+X4 a_76_160# B VDD VDD sg13_lv_pmos ad=0.31319p pd=2.99051u as=0.52182p ps=2.57308u w=0.84u l=0.13u
+**devattr s=6384,244 d=6384,244
+X5 VDD C a_76_160# VDD sg13_lv_pmos ad=0.52182p pd=2.57308u as=0.31319p ps=2.99051u w=0.84u l=0.13u
+**devattr s=6384,244 d=14478,368
+X6 X a_76_160# VDD VDD sg13_lv_pmos ad=0.42256p pd=3.90194u as=0.69575p ps=3.43077u w=1.12u l=0.13u
+**devattr s=14478,368 d=15232,584
+X7 X a_76_160# VSS VSS sg13_lv_nmos ad=0.27919p pd=2.57806u as=0.92103p ps=5.06203u w=0.74u l=0.13u
+**devattr s=5484,224 d=10064,432
+.ends
+
+.subckt sg13g2_or3_1 VDD VSS C B A X
+X0 VSS A a_73_118# VSS sg13_lv_nmos ad=0.42039p pd=2.36569u as=0.31658p ps=2.88491u w=0.55u l=0.13u
+**devattr s=7920,254 d=5358,224
+X1 X a_73_118# VSS VSS sg13_lv_nmos ad=0.28908p pd=2.44677u as=0.56562p ps=3.18293u w=0.74u l=0.13u
+**devattr s=5358,224 d=10064,432
+X2 a_244_412# B a_167_412# VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1u l=0.13u
+**devattr s=5100,251 d=8800,288
+X3 VDD A a_244_412# VDD sg13_lv_pmos ad=1.00443p pd=4.60849u as=0 ps=0 w=1u l=0.13u
+**devattr s=8800,288 d=15288,368
+X4 VSS C a_73_118# VSS sg13_lv_nmos ad=0.42039p pd=2.36569u as=0.31658p ps=2.88491u w=0.55u l=0.13u
+**devattr s=7480,356 d=4180,186
+X5 a_167_412# C a_73_118# VDD sg13_lv_pmos ad=0 pd=0 as=0.5756p ps=5.24528u w=1u l=0.13u
+**devattr s=13600,536 d=5100,251
+X6 a_73_118# B VSS VSS sg13_lv_nmos ad=0.31658p pd=2.88491u as=0.42039p ps=2.36569u w=0.55u l=0.13u
+**devattr s=4180,186 d=7920,254
+X7 X a_73_118# VDD VDD sg13_lv_pmos ad=0.43752p pd=3.70323u as=1.12497p ps=5.16151u w=1.12u l=0.13u
+**devattr s=15288,368 d=15232,584
+.ends
+
+.subckt sg13g2_nand2b_2 A_N Y VDD VSS B
+X0 a_116_149# A_N VDD VDD sg13_lv_pmos ad=0.34416p pd=3.45669u as=0.47245p ps=2.93368u w=0.84u l=0.13u
+**devattr s=11424,472 d=11424,472
+X1 Y B a_226_115# VSS sg13_lv_nmos ad=0.1182p pd=1.06297u as=0.21231p ps=1.985u w=0.72u l=0.13u
+**devattr s=5616,222 d=5472,220
+X2 a_226_115# B Y VSS sg13_lv_nmos ad=0.21231p pd=1.985u as=0.1182p ps=1.06297u w=0.72u l=0.13u
+**devattr s=5472,220 d=9792,424
+X3 Y B VDD VDD sg13_lv_pmos ad=0.18387p pd=1.65351u as=0.62994p ps=3.91158u w=1.12u l=0.13u
+**devattr s=8736,302 d=8512,300
+X4 VDD B Y VDD sg13_lv_pmos ad=0.62994p pd=3.91158u as=0.18387p ps=1.65351u w=1.12u l=0.13u
+**devattr s=8512,300 d=15680,588
+X5 a_116_149# A_N VSS VSS sg13_lv_nmos ad=0.22534p pd=2.26331u as=0.58842p ps=3.3u w=0.55u l=0.13u
+**devattr s=7480,356 d=7480,356
+X6 VSS a_116_149# a_226_115# VSS sg13_lv_nmos ad=0.77029p pd=4.32u as=0.21231p ps=1.985u w=0.72u l=0.13u
+**devattr s=10368,432 d=5472,220
+X7 Y a_116_149# VDD VDD sg13_lv_pmos ad=0.18387p pd=1.65351u as=0.62994p ps=3.91158u w=1.12u l=0.13u
+**devattr s=16128,592 d=8512,300
+X8 a_226_115# a_116_149# VSS VSS sg13_lv_nmos ad=0.21231p pd=1.985u as=0.77029p ps=4.32u w=0.72u l=0.13u
+**devattr s=5472,220 d=5616,222
+X9 VDD a_116_149# Y VDD sg13_lv_pmos ad=0.62994p pd=3.91158u as=0.18387p ps=1.65351u w=1.12u l=0.13u
+**devattr s=8512,300 d=8736,302
+.ends
+
+.subckt sg13g2_nand2b_1 VSS A_N Y B VDD
+X0 VDD a_27_156# Y VDD sg13_lv_pmos ad=0.51171p pd=3.26182u as=0.29026p ps=2.8451u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X1 a_291_118# B VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.87595p ps=4.15891u w=0.74u l=0.13u
+**devattr s=10390,292 d=2664,184
+X2 Y a_27_156# a_291_118# VSS sg13_lv_nmos ad=0.19178p pd=1.8798u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=2664,184 d=10064,432
+X3 VDD A_N a_27_156# VDD sg13_lv_pmos ad=0.38378p pd=2.44636u as=0.55615p ps=6.2305u w=0.84u l=0.13u
+**devattr s=11424,472 d=8792,306
+X4 Y B VDD VDD sg13_lv_pmos ad=0.29026p pd=2.8451u as=0.51171p ps=3.26182u w=1.12u l=0.13u
+**devattr s=8792,306 d=8512,300
+X5 VSS A_N a_27_156# VSS sg13_lv_nmos ad=0.65105p pd=3.09109u as=0.36415p ps=4.0795u w=0.55u l=0.13u
+**devattr s=7480,356 d=10390,292
+.ends
+
+.subckt sg13g2_buf_4 X VSS A VDD
+X0 a_111_82# A VSS VSS sg13_lv_nmos ad=0.35938p pd=3.36058u as=0.46145p ps=2.656u w=0.74u l=0.13u
+**devattr s=12136,312 d=10656,440
+X1 X a_111_82# VSS VSS sg13_lv_nmos ad=0.14003p pd=1.23035u as=0.46145p ps=2.656u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+X2 X a_111_82# VDD VDD sg13_lv_pmos ad=0.21194p pd=1.86215u as=0.53671p ps=3.32182u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X3 VSS a_111_82# X VSS sg13_lv_nmos ad=0.46145p pd=2.656u as=0.14003p ps=1.23035u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X4 VDD a_111_82# X VDD sg13_lv_pmos ad=0.53671p pd=3.32182u as=0.21194p ps=1.86215u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X5 X a_111_82# VSS VSS sg13_lv_nmos ad=0.14003p pd=1.23035u as=0.46145p ps=2.656u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X6 VSS a_111_82# X VSS sg13_lv_nmos ad=0.46145p pd=2.656u as=0.14003p ps=1.23035u w=0.74u l=0.13u
+**devattr s=5624,224 d=12136,312
+X7 X a_111_82# VDD VDD sg13_lv_pmos ad=0.21194p pd=1.86215u as=0.53671p ps=3.32182u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X8 VDD a_111_82# X VDD sg13_lv_pmos ad=0.53671p pd=3.32182u as=0.21194p ps=1.86215u w=1.12u l=0.13u
+**devattr s=8512,300 d=8120,300
+X9 a_111_82# A VDD VDD sg13_lv_pmos ad=0.40795p pd=3.81471u as=0.40253p ps=2.49136u w=0.84u l=0.13u
+**devattr s=8120,300 d=6384,244
+X10 VDD A a_111_82# VDD sg13_lv_pmos ad=0.40253p pd=2.49136u as=0.40795p ps=3.81471u w=0.84u l=0.13u
+**devattr s=6384,244 d=11424,472
+.ends
+
+.subckt sg13g2_and2_2 X VSS VDD B A
+X0 X a_45_160# VDD VDD sg13_lv_pmos ad=0.19745p pd=1.68903u as=0.60609p ps=3.77429u w=1.12u l=0.13u
+**devattr s=7672,300 d=8512,300
+X1 VDD a_45_160# X VDD sg13_lv_pmos ad=0.60609p pd=3.77429u as=0.19745p ps=1.68903u w=1.12u l=0.13u
+**devattr s=8512,300 d=17024,600
+X2 X a_45_160# VSS VSS sg13_lv_nmos ad=0.13045p pd=1.11597u as=0.61204p ps=3.62321u w=0.74u l=0.13u
+**devattr s=5324,224 d=5624,224
+X3 VSS a_45_160# X VSS sg13_lv_nmos ad=0.61204p pd=3.62321u as=0.13045p ps=1.11597u w=0.74u l=0.13u
+**devattr s=5624,224 d=11248,448
+X4 a_45_160# A VDD VDD sg13_lv_pmos ad=0.30734p pd=2.85672u as=0.45456p ps=2.83071u w=0.84u l=0.13u
+**devattr s=11424,472 d=6384,244
+X5 VDD B a_45_160# VDD sg13_lv_pmos ad=0.45456p pd=2.83071u as=0.30734p ps=2.85672u w=0.84u l=0.13u
+**devattr s=6384,244 d=7672,300
+X6 a_139_160# A a_45_160# VSS sg13_lv_nmos ad=0 pd=0 as=0.23417p ps=2.17655u w=0.64u l=0.13u
+**devattr s=8704,392 d=4864,204
+X7 VSS B a_139_160# VSS sg13_lv_nmos ad=0.52933p pd=3.13358u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=4864,204 d=5324,224
+.ends
+
+.subckt sg13g2_nor2_2 A VDD Y VSS B
+X0 Y B a_52_412# VDD sg13_lv_pmos ad=0.26142p pd=2.10646u as=0.31235p ps=2.2875u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X1 a_52_412# B Y VDD sg13_lv_pmos ad=0.31235p pd=2.2875u as=0.26142p ps=2.10646u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X2 Y A VSS VSS sg13_lv_nmos ad=0.17273p pd=1.39177u as=0.47215p ps=2.855u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+X3 VDD A a_52_412# VDD sg13_lv_pmos ad=0.76555p pd=4.335u as=0.31235p ps=2.2875u w=1.12u l=0.13u
+**devattr s=16128,592 d=8512,300
+X4 VSS A Y VSS sg13_lv_nmos ad=0.47215p pd=2.855u as=0.17273p ps=1.39177u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X5 a_52_412# A VDD VDD sg13_lv_pmos ad=0.31235p pd=2.2875u as=0.76555p ps=4.335u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X6 Y B VSS VSS sg13_lv_nmos ad=0.17273p pd=1.39177u as=0.47215p ps=2.855u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X7 VSS B Y VSS sg13_lv_nmos ad=0.47215p pd=2.855u as=0.17273p ps=1.39177u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+.ends
+
+.subckt sg13g2_and4_2 X B A VDD VSS C D
+X0 VDD D a_135_118# VDD sg13_lv_pmos ad=0.45691p pd=2.7495u as=0.3147p ps=3.0324u w=0.84u l=0.13u
+**devattr s=7392,256 d=8176,306
+X1 a_385_118# C a_307_118# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.64u l=0.13u
+**devattr s=3328,180 d=5632,216
+X2 a_307_118# B a_229_118# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.64u l=0.13u
+**devattr s=3328,180 d=3328,180
+X3 VSS D a_385_118# VSS sg13_lv_nmos ad=0.73466p pd=4.09962u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=5632,216 d=5404,224
+X4 X a_135_118# VSS VSS sg13_lv_nmos ad=0.18524p pd=1.30495u as=0.84945p ps=4.74019u w=0.74u l=0.13u
+**devattr s=5404,224 d=7696,252
+X5 X a_135_118# VDD VDD sg13_lv_pmos ad=0.28036p pd=1.97505u as=0.60922p ps=3.666u w=1.12u l=0.13u
+**devattr s=8176,306 d=11648,328
+X6 VSS a_135_118# X VSS sg13_lv_nmos ad=0.84945p pd=4.74019u as=0.18524p ps=1.30495u w=0.74u l=0.13u
+**devattr s=7696,252 d=14504,492
+X7 a_135_118# A VDD VDD sg13_lv_pmos ad=0.3147p pd=3.0324u as=0.45691p ps=2.7495u w=0.84u l=0.13u
+**devattr s=11424,472 d=6384,244
+X8 VDD B a_135_118# VDD sg13_lv_pmos ad=0.45691p pd=2.7495u as=0.3147p ps=3.0324u w=0.84u l=0.13u
+**devattr s=6384,244 d=6384,244
+X9 VDD a_135_118# X VDD sg13_lv_pmos ad=0.60922p pd=3.666u as=0.28036p ps=1.97505u w=1.12u l=0.13u
+**devattr s=11648,328 d=21952,644
+X10 a_135_118# C VDD VDD sg13_lv_pmos ad=0.3147p pd=3.0324u as=0.45691p ps=2.7495u w=0.84u l=0.13u
+**devattr s=6384,244 d=7392,256
+X11 a_229_118# A a_135_118# VSS sg13_lv_nmos ad=0 pd=0 as=0.23977p ps=2.3104u w=0.64u l=0.13u
+**devattr s=8704,392 d=3328,180
+.ends
+
+.subckt sg13g2_buf_1 VDD VSS a_285_412# a_40_330#
+X0 VSS a_40_330# a_31_201# VSS sg13_lv_nmos ad=0.47345p pd=2.69884u as=0.31495p ps=3.11799u w=0.55u l=0.13u
+**devattr s=9905,458 d=6375,238
+X1 VDD a_40_330# a_31_201# VDD sg13_lv_pmos ad=0.45463p pd=2.64u as=0.48102p ps=4.76201u w=0.84u l=0.13u
+**devattr s=12096,480 d=8204,304
+X2 a_285_412# a_31_201# VSS VSS sg13_lv_nmos ad=0.27901p pd=2.41097u as=0.637p ps=3.63116u w=0.74u l=0.13u
+**devattr s=6375,238 d=10064,432
+X3 a_285_412# a_31_201# VDD VDD sg13_lv_pmos ad=0.42229p pd=3.64903u as=0.60617p ps=3.52u w=1.12u l=0.13u
+**devattr s=8204,304 d=16128,592
+.ends
+
+.subckt sg13g2_nor3_2 B C Y VDD VSS A
+X0 a_140_412# A VDD VDD sg13_lv_pmos ad=0.17714p pd=1.625u as=1.278p ps=7.28u w=1.12u l=0.13u
+**devattr s=15456,586 d=8512,300
+X1 VDD A a_140_412# VDD sg13_lv_pmos ad=1.278p pd=7.28u as=0.17714p ps=1.625u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X2 a_140_412# B a_352_412# VDD sg13_lv_pmos ad=0.17714p pd=1.625u as=0.28957p ps=2.3575u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X3 a_352_412# B a_140_412# VDD sg13_lv_pmos ad=0.28957p pd=2.3575u as=0.17714p ps=1.625u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X4 Y C a_352_412# VDD sg13_lv_pmos ad=0.24311p pd=2.07569u as=0.28957p ps=2.3575u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X5 a_352_412# C Y VDD sg13_lv_pmos ad=0.28957p pd=2.3575u as=0.24311p ps=2.07569u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X6 Y A VSS VSS sg13_lv_nmos ad=0.16063p pd=1.37144u as=0.5668p ps=3.01167u w=0.74u l=0.13u
+**devattr s=10212,434 d=5624,224
+X7 VSS A Y VSS sg13_lv_nmos ad=0.5668p pd=3.01167u as=0.16063p ps=1.37144u w=0.74u l=0.13u
+**devattr s=5624,224 d=13172,326
+X8 Y B VSS VSS sg13_lv_nmos ad=0.16063p pd=1.37144u as=0.5668p ps=3.01167u w=0.74u l=0.13u
+**devattr s=13172,326 d=5624,224
+X9 VSS B Y VSS sg13_lv_nmos ad=0.5668p pd=3.01167u as=0.16063p ps=1.37144u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X10 Y C VSS VSS sg13_lv_nmos ad=0.16063p pd=1.37144u as=0.5668p ps=3.01167u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X11 VSS C Y VSS sg13_lv_nmos ad=0.5668p pd=3.01167u as=0.16063p ps=1.37144u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+.ends
+
+.subckt sg13g2_nand4_1 VDD Y B C VSS A D
+X0 Y D VDD VDD sg13_lv_pmos ad=0.28156p pd=2.34943u as=0.53455p ps=3.335u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X1 VDD C Y VDD sg13_lv_pmos ad=0.53455p pd=3.335u as=0.28156p ps=2.34943u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X2 Y B VDD VDD sg13_lv_pmos ad=0.28156p pd=2.34943u as=0.53455p ps=3.335u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X3 VDD A Y VDD sg13_lv_pmos ad=0.53455p pd=3.335u as=0.28156p ps=2.34943u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X4 a_247_122# C a_146_122# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+**devattr s=5550,223 d=5698,225
+X5 a_146_122# D VSS VSS sg13_lv_nmos ad=0 pd=0 as=1.5669p ps=8.86u w=0.74u l=0.13u
+**devattr s=11544,452 d=5550,223
+X6 a_350_122# B a_247_122# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+**devattr s=5698,225 d=5624,224
+X7 Y A a_350_122# VSS sg13_lv_nmos ad=0.18603p pd=1.5523u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+.ends
+
+.subckt sg13g2_or4_1 X C D VDD VSS A B
+X0 X a_80_436# VSS VSS sg13_lv_nmos ad=0.27954p pd=2.37914u as=0.58855p ps=3.41054u w=0.74u l=0.13u
+**devattr s=5358,224 d=10064,432
+X1 VSS A a_80_436# VSS sg13_lv_nmos ad=0.43744p pd=2.53486u as=0.23665p ps=2.47844u w=0.55u l=0.13u
+**devattr s=4180,186 d=5358,224
+X2 a_260_436# C a_174_436# VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1u l=0.13u
+**devattr s=6000,260 d=8800,288
+X3 a_374_436# B a_260_436# VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1u l=0.13u
+**devattr s=8800,288 d=8800,288
+X4 VDD A a_374_436# VDD sg13_lv_pmos ad=0.91656p pd=4.95755u as=0 ps=0 w=1u l=0.13u
+**devattr s=8800,288 d=11076,329
+X5 a_80_436# D VSS VSS sg13_lv_nmos ad=0.23665p pd=2.47844u as=0.43744p ps=2.53486u w=0.55u l=0.13u
+**devattr s=7480,356 d=4180,186
+X6 X a_80_436# VDD VDD sg13_lv_pmos ad=0.42309p pd=3.60086u as=1.02654p ps=5.55245u w=1.12u l=0.13u
+**devattr s=11076,329 d=15232,584
+X7 VSS C a_80_436# VSS sg13_lv_nmos ad=0.43744p pd=2.53486u as=0.23665p ps=2.47844u w=0.55u l=0.13u
+**devattr s=4180,186 d=6702,233
+X8 a_174_436# D a_80_436# VDD sg13_lv_pmos ad=0 pd=0 as=0.43028p ps=4.50625u w=1u l=0.13u
+**devattr s=13600,536 d=6000,260
+X9 a_80_436# B VSS VSS sg13_lv_nmos ad=0.23665p pd=2.47844u as=0.43744p ps=2.53486u w=0.55u l=0.13u
+**devattr s=6702,233 d=4180,186
+.ends
+
+.subckt sg13g2_nor4_2 D B C Y VDD VSS A
+X0 a_140_412# A VDD VDD sg13_lv_pmos ad=0.17714p pd=1.625u as=1.5948p ps=8.72u w=1.12u l=0.13u
+**devattr s=15456,586 d=8512,300
+X1 VDD A a_140_412# VDD sg13_lv_pmos ad=1.5948p pd=8.72u as=0.17714p ps=1.625u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X2 a_140_412# B a_352_412# VDD sg13_lv_pmos ad=0.17714p pd=1.625u as=0.26195p ps=2.145u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X3 a_352_412# B a_140_412# VDD sg13_lv_pmos ad=0.26195p pd=2.145u as=0.17714p ps=1.625u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X4 a_650_412# C a_352_412# VDD sg13_lv_pmos ad=0.26852p pd=2.3525u as=0.26195p ps=2.145u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+X5 a_352_412# C a_650_412# VDD sg13_lv_pmos ad=0.26195p pd=2.145u as=0.26852p ps=2.3525u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X6 Y A VSS VSS sg13_lv_nmos ad=0.1544p pd=1.40564u as=0.56434p ps=2.70875u w=0.74u l=0.13u
+**devattr s=10212,434 d=5624,224
+X7 VSS A Y VSS sg13_lv_nmos ad=0.56434p pd=2.70875u as=0.1544p ps=1.40564u w=0.74u l=0.13u
+**devattr s=5624,224 d=13172,326
+X8 Y D a_650_412# VDD sg13_lv_pmos ad=0.23369p pd=2.12745u as=0.26852p ps=2.3525u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+X9 Y B VSS VSS sg13_lv_nmos ad=0.1544p pd=1.40564u as=0.56434p ps=2.70875u w=0.74u l=0.13u
+**devattr s=13172,326 d=5624,224
+X10 VSS B Y VSS sg13_lv_nmos ad=0.56434p pd=2.70875u as=0.1544p ps=1.40564u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X11 a_650_412# D Y VDD sg13_lv_pmos ad=0.26852p pd=2.3525u as=0.23369p ps=2.12745u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+X12 Y C VSS VSS sg13_lv_nmos ad=0.1544p pd=1.40564u as=0.56434p ps=2.70875u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+X13 VSS C Y VSS sg13_lv_nmos ad=0.56434p pd=2.70875u as=0.1544p ps=1.40564u w=0.74u l=0.13u
+**devattr s=5624,224 d=13172,326
+X14 Y D VSS VSS sg13_lv_nmos ad=0.1544p pd=1.40564u as=0.56434p ps=2.70875u w=0.74u l=0.13u
+**devattr s=13172,326 d=5624,224
+X15 VSS D Y VSS sg13_lv_nmos ad=0.56434p pd=2.70875u as=0.1544p ps=1.40564u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+.ends
+
+.subckt sg13g2_and3_2 X B VDD VSS C A
+X0 a_170_160# A a_76_160# VSS sg13_lv_nmos ad=0 pd=0 as=0.23328p ps=2.21165u w=0.64u l=0.13u
+**devattr s=8704,392 d=4864,204
+X1 a_272_160# B a_170_160# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.64u l=0.13u
+**devattr s=4864,204 d=4864,204
+X2 VSS C a_272_160# VSS sg13_lv_nmos ad=0.58681p pd=3.37509u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=4864,204 d=5484,224
+X3 VDD A a_76_160# VDD sg13_lv_pmos ad=0.37497p pd=2.20941u as=0.30617p ps=2.90278u w=0.84u l=0.13u
+**devattr s=11424,472 d=6384,244
+X4 a_76_160# B VDD VDD sg13_lv_pmos ad=0.30617p pd=2.90278u as=0.37497p ps=2.20941u w=0.84u l=0.13u
+**devattr s=6384,244 d=6384,244
+X5 VDD C a_76_160# VDD sg13_lv_pmos ad=0.37497p pd=2.20941u as=0.30617p ps=2.90278u w=0.84u l=0.13u
+**devattr s=6384,244 d=7824,300
+X6 X a_76_160# VDD VDD sg13_lv_pmos ad=0.24471p pd=2.17677u as=0.49996p ps=2.94588u w=1.12u l=0.13u
+**devattr s=7824,300 d=8512,300
+X7 VDD a_76_160# X VDD sg13_lv_pmos ad=0.49996p pd=2.94588u as=0.24471p ps=2.17677u w=1.12u l=0.13u
+**devattr s=8512,300 d=15680,588
+X8 X a_76_160# VSS VSS sg13_lv_nmos ad=0.16169p pd=1.43823u as=0.6785p ps=3.90245u w=0.74u l=0.13u
+**devattr s=5484,224 d=5624,224
+X9 VSS a_76_160# X VSS sg13_lv_nmos ad=0.6785p pd=3.90245u as=0.16169p ps=1.43823u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+.ends
+
+.subckt sg13g2_tielo L_LO VDD VSS
+X0 L_LO a_223_58# VSS VSS sg13_lv_nmos ad=0.27405p pd=2.47u as=0.68143p ps=3.81913u w=0.88u l=0.13u
+**devattr s=12217,414 d=11968,488
+X1 VDD a_59_418# a_59_418# VDD sg13_lv_pmos ad=0.21707p pd=1.229u as=0.169p ps=1.82u w=0.3u l=0.13u
+**devattr s=4080,256 d=13077,451
+X2 a_223_58# a_59_195# VDD VDD sg13_lv_pmos ad=0.38912p pd=3.38u as=0.75611p ps=4.281u w=1.045u l=0.13u
+**devattr s=13077,451 d=14212,554
+X3 VSS a_59_418# a_59_195# VSS sg13_lv_nmos ad=0.29812p pd=1.67087u as=0.3928p ps=3.66u w=0.385u l=0.13u
+**devattr s=5236,290 d=12217,414
+.ends
+
+.subckt sg13g2_or2_2 B VSS A X VDD
+X0 X a_22_492# VDD VDD sg13_lv_pmos ad=0.17667p pd=1.83054u as=0.71633p ps=4.36u w=1.12u l=0.13u
+**devattr s=8904,307 d=10080,314
+X1 X a_22_492# VSS VSS sg13_lv_nmos ad=0.11673p pd=1.20946u as=0.55362p ps=3.36729u w=0.74u l=0.13u
+**devattr s=5857,231 d=6660,238
+X2 VSS A a_22_492# VSS sg13_lv_nmos ad=0.41148p pd=2.50271u as=0.23376p ps=2.36727u w=0.55u l=0.13u
+**devattr s=4180,186 d=5857,231
+X3 VDD A a_116_492# VDD sg13_lv_pmos ad=0.53725p pd=3.27u as=0 ps=0 w=0.84u l=0.13u
+**devattr s=6384,244 d=8904,307
+X4 VDD a_22_492# X VDD sg13_lv_pmos ad=0.71633p pd=4.36u as=0.17667p ps=1.83054u w=1.12u l=0.13u
+**devattr s=10080,314 d=17024,600
+X5 a_116_492# B a_22_492# VDD sg13_lv_pmos ad=0 pd=0 as=0.35701p ps=3.61546u w=0.84u l=0.13u
+**devattr s=11424,472 d=6384,244
+X6 a_22_492# B VSS VSS sg13_lv_nmos ad=0.23376p pd=2.36727u as=0.41148p ps=2.50271u w=0.55u l=0.13u
+**devattr s=7480,356 d=4180,186
+X7 VSS a_22_492# X VSS sg13_lv_nmos ad=0.55362p pd=3.36729u as=0.11673p ps=1.20946u w=0.74u l=0.13u
+**devattr s=6660,238 d=11248,448
+.ends
+
+.subckt sg13g2_and4_1 X B A VDD VSS C D
+X0 VDD D a_135_118# VDD sg13_lv_pmos ad=0.46183p pd=2.72062u as=0.3147p ps=3.0324u w=0.84u l=0.13u
+**devattr s=7392,256 d=8176,306
+X1 a_385_118# C a_307_118# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.64u l=0.13u
+**devattr s=3328,180 d=5632,216
+X2 a_307_118# B a_229_118# VSS sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.64u l=0.13u
+**devattr s=3328,180 d=3328,180
+X3 VSS D a_385_118# VSS sg13_lv_nmos ad=0.90525p pd=4.88812u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=5632,216 d=5404,224
+X4 X a_135_118# VSS VSS sg13_lv_nmos ad=0.37048p pd=2.60989u as=1.0467p ps=5.65188u w=0.74u l=0.13u
+**devattr s=5404,224 d=14208,488
+X5 X a_135_118# VDD VDD sg13_lv_pmos ad=0.56072p pd=3.95011u as=0.61577p ps=3.6275u w=1.12u l=0.13u
+**devattr s=8176,306 d=21504,640
+X6 a_135_118# A VDD VDD sg13_lv_pmos ad=0.3147p pd=3.0324u as=0.46183p ps=2.72062u w=0.84u l=0.13u
+**devattr s=11424,472 d=6384,244
+X7 VDD B a_135_118# VDD sg13_lv_pmos ad=0.46183p pd=2.72062u as=0.3147p ps=3.0324u w=0.84u l=0.13u
+**devattr s=6384,244 d=6384,244
+X8 a_135_118# C VDD VDD sg13_lv_pmos ad=0.3147p pd=3.0324u as=0.46183p ps=2.72062u w=0.84u l=0.13u
+**devattr s=6384,244 d=7392,256
+X9 a_229_118# A a_135_118# VSS sg13_lv_nmos ad=0 pd=0 as=0.23977p ps=2.3104u w=0.64u l=0.13u
+**devattr s=8704,392 d=3328,180
+.ends
+
+.subckt controller VGND VPWR b6 b7 clk db[0] db[1] db[2] db[3] db[4] db[5] db[6] db[7]
++ dg[0] dg[1] dg[2] dg[3] dg[4] dg[5] dg[6] dg[7] dr[0] dr[1] dr[2] dr[3] dr[4] dr[5]
++ dr[6] dr[7] ena g6 g7 hblank hsync r6 r7 rst_n ui_in[0] ui_in[1] ui_in[2] ui_in[3]
++ ui_in[4] ui_in[5] ui_in[6] ui_in[7] uio_oe[0] uio_oe[1] uio_out2 uio_out3 uio_out4
++ uio_out5 uio_out6 uio_out7 vblank vsync
+X_2037_ _2037__39/L_HI _2037_/D _1542_/A _2038_/CLK VGND VPWR _2037_/Q sg13g2_dfrbp_1
+XFILLER_3_34 VPWR VGND sg13g2_decap_4
+XFILLER_3_67 VPWR VGND sg13g2_decap_4
+X_1270_ _1270_/X VGND VPWR _1270_/B _1690_/A sg13g2_and2_1
+X_1606_ _1608_/A _1755_/B VPWR hold74/A VGND sg13g2_xnor2_1
+X_1399_ VGND VPWR _1399_/Y _1398_/Y _1397_/X _1393_/Y sg13g2_o21ai_1
+X_1537_ VGND VPWR _1537_/Y _1352_/Y _1631_/B _1303_/X sg13g2_o21ai_1
+X_1468_ _1813_/A VPWR _1468_/Y VGND _1468_/B sg13g2_nor2_1
+XFILLER_2_313 VPWR VGND sg13g2_decap_8
+X_1322_ VGND VPWR _1323_/B _1282_/Y _1284_/B _1284_/A sg13g2_o21ai_1
+X_1253_ VGND VPWR _1249_/Y _1254_/A _1476_/B _1492_/A _1201_/Y _1669_/A1 sg13g2_a221oi_1
+X_1184_ _1181_/X _1196_/B VPWR VGND _1675_/B _1945_/A sg13g2_nand3b_1
+Xclkbuf_4_12_0_clk VGND VPWR _2065_/CLK clkbuf_0_clk/X sg13g2_buf_2
+X_1940_ hold30/X hold31/A _1940_/S VPWR VGND _1939_/Y sg13g2_mux2_1
+XFILLER_9_77 VPWR VGND sg13g2_decap_8
+XFILLER_14_250 VPWR VGND sg13g2_decap_8
+X_1871_ VPWR VGND _1873_/C _2034_/Q hold4/X hold5/A sg13g2_a21oi_1
+XFILLER_29_0 VPWR VGND sg13g2_decap_8
+X_1305_ VGND VPWR _1305_/Y _1304_/Y _1463_/B _1698_/B sg13g2_o21ai_1
+X_1236_ _1238_/B VPWR hold19/A VGND _1653_/B sg13g2_nand2_1
+X_1098_ _1984_/A VPWR hold32/X VGND _1979_/A sg13g2_nand2_1
+X_2064__28 _2064__28/L_HI VPWR VGND sg13g2_tiehi
+X_1167_ VGND VPWR _1167_/Y _1166_/Y _1804_/B _1241_/A sg13g2_o21ai_1
+X_2070_ _2070__61/L_HI _2070_/D hold44/A _2070_/CLK VGND VPWR hold57/A sg13g2_dfrbp_1
+X_1923_ VPWR VGND _1912_/A _2013_/B _1934_/A1 _1923_/Y sg13g2_a21oi_1
+X_1785_ VPWR VGND _1755_/B hold45/A _1757_/Y _1786_/B sg13g2_a21oi_1
+X_1854_ _1854_/A VPWR _2033_/D VGND hold40/X sg13g2_nor2_1
+X_1219_ _1219_/Y VPWR _1246_/A VGND _1243_/B sg13g2_nand2_2
+X_2037__39 _2037__39/L_HI VPWR VGND sg13g2_tiehi
+Xhold30 hold30/A VPWR VGND hold30/X sg13g2_dlygate4sd3_1
+Xhold41 hold41/A VPWR VGND hold41/X sg13g2_dlygate4sd3_1
+Xhold63 hold63/A VPWR VGND hold63/X sg13g2_dlygate4sd3_1
+Xhold74 hold74/A VPWR VGND hold74/X sg13g2_dlygate4sd3_1
+Xhold52 hold52/A VPWR VGND hold52/X sg13g2_dlygate4sd3_1
+X_1570_ VPWR VGND _1569_/Y _1565_/X _1788_/A1 _1570_/Y sg13g2_a21oi_1
+X_2053_ _2053__70/L_HI hold31/X _2053_/Q_N clkload5/A VGND VPWR hold30/A sg13g2_dfrbp_1
+X_1906_ hold36/X VPWR hold37/A VGND _1906_/B sg13g2_nor2_1
+X_1837_ _1854_/A VPWR _2027_/D VGND hold52/X sg13g2_nor2_1
+X_1768_ VGND VPWR _1768_/Y _1767_/Y _1762_/Y _1761_/Y sg13g2_o21ai_1
+X_1699_ _1699_/X VPWR _1699_/B _1699_/A VGND sg13g2_xor2_1
+X_1622_ VGND VPWR _1623_/B _1127_/Y _1619_/Y _1258_/B sg13g2_o21ai_1
+X_1484_ _1484_/Y _1480_/Y VPWR _1483_/X VGND _1504_/C _1245_/Y sg13g2_a22oi_1
+X_1553_ VPWR VGND _1550_/Y _1548_/Y _1552_/Y _1553_/Y sg13g2_a21oi_1
+XFILLER_11_0 VPWR VGND sg13g2_decap_4
+X_2036_ _2036__41/L_HI _2036_/D hold68/A _2038_/CLK VGND VPWR hold75/A sg13g2_dfrbp_1
+X_1605_ hold74/A VPWR _1605_/Y VGND _1755_/B sg13g2_nor2_1
+X_1536_ VGND VPWR _1536_/Y _1535_/Y _1627_/B _1698_/B sg13g2_o21ai_1
+X_1398_ VPWR VGND _1397_/X _1393_/Y _1788_/A1 _1398_/Y sg13g2_a21oi_1
+X_1467_ VGND VPWR _1463_/Y _1468_/B _1467_/B2 _1631_/A _1201_/Y _1467_/A1 sg13g2_a221oi_1
+X_2019_ _2019__26/L_HI _2019_/D _2019_/Q_N _2073_/CLK VGND VPWR _2019_/Q sg13g2_dfrbp_1
+XFILLER_12_99 VPWR VGND sg13g2_decap_4
+XFILLER_18_204 VPWR VGND sg13g2_decap_8
+XFILLER_33_229 VPWR VGND sg13g2_decap_8
+X_1321_ _1323_/A VPWR _1675_/B _1517_/A VGND sg13g2_xor2_1
+X_1252_ _1250_/X _1492_/A _1465_/A VPWR VGND _1251_/X sg13g2_mux2_2
+X_1183_ _1183_/Y _1846_/B VGND VPWR sg13g2_inv_1
+X_1519_ _1519_/X VGND VPWR _1675_/B _1520_/A sg13g2_and2_1
+XFILLER_2_100 VPWR VGND sg13g2_decap_4
+XFILLER_0_14 VPWR VGND sg13g2_decap_8
+XFILLER_0_25 VPWR VGND sg13g2_decap_8
+X_1870_ _1916_/B hold20/A _1870_/B _1870_/C VPWR VGND sg13g2_nor3_1
+X_1235_ _1238_/A _1235_/B VPWR _1504_/B VGND sg13g2_xnor2_1
+X_1304_ _1304_/Y _1201_/Y VPWR _1303_/X VGND _1542_/A _1476_/B sg13g2_a22oi_1
+X_1166_ _1320_/B VPWR _1166_/Y VGND _1166_/B sg13g2_nor2_1
+X_1097_ _2000_/B _1097_/X VPWR VGND _1858_/C _2001_/B sg13g2_a21o_1
+X_1999_ VGND VPWR _1999_/B _2000_/B _1999_/Y hold47/A _1999_/D sg13g2_nor4_1
+Xclkbuf_4_11_0_clk VGND VPWR clkload4/A clkbuf_0_clk/X sg13g2_buf_2
+X_1922_ VPWR _1930_/A _1938_/B _1938_/C VGND hold12/X sg13g2_nand3_1
+X_1784_ _1786_/A _1942_/B VPWR hold41/A VGND sg13g2_xnor2_1
+X_1853_ hold40/A _1853_/B VPWR _2033_/Q VGND sg13g2_xnor2_1
+X_1149_ hold53/A VGND hold18/A _1149_/X VPWR sg13g2_or2_1
+X_1218_ _1218_/X VGND VPWR _1243_/B _1246_/A sg13g2_and2_1
+Xhold53 hold53/A VPWR VGND hold53/X sg13g2_dlygate4sd3_1
+Xhold31 hold31/A VPWR VGND hold31/X sg13g2_dlygate4sd3_1
+XFILLER_28_140 VPWR VGND sg13g2_decap_8
+Xhold20 hold20/A VPWR VGND hold20/X sg13g2_dlygate4sd3_1
+Xhold42 hold42/A VPWR VGND hold42/X sg13g2_dlygate4sd3_1
+Xhold75 hold75/A VPWR VGND hold75/X sg13g2_dlygate4sd3_1
+Xhold64 hold64/A VPWR VGND hold64/X sg13g2_dlygate4sd3_1
+XFILLER_6_46 VPWR VGND sg13g2_decap_4
+X_2052_ _2052__71/L_HI hold35/X _2052_/Q_N clkload2/A VGND VPWR hold34/A sg13g2_dfrbp_1
+X_1905_ _1905_/A VPWR _1906_/B VGND _1905_/B sg13g2_nor2_1
+X_1698_ _1699_/B _1698_/B VPWR _1698_/A VGND sg13g2_xnor2_1
+X_1836_ hold52/A _1836_/B VPWR _1945_/A VGND sg13g2_xnor2_1
+X_1767_ VPWR VGND _1765_/Y _1436_/A _1766_/Y _1767_/Y sg13g2_a21oi_1
+XFILLER_25_121 VPWR VGND sg13g2_decap_4
+XFILLER_15_99 VPWR VGND sg13g2_decap_4
+X_1621_ VGND VPWR _1620_/Y _1623_/A _1436_/A _1619_/Y _1617_/Y _1615_/Y sg13g2_a221oi_1
+X_1552_ VGND VPWR _1552_/Y _1551_/Y _1536_/Y _1766_/A1 sg13g2_o21ai_1
+X_1483_ _1483_/A VGND _1483_/B _1483_/X VPWR sg13g2_or2_1
+X_2035_ _2035__43/L_HI _2035_/D _1669_/A1 _2038_/CLK VGND VPWR hold4/A sg13g2_dfrbp_1
+XFILLER_22_135 VPWR VGND sg13g2_decap_8
+X_1819_ r7 _1818_/Y VPWR _1819_/A1 _1443_/Y VGND sg13g2_a21oi_2
+XFILLER_26_54 VPWR VGND sg13g2_decap_4
+XFILLER_8_172 VPWR VGND sg13g2_decap_8
+X_1604_ _1604_/Y VPWR hold74/A VGND _1755_/B sg13g2_nand2_1
+X_1535_ _1535_/Y _1303_/X VPWR _1763_/B VGND _2008_/A _1542_/A sg13g2_a22oi_1
+X_1397_ _1397_/X VPWR _1397_/B _1397_/A VGND sg13g2_xor2_1
+X_1466_ _1631_/A _1464_/Y VPWR _1465_/A _1465_/Y VGND sg13g2_a21oi_2
+X_2018_ VGND VPWR _2075_/D _1948_/B _1970_/A _1072_/Y sg13g2_o21ai_1
+XFILLER_10_127 VPWR VGND sg13g2_decap_8
+X_1320_ _1320_/A VPWR _1320_/Y VGND _1320_/B sg13g2_nor2_1
+X_1182_ VPWR _1846_/B _1945_/B _1833_/B VGND _1945_/A sg13g2_nand3_1
+X_1251_ hold51/A _1251_/X _2011_/A VPWR VGND _1166_/B sg13g2_mux2_1
+X_1449_ _1453_/A VPWR _1752_/B _1898_/A VGND sg13g2_xor2_1
+X_1518_ _1518_/Y _1518_/B VPWR _1518_/A VGND sg13g2_xnor2_1
+X_1303_ _1302_/Y _1303_/X _1465_/A VPWR VGND _1250_/X sg13g2_mux2_2
+X_1096_ _1862_/C VPWR _2001_/B VGND _1866_/B sg13g2_nor2_1
+X_1234_ _1235_/B VPWR _1659_/B _1873_/A VGND sg13g2_xor2_1
+X_1165_ _1804_/B VPWR _1165_/B _1862_/A VGND sg13g2_xor2_1
+X_1998_ _1998_/A VPWR _1998_/Y VGND _1998_/B sg13g2_nor2_1
+XFILLER_7_248 VPWR VGND sg13g2_decap_4
+XFILLER_1_0 VPWR VGND sg13g2_decap_4
+X_1921_ VPWR VGND _1934_/A1 _1075_/Y _1920_/Y hold10/A sg13g2_a21oi_1
+X_1852_ hold39/X VPWR _1853_/B VGND _1852_/B sg13g2_nor2_1
+X_1783_ hold41/A VPWR _1783_/Y VGND _1942_/B sg13g2_nor2_1
+XFILLER_34_0 VPWR VGND sg13g2_decap_8
+X_1148_ _1148_/X VGND VPWR hold18/A hold53/A sg13g2_and2_1
+X_1217_ hold54/A hold48/A VPWR _1243_/B VGND sg13g2_nor2b_2
+XFILLER_1_91 VPWR VGND sg13g2_decap_4
+X_1079_ VGND VPWR _1079_/Y _2033_/Q hold64/A _1825_/C sg13g2_o21ai_1
+X_2060__44 _2060__44/L_HI VPWR VGND sg13g2_tiehi
+Xhold10 hold10/A VPWR VGND hold10/X sg13g2_dlygate4sd3_1
+Xhold54 hold54/A VPWR VGND hold54/X sg13g2_dlygate4sd3_1
+Xhold32 hold32/A VPWR VGND hold32/X sg13g2_dlygate4sd3_1
+Xhold21 hold21/A VPWR VGND hold21/X sg13g2_dlygate4sd3_1
+Xhold65 hold65/A VPWR VGND hold65/X sg13g2_dlygate4sd3_1
+Xhold76 hold76/A VPWR VGND hold76/X sg13g2_dlygate4sd3_1
+Xhold43 hold43/A VPWR VGND hold43/X sg13g2_dlygate4sd3_1
+X_2036__41 _2036__41/L_HI VPWR VGND sg13g2_tiehi
+XFILLER_3_273 VPWR VGND sg13g2_decap_4
+X_2051_ _2051__72/L_HI hold15/X _2051_/Q_N _2075_/CLK VGND VPWR hold14/A sg13g2_dfrbp_1
+X_1904_ _1985_/A VPWR _2044_/D VGND _1904_/B sg13g2_nor2_1
+X_2027__52 _2027__52/L_HI VPWR VGND sg13g2_tiehi
+X_1835_ hold51/X VPWR _1836_/B VGND _1835_/B sg13g2_nor2_1
+X_1697_ _1697_/X VGND VPWR _1698_/B _1893_/B sg13g2_and2_1
+X_1766_ VGND VPWR _1766_/Y _1258_/B _1765_/Y _1766_/A1 sg13g2_o21ai_1
+Xclkbuf_4_10_0_clk VGND VPWR _2045_/CLK clkbuf_0_clk/X sg13g2_buf_2
+X_1482_ _1482_/A VPWR _1483_/B VGND _1631_/B sg13g2_nor2_1
+X_1620_ VGND VPWR _1620_/Y _1258_/B _1619_/Y _1214_/Y sg13g2_o21ai_1
+X_1551_ VPWR VGND _1536_/Y _1436_/A _1257_/B _1551_/Y sg13g2_a21oi_1
+X_2024__55 _2024__55/L_HI VPWR VGND sg13g2_tiehi
+X_2034_ _2034__45/L_HI hold20/X hold19/A _2070_/CLK VGND VPWR _2034_/Q sg13g2_dfrbp_1
+XFILLER_22_169 VPWR VGND sg13g2_decap_8
+X_1818_ VGND VPWR _1818_/Y _1445_/Y _1817_/Y _1818_/A1 sg13g2_o21ai_1
+X_1749_ VPWR VGND _1748_/Y _1749_/A1 _1334_/Y dr[4] sg13g2_a21oi_1
+X_2021__58 _2021__58/L_HI VPWR VGND sg13g2_tiehi
+X_1603_ VGND VPWR _1603_/Y _1447_/Y _1631_/B _1434_/X sg13g2_o21ai_1
+X_1465_ _1465_/A VPWR _1465_/Y VGND _1465_/B sg13g2_nor2_1
+X_1534_ VPWR VGND _1533_/Y _1773_/A1 _1263_/Y dg[2] sg13g2_a21oi_1
+X_2017_ input9/X _2074_/D _2017_/S VPWR VGND hold42/X sg13g2_mux2_1
+X_1396_ VGND VPWR _1397_/B _1358_/Y _1361_/B _1361_/A sg13g2_o21ai_1
+XFILLER_18_239 VPWR VGND sg13g2_decap_4
+XFILLER_5_110 VPWR VGND sg13g2_decap_4
+X_1181_ _1181_/X _1174_/Y _1655_/B _1657_/B VPWR VGND _1279_/A _1545_/B _1653_/B sg13g2_mux4_1
+X_1250_ hold43/A _1250_/X _1464_/A VPWR VGND _1824_/A sg13g2_mux2_1
+X_1448_ VGND VPWR _1454_/A _1424_/Y _1732_/B _1612_/A sg13g2_o21ai_1
+X_1517_ _1518_/B VPWR _1695_/B _1517_/A VGND sg13g2_xor2_1
+X_1379_ VPWR VGND _1380_/C _1380_/B _1629_/A _1379_/Y sg13g2_a21oi_1
+XFILLER_2_135 VPWR VGND sg13g2_decap_8
+X_1233_ _1873_/A VPWR _1233_/Y VGND _1279_/A sg13g2_nor2_1
+X_1302_ VGND VPWR _1302_/Y _1301_/Y _1069_/Y _1464_/A sg13g2_o21ai_1
+X_2049__17 _2049__17/L_HI VPWR VGND sg13g2_tiehi
+X_1095_ hold32/A VGND hold53/A _1866_/B VPWR sg13g2_or2_1
+X_1164_ _1175_/A _1164_/Y _1164_/B _1164_/C VPWR VGND sg13g2_nor3_1
+X_1997_ VPWR _1997_/Y _1997_/B _1997_/C VGND _1999_/B sg13g2_nand3_1
+X_2072__42 _2072__42/L_HI VPWR VGND sg13g2_tiehi
+X_1920_ VGND VPWR _1934_/A1 _1920_/Y _1919_/X _1938_/C _1912_/B _2013_/B sg13g2_a221oi_1
+X_1851_ _1854_/A VPWR _2032_/D VGND _1851_/B sg13g2_nor2_1
+X_1782_ _1782_/Y VPWR hold41/A VGND _1942_/B sg13g2_nand2_1
+XFILLER_27_0 VPWR VGND sg13g2_decap_8
+X_1216_ _1216_/Y _1216_/A VGND VPWR sg13g2_inv_1
+X_1147_ _1192_/A _1073_/Y VPWR _1145_/Y VGND _1996_/A _1146_/Y sg13g2_a22oi_1
+X_1078_ VGND VPWR _1893_/B _1698_/A sg13g2_inv_2
+Xhold22 hold22/A VPWR VGND hold22/X sg13g2_dlygate4sd3_1
+Xhold11 hold11/A VPWR VGND hold11/X sg13g2_dlygate4sd3_1
+Xhold44 hold44/A VPWR VGND hold44/X sg13g2_dlygate4sd3_1
+Xhold33 hold33/A VPWR VGND hold33/X sg13g2_dlygate4sd3_1
+XFILLER_28_197 VPWR VGND sg13g2_decap_8
+XFILLER_28_175 VPWR VGND sg13g2_decap_8
+Xhold66 hold66/A VPWR VGND hold66/X sg13g2_dlygate4sd3_1
+Xhold55 hold55/A VPWR VGND hold55/X sg13g2_dlygate4sd3_1
+X_2050_ _2050__73/L_HI _2050_/D _2050_/Q_N _2075_/CLK VGND VPWR hold18/A sg13g2_dfrbp_1
+X_1903_ _1904_/B VPWR _1905_/B hold41/X VGND sg13g2_xor2_1
+X_1834_ _1854_/A VPWR _2026_/D VGND _1834_/B sg13g2_nor2_1
+X_1765_ _1765_/Y VPWR _1765_/A VGND _1765_/B sg13g2_nand2_1
+X_1696_ VGND VPWR _1699_/A _1695_/X _1673_/B _1673_/A sg13g2_o21ai_1
+X_1481_ _1631_/B VPWR _1596_/C VGND _1481_/B sg13g2_nand2_2
+X_1550_ VPWR VGND _1549_/Y _1698_/B _1214_/B _1550_/Y sg13g2_a21oi_1
+X_2033_ _2033__46/L_HI _2033_/D _1434_/A3 clkload4/A VGND VPWR _2033_/Q sg13g2_dfrbp_1
+X_1748_ VGND VPWR _1748_/Y _1336_/Y _1747_/Y _1748_/A1 sg13g2_o21ai_1
+X_1817_ VPWR VGND _1816_/Y _1815_/Y _1444_/Y _1817_/Y sg13g2_a21oi_1
+X_1679_ VGND VPWR _1679_/Y _1678_/Y _1677_/Y _1673_/X sg13g2_o21ai_1
+XFILLER_26_67 VPWR VGND sg13g2_decap_8
+XFILLER_26_45 VPWR VGND sg13g2_decap_4
+XFILLER_13_126 VPWR VGND sg13g2_decap_4
+X_1602_ VPWR VGND _1601_/Y _1773_/A1 _1372_/Y dg[5] sg13g2_a21oi_1
+X_1395_ _1397_/A VPWR _1567_/B _1889_/A VGND sg13g2_xor2_1
+X_1464_ _1464_/A _2033_/Q VPWR _1464_/Y VGND sg13g2_nor2b_1
+X_1533_ VGND VPWR _1533_/Y _1265_/Y _1532_/Y _1748_/A1 sg13g2_o21ai_1
+X_2016_ input8/X _2073_/D _2016_/S VPWR VGND hold54/X sg13g2_mux2_1
+X_1180_ _1835_/B VPWR _1657_/B VGND _1180_/B sg13g2_nand2_1
+X_1516_ _1518_/A _1655_/B VPWR _1495_/A VGND _1876_/A _1495_/B sg13g2_a22oi_1
+X_1447_ _1447_/Y _1446_/Y VPWR _1246_/Y _1447_/B1 VGND sg13g2_a21oi_2
+X_1378_ _1380_/C _1201_/Y VPWR _1583_/A VGND _1695_/A _1467_/B2 sg13g2_a22oi_1
+X_1232_ _1232_/Y VPWR _1873_/A VGND _1279_/A sg13g2_nand2_1
+X_1301_ _1301_/Y VPWR _1464_/A VGND hold61/A sg13g2_nand2_1
+X_1094_ hold47/A VPWR _1858_/C VGND hold70/A sg13g2_nor2_1
+X_1163_ _1164_/C _1993_/A VPWR VGND _1165_/B _1862_/A sg13g2_and3_1
+X_1996_ _1996_/A _1997_/C _2000_/A _1996_/C VPWR VGND sg13g2_nor3_1
+X_2063__32 _2063__32/L_HI VPWR VGND sg13g2_tiehi
+Xclkload0 clkload0/Y clkload0/A VGND VPWR sg13g2_inv_1
+X_1781_ VPWR VGND _1777_/Y _1753_/Y _1780_/Y _1787_/A sg13g2_a21oi_1
+X_1850_ _1851_/B VPWR _1852_/B hold64/X VGND sg13g2_xor2_1
+X_1146_ VPWR VGND hold28/A hold47/A _1143_/X _1146_/Y sg13g2_a21oi_1
+X_1215_ VGND VPWR _1216_/A _1212_/Y _1766_/A1 _1212_/A sg13g2_o21ai_1
+X_1077_ _1544_/A _1885_/A VGND VPWR sg13g2_inv_1
+X_1979_ _1979_/Y VPWR _1979_/A VGND _1992_/B sg13g2_nand2_1
+Xhold34 hold34/A VPWR VGND hold34/X sg13g2_dlygate4sd3_1
+Xhold12 hold12/A VPWR VGND hold12/X sg13g2_dlygate4sd3_1
+Xhold23 hold23/A VPWR VGND hold23/X sg13g2_dlygate4sd3_1
+XFILLER_29_34 VPWR VGND sg13g2_decap_8
+Xhold45 hold45/A VPWR VGND hold45/X sg13g2_dlygate4sd3_1
+Xhold56 hold56/A VPWR VGND hold56/X sg13g2_dlygate4sd3_1
+Xhold67 hold67/A VPWR VGND hold67/X sg13g2_dlygate4sd3_1
+XFILLER_16_316 VPWR VGND sg13g2_decap_4
+X_1902_ VPWR VGND _1902_/C _1902_/B _1902_/A _1905_/B sg13g2_or3_1
+X_1833_ _1834_/B _1833_/B VPWR _1945_/B VGND sg13g2_xnor2_1
+X_1764_ _1765_/B _1649_/A VPWR _1583_/A VGND _1695_/A _1719_/B sg13g2_a22oi_1
+X_1695_ _1695_/A VGND _1695_/B _1695_/X VPWR sg13g2_or2_1
+X_1129_ VGND VPWR _1130_/B _1819_/A1 vblank hblank sg13g2_o21ai_1
+XFILLER_15_47 VPWR VGND sg13g2_decap_4
+XFILLER_15_58 VPWR VGND sg13g2_decap_8
+X_2033__46 _2033__46/L_HI VPWR VGND sg13g2_tiehi
+X_1480_ hold11/A VPWR _1480_/Y VGND _1480_/B sg13g2_nor2_1
+X_2032_ _2032__47/L_HI _2032_/D hold39/A clkload4/A VGND VPWR hold64/A sg13g2_dfrbp_1
+X_1678_ VPWR VGND _1677_/Y _1673_/X _1915_/B _1678_/Y sg13g2_a21oi_1
+XFILLER_7_81 VPWR VGND sg13g2_decap_8
+X_2030__49 _2030__49/L_HI VPWR VGND sg13g2_tiehi
+X_1816_ VPWR VGND _1813_/B _1438_/A _1913_/B _1816_/Y sg13g2_a21oi_1
+X_1747_ VPWR VGND _1746_/Y _1373_/B _1369_/A _1747_/Y sg13g2_a21oi_1
+XFILLER_13_105 VPWR VGND sg13g2_decap_4
+XFILLER_9_109 VPWR VGND sg13g2_decap_8
+X_1601_ VGND VPWR _1601_/Y _1374_/Y _1600_/Y _1772_/A1 sg13g2_o21ai_1
+X_1532_ _1532_/A VPWR _1532_/Y VGND _1532_/B sg13g2_nor2_1
+X_1394_ _1394_/X VGND VPWR _1567_/B _1539_/A sg13g2_and2_1
+X_1463_ _1811_/A VPWR _1463_/Y VGND _1463_/B sg13g2_nor2_1
+X_2015_ input7/X _2072_/D _2016_/S VPWR VGND hold48/X sg13g2_mux2_1
+X_1515_ _1515_/A VPWR _1515_/Y VGND _1515_/B sg13g2_nor2_1
+X_1446_ _1446_/Y _1752_/B VPWR _1950_/B VGND sg13g2_xnor2_1
+X_1377_ _1465_/B _1583_/A hold23/A VPWR VGND _1302_/Y sg13g2_mux2_2
+X_2075__30 _2075__30/L_HI VPWR VGND sg13g2_tiehi
+X_1300_ VGND VPWR _1557_/A _1727_/A1 _1726_/A _1196_/Y sg13g2_o21ai_1
+X_1162_ VPWR VGND _1165_/B _1862_/A _1993_/A _1164_/B sg13g2_a21oi_1
+X_1231_ VGND VPWR _1231_/Y _1727_/A1 _1509_/A _1196_/Y sg13g2_o21ai_1
+X_1093_ _2000_/B VPWR hold21/A VGND _1988_/A sg13g2_nand2_1
+X_1995_ VGND VPWR _1998_/B _1970_/A _1856_/D _1101_/Y sg13g2_o21ai_1
+X_1429_ _1429_/Y _1429_/B VPWR _1429_/A VGND sg13g2_xnor2_1
+XFILLER_18_47 VPWR VGND sg13g2_decap_4
+Xclkload1 clkload1/Y clkload1/A VGND VPWR sg13g2_inv_1
+X_1780_ VGND VPWR _1780_/Y _1779_/Y _1778_/Y _1754_/A sg13g2_o21ai_1
+X_1145_ _1145_/Y VPWR _1173_/A VGND _1173_/B sg13g2_nand2_1
+XFILLER_1_83 VPWR VGND sg13g2_decap_4
+X_1214_ _1213_/B _1214_/Y VPWR VGND _1214_/B sg13g2_nand2b_2
+X_1076_ _1076_/Y hold24/X VGND VPWR sg13g2_inv_1
+X_1978_ _1978_/A _2059_/D _1978_/B _1978_/C VPWR VGND sg13g2_nor3_1
+XFILLER_20_26 VPWR VGND sg13g2_decap_8
+Xhold35 hold35/A VPWR VGND hold35/X sg13g2_dlygate4sd3_1
+Xhold24 hold24/A VPWR VGND hold24/X sg13g2_dlygate4sd3_1
+Xhold13 hold13/A VPWR VGND hold13/X sg13g2_dlygate4sd3_1
+Xhold57 hold57/A VPWR VGND hold57/X sg13g2_dlygate4sd3_1
+Xhold46 hold46/A VPWR VGND hold46/X sg13g2_dlygate4sd3_1
+Xhold68 hold68/A VPWR VGND hold68/X sg13g2_dlygate4sd3_1
+XFILLER_28_155 VPWR VGND sg13g2_decap_4
+XFILLER_28_133 VPWR VGND sg13g2_decap_8
+X_1901_ hold46/X _1900_/Y VPWR _2043_/D VGND sg13g2_nor2b_1
+X_1832_ hold72/X _2025_/D _1985_/A _1833_/B VPWR VGND sg13g2_nor3_1
+X_1694_ _1694_/Y _1694_/B VPWR _1694_/A VGND sg13g2_xnor2_1
+X_1763_ _1765_/A VPWR _1763_/A VGND _1763_/B sg13g2_nand2_1
+XFILLER_32_0 VPWR VGND sg13g2_decap_4
+X_1128_ _1128_/Y VPWR _1475_/A VGND _1913_/B sg13g2_nand2_2
+XFILLER_25_114 VPWR VGND sg13g2_decap_8
+X_1059_ _1320_/A _1517_/A VGND VPWR sg13g2_inv_1
+XFILLER_0_224 VPWR VGND sg13g2_decap_4
+X_2031_ _2031__48/L_HI _2031_/D _1642_/A clkload4/A VGND VPWR _2031_/Q sg13g2_dfrbp_1
+X_1815_ VGND VPWR _1815_/Y _1814_/Y _1810_/Y _1809_/Y sg13g2_o21ai_1
+X_1677_ _1677_/Y _1677_/B VPWR _1677_/A VGND sg13g2_xnor2_1
+X_1746_ VPWR VGND _1743_/Y _1438_/A _1745_/Y _1746_/Y sg13g2_a21oi_1
+XFILLER_8_165 VPWR VGND sg13g2_decap_8
+X_1462_ _1461_/Y _1462_/X _1504_/C VPWR VGND _1455_/Y sg13g2_mux2_1
+X_1600_ VPWR VGND _1599_/Y _1373_/B _1404_/A _1600_/Y sg13g2_a21oi_1
+X_1531_ _1531_/A VPWR _1532_/B VGND _1531_/B sg13g2_nor2_1
+X_1393_ _1393_/Y _1393_/B VPWR _1393_/A VGND sg13g2_xnor2_1
+X_2014_ VGND VPWR _2071_/D _2013_/Y _2013_/B _1299_/A sg13g2_o21ai_1
+X_1729_ VGND _1612_/A _1729_/Y _1729_/B VPWR sg13g2_nand2b_1
+X_1514_ _1514_/A VPWR _1515_/B VGND _1631_/B sg13g2_nor2_1
+X_1445_ VGND VPWR _1445_/Y _1133_/Y _1444_/Y _1196_/Y sg13g2_o21ai_1
+X_1376_ hold39/A _1465_/B _1464_/A VPWR VGND _1642_/A sg13g2_mux2_1
+XFILLER_23_223 VPWR VGND sg13g2_decap_8
+XFILLER_2_116 VPWR VGND sg13g2_decap_4
+Xfanout420 _1985_/A VGND fanout422/X VPWR sg13g2_buf_4
+X_1092_ _1988_/A VGND VPWR hold49/A _1862_/A sg13g2_and2_2
+X_1161_ _1775_/B _1165_/B VPWR VGND hold49/A hold30/A sg13g2_a21o_1
+X_1230_ input4/X VPWR _1509_/A VGND _1335_/B sg13g2_nor2_2
+X_2057__64 _2057__64/L_HI VPWR VGND sg13g2_tiehi
+X_1994_ VGND VPWR hold22/A _1992_/Y _1993_/Y _1971_/A sg13g2_o21ai_1
+XFILLER_20_226 VPWR VGND sg13g2_decap_4
+X_1428_ _1429_/A _1429_/B VPWR _1428_/Y VGND sg13g2_nor2b_1
+XFILLER_34_14 VPWR VGND sg13g2_decap_4
+X_1359_ _1361_/A _1692_/B VPWR _1889_/B VGND sg13g2_xnor2_1
+Xclkload2 clkload2/Y clkload2/A VGND VPWR sg13g2_inv_1
+XFILLER_6_230 VPWR VGND sg13g2_decap_8
+X_1213_ _1505_/A VPWR _1213_/Y VGND _1213_/B sg13g2_nor2_1
+X_1075_ _1075_/Y hold9/X VGND VPWR sg13g2_inv_1
+X_1144_ _1173_/B VPWR _2048_/Q _2000_/A VGND sg13g2_xor2_1
+X_1977_ _1984_/B VPWR hold53/A VGND _1977_/B sg13g2_nand2_1
+X_2045__23 _2045__23/L_HI VPWR VGND sg13g2_tiehi
+Xhold25 hold25/A VPWR VGND hold25/X sg13g2_dlygate4sd3_1
+Xhold47 hold47/A VPWR VGND hold47/X sg13g2_dlygate4sd3_1
+Xhold14 hold14/A VPWR VGND hold14/X sg13g2_dlygate4sd3_1
+Xhold58 hold58/A VPWR VGND hold58/X sg13g2_dlygate4sd3_1
+Xhold36 hold36/A VPWR VGND hold36/X sg13g2_dlygate4sd3_1
+Xhold69 hold69/A VPWR VGND hold69/X sg13g2_dlygate4sd3_1
+XFILLER_3_266 VPWR VGND sg13g2_decap_8
+XFILLER_10_71 VPWR VGND sg13g2_decap_4
+XFILLER_19_189 VPWR VGND sg13g2_decap_8
+X_1900_ VPWR VGND _1899_/B hold45/X _1985_/A _1900_/Y sg13g2_a21oi_1
+X_1831_ _2024_/D VGND VPWR _1992_/B hold11/X sg13g2_and2_1
+X_1693_ _1694_/B _1677_/B VPWR _1677_/A _1674_/X VGND sg13g2_a21oi_2
+X_1762_ VGND VPWR _1762_/Y _1505_/A _1420_/Y _1596_/C sg13g2_o21ai_1
+XFILLER_25_0 VPWR VGND sg13g2_decap_8
+X_1058_ _1902_/B hold74/X VGND VPWR sg13g2_inv_1
+X_1127_ _1127_/Y VPWR _1246_/A VGND _1223_/B sg13g2_nand2_1
+XFILLER_0_269 VPWR VGND sg13g2_decap_4
+XFILLER_16_159 VPWR VGND sg13g2_decap_4
+X_2030_ _2030__49/L_HI _2030_/D hold61/A _2045_/CLK VGND VPWR hold59/A sg13g2_dfrbp_1
+X_1745_ VGND VPWR _1744_/Y _1745_/Y _1436_/A _1743_/A _1740_/Y _1739_/Y sg13g2_a221oi_1
+X_1814_ VGND VPWR _1813_/Y _1814_/Y _1690_/A _1813_/B _1243_/B _1814_/A1 sg13g2_a221oi_1
+X_1676_ VGND VPWR _1677_/B _1658_/Y _1660_/B _1660_/A sg13g2_o21ai_1
+XFILLER_13_118 VPWR VGND sg13g2_decap_4
+X_1392_ _1393_/B VPWR _1729_/B _1890_/A VGND sg13g2_xor2_1
+X_1461_ _1461_/Y _1461_/B VPWR _1461_/A VGND sg13g2_xnor2_1
+X_1530_ _1531_/B _1513_/Y VPWR _1529_/Y VGND _1258_/Y _1705_/A sg13g2_a22oi_1
+XFILLER_35_221 VPWR VGND sg13g2_decap_4
+X_2013_ _2013_/Y VPWR hold23/X VGND _2013_/B sg13g2_nand2_1
+X_1728_ dr[3] _1727_/Y VPWR _1728_/A1 _1297_/Y VGND sg13g2_a21oi_2
+X_1659_ _1660_/B _1659_/B VPWR _1889_/B VGND sg13g2_xnor2_1
+XFILLER_5_136 VPWR VGND sg13g2_decap_8
+XFILLER_17_232 VPWR VGND sg13g2_decap_4
+X_1444_ _1444_/A VPWR _1444_/Y VGND _1444_/B sg13g2_nor2_1
+X_1513_ VGND VPWR _1513_/Y _1512_/Y _1627_/B _1174_/Y sg13g2_o21ai_1
+X_1375_ _1380_/B VPWR _1763_/A VGND _1375_/B sg13g2_nand2_1
+Xfanout421 VGND VPWR _1978_/A fanout422/X sg13g2_buf_2
+Xfanout410 _1659_/B VGND _1279_/A VPWR sg13g2_buf_4
+XFILLER_9_29 VPWR VGND sg13g2_decap_8
+XFILLER_29_7 VPWR VGND sg13g2_decap_4
+XFILLER_1_172 VPWR VGND sg13g2_decap_8
+X_1091_ _1913_/A hblank VGND VPWR sg13g2_inv_1
+X_1160_ _1775_/B _1185_/C VPWR _1185_/B _1185_/A VGND sg13g2_a21oi_2
+X_1993_ _1993_/Y _1993_/B VPWR _1993_/A VGND sg13g2_xnor2_1
+X_1358_ _1358_/Y VPWR _1889_/B VGND _1692_/B sg13g2_nand2_1
+X_1427_ _1394_/X _1429_/B VPWR VGND _1397_/A _1397_/B sg13g2_a21o_1
+X_1289_ VPWR VGND _1288_/X _1284_/Y _1915_/B _1289_/Y sg13g2_a21oi_1
+Xclkload3 clkload3/Y clkload3/A VGND VPWR sg13g2_inv_1
+XFILLER_6_275 VPWR VGND sg13g2_decap_4
+X_1212_ _1212_/Y VPWR _1212_/A VGND _1436_/A sg13g2_nand2_1
+X_1074_ _1074_/Y _2048_/Q VGND VPWR sg13g2_inv_1
+X_1143_ _1143_/X VGND VPWR _2048_/Q _2000_/A sg13g2_and2_1
+X_1976_ _1978_/C _1976_/B VPWR VGND _1977_/B hold53/A sg13g2_and3_1
+Xhold15 hold15/A VPWR VGND hold15/X sg13g2_dlygate4sd3_1
+Xhold26 hold26/A VPWR VGND hold26/X sg13g2_dlygate4sd3_1
+XFILLER_28_168 VPWR VGND sg13g2_decap_8
+Xhold48 hold48/A VPWR VGND hold48/X sg13g2_dlygate4sd3_1
+Xhold37 hold37/A VPWR VGND hold37/X sg13g2_dlygate4sd3_1
+Xhold59 hold59/A VPWR VGND hold59/X sg13g2_dlygate4sd3_1
+X_1761_ VPWR VGND _1760_/Y _1809_/A1 _1447_/Y _1761_/Y sg13g2_a21oi_1
+X_1830_ _1854_/A VPWR _1944_/B VGND _1958_/A sg13g2_nand2_2
+X_1692_ _1694_/A _1692_/B VPWR _1890_/A VGND sg13g2_xnor2_1
+X_1126_ _1126_/X VGND VPWR _1223_/B _1246_/A sg13g2_and2_1
+XFILLER_18_0 VPWR VGND sg13g2_decap_4
+X_1057_ _1902_/A hold45/A VGND VPWR sg13g2_inv_1
+XFILLER_15_17 VPWR VGND sg13g2_decap_4
+X_1959_ VGND VPWR _1959_/Y _1970_/A _1970_/B _1178_/A sg13g2_o21ai_1
+XFILLER_24_182 VPWR VGND sg13g2_decap_8
+Xclkbuf_0_clk VGND VPWR clkbuf_0_clk/X clk sg13g2_buf_2
+XFILLER_22_119 VPWR VGND sg13g2_decap_8
+X_1744_ VGND VPWR _1744_/Y _1258_/B _1743_/A _1214_/Y sg13g2_o21ai_1
+X_1813_ _1813_/A VPWR _1813_/Y VGND _1813_/B sg13g2_nor2_1
+X_1675_ _1677_/A VPWR _1675_/B _1889_/A VGND sg13g2_xor2_1
+X_1109_ hold44/X VPWR _1109_/Y VGND _1919_/B sg13g2_nor2_1
+XFILLER_21_141 VPWR VGND sg13g2_decap_4
+X_1391_ VGND VPWR _1393_/A _1354_/Y _1355_/Y _1357_/A sg13g2_o21ai_1
+X_1460_ _1461_/B _1460_/B VPWR _1460_/A VGND sg13g2_xnor2_1
+X_2012_ VGND VPWR _2070_/D _2011_/Y _2013_/B _1060_/Y sg13g2_o21ai_1
+X_1727_ VGND VPWR _1727_/Y _1557_/A _1726_/Y _1727_/A1 sg13g2_o21ai_1
+X_1658_ _1658_/Y VPWR _1889_/B VGND _1659_/B sg13g2_nand2_1
+X_1589_ _1589_/X VGND VPWR _1952_/A _1895_/A sg13g2_and2_1
+X_2069__63 _2069__63/L_HI VPWR VGND sg13g2_tiehi
+X_1512_ _1512_/Y _1514_/A VPWR _1763_/B VGND _1475_/B hold68/A sg13g2_a22oi_1
+X_1443_ VGND VPWR _1443_/Y _1130_/X _1819_/A1 _1444_/A sg13g2_o21ai_1
+X_1374_ VGND VPWR _1374_/Y _1772_/A1 _1404_/A _1196_/Y sg13g2_o21ai_1
+Xfanout422 VGND VPWR fanout422/X _1108_/Y sg13g2_buf_2
+Xfanout400 VGND VPWR _1755_/B hold59/A sg13g2_buf_2
+Xfanout411 VGND VPWR _1279_/A _1180_/B sg13g2_buf_2
+X_2066__22 _2066__22/L_HI VPWR VGND sg13g2_tiehi
+XFILLER_14_214 VPWR VGND sg13g2_decap_8
+X_1090_ hblank _1079_/Y VPWR _1088_/Y VGND _1065_/Y _1089_/Y sg13g2_a22oi_1
+X_1992_ _1992_/Y VPWR hold21/X VGND _1992_/B sg13g2_nand2_1
+X_1288_ _1288_/X VPWR _1288_/B _1288_/A VGND sg13g2_xor2_1
+X_1357_ _1357_/Y _1357_/B VPWR _1357_/A VGND sg13g2_xnor2_1
+X_1426_ _1429_/A _1952_/A VPWR hold76/A VGND sg13g2_xnor2_1
+Xclkload4 clkload4/Y clkload4/A VGND VPWR sg13g2_inv_1
+X_2054__69 _2054__69/L_HI VPWR VGND sg13g2_tiehi
+X_1142_ VGND VPWR _1173_/A _1139_/Y _1176_/B _1176_/A sg13g2_o21ai_1
+X_1211_ _1813_/A VPWR _1214_/B VGND _1213_/B sg13g2_nand2_2
+X_1073_ _1073_/Y hold28/X VGND VPWR sg13g2_inv_1
+X_1975_ VPWR VGND _1977_/B _1976_/B hold53/X _1978_/B sg13g2_a21oi_1
+Xhold27 hold27/A VPWR VGND hold27/X sg13g2_dlygate4sd3_1
+Xhold16 hold16/A VPWR VGND hold16/X sg13g2_dlygate4sd3_1
+X_1409_ VGND VPWR _1409_/Y _1133_/Y _1624_/A _1196_/Y sg13g2_o21ai_1
+Xhold38 hold38/A VPWR VGND hold38/X sg13g2_dlygate4sd3_1
+Xhold49 hold49/A VPWR VGND hold49/X sg13g2_dlygate4sd3_1
+XFILLER_19_103 VPWR VGND sg13g2_decap_8
+XFILLER_19_136 VPWR VGND sg13g2_decap_8
+X_1691_ _1691_/Y VPWR _1890_/A VGND _1692_/B sg13g2_nand2_1
+X_1760_ _1760_/Y _1760_/B VPWR _1760_/A VGND sg13g2_xnor2_1
+X_1125_ hold54/A VPWR _1223_/B VGND hold48/A sg13g2_nor2_2
+X_1056_ VGND VPWR _1996_/A hold47/A sg13g2_inv_2
+X_1889_ _1895_/C _1889_/B _1889_/A VPWR VGND _1889_/C _1889_/D sg13g2_and4_2
+X_1958_ _1958_/A VPWR _1970_/B VGND _1958_/B sg13g2_nor2_2
+XFILLER_21_50 VPWR VGND sg13g2_decap_4
+XFILLER_21_94 VPWR VGND sg13g2_decap_8
+XFILLER_15_194 VPWR VGND sg13g2_decap_8
+X_1674_ _1674_/X VGND VPWR _1675_/B _1889_/A sg13g2_and2_1
+X_1812_ VGND VPWR _1811_/Y _1813_/B _1719_/B _1631_/A _1649_/A _1612_/A sg13g2_a221oi_1
+X_1743_ _1743_/Y _1743_/A VGND VPWR sg13g2_inv_1
+X_1108_ _1108_/Y VPWR _1108_/A VGND _1130_/A sg13g2_nand2_1
+XFILLER_8_113 VPWR VGND sg13g2_decap_4
+XFILLER_8_135 VPWR VGND sg13g2_decap_8
+X_1390_ _1447_/B1 _1390_/X VPWR VGND _1246_/Y _1389_/X sg13g2_a21o_1
+X_2011_ _2011_/Y VPWR _2011_/A VGND _2013_/B sg13g2_nand2_1
+X_1588_ _1588_/Y _1588_/B VPWR _1588_/A VGND sg13g2_xnor2_1
+X_1657_ _1660_/A VPWR _1889_/C VGND _1657_/B sg13g2_nand2_1
+X_1726_ _1726_/A VPWR _1726_/Y VGND _1726_/B sg13g2_nor2_1
+X_1442_ b6 _1441_/Y VPWR _1819_/A1 _1407_/Y VGND sg13g2_a21oi_2
+X_1511_ dg[1] _1510_/Y VPWR _1749_/A1 _1229_/Y VGND sg13g2_a21oi_2
+XFILLER_4_20 VPWR VGND sg13g2_decap_8
+X_1373_ input8/X VPWR _1404_/A VGND _1373_/B sg13g2_nor2_1
+XFILLER_23_237 VPWR VGND sg13g2_decap_8
+Xfanout423 VGND VPWR _2013_/B _1970_/A sg13g2_buf_2
+Xfanout401 VGND VPWR _1952_/B hold59/X sg13g2_buf_2
+Xfanout412 VGND VPWR _1180_/B hold71/X sg13g2_buf_2
+X_1709_ VPWR VGND _1708_/Y _1749_/A1 _1263_/Y dr[2] sg13g2_a21oi_1
+XFILLER_8_0 VPWR VGND sg13g2_decap_4
+X_1991_ _1991_/A VPWR hold7/A VGND _1991_/B sg13g2_nor2_1
+X_1425_ _1425_/X VPWR _1425_/B _1425_/A VGND sg13g2_xor2_1
+X_1287_ _1288_/B VPWR _1876_/A VGND _1653_/B sg13g2_nand2_1
+X_1356_ _1357_/B _1545_/B VPWR _1695_/A VGND sg13g2_xnor2_1
+Xclkload5 clkload5/Y clkload5/A VGND VPWR sg13g2_inv_1
+XFILLER_6_244 VPWR VGND sg13g2_decap_4
+XFILLER_10_262 VPWR VGND sg13g2_decap_8
+XFILLER_34_7 VPWR VGND sg13g2_decap_8
+X_1141_ _1176_/B hold9/A VPWR _1999_/B VGND sg13g2_xnor2_1
+X_1072_ _1072_/Y _1444_/A VGND VPWR sg13g2_inv_1
+XFILLER_1_76 VPWR VGND sg13g2_decap_8
+X_1210_ _1436_/A VGND VPWR _1213_/B _1214_/B sg13g2_and2_2
+X_1974_ VGND VPWR _2058_/D _1969_/Y _1973_/Y _1971_/A sg13g2_o21ai_1
+X_2053__70 _2053__70/L_HI VPWR VGND sg13g2_tiehi
+Xhold28 hold28/A VPWR VGND hold28/X sg13g2_dlygate4sd3_1
+Xhold17 hold17/A VPWR VGND hold17/X sg13g2_dlygate4sd3_1
+X_1408_ input9/X VPWR _1624_/A VGND _1444_/B sg13g2_nor2_1
+Xhold39 hold39/A VPWR VGND hold39/X sg13g2_dlygate4sd3_1
+XFILLER_28_115 VPWR VGND sg13g2_decap_4
+X_1339_ VGND VPWR _1339_/Y _1338_/Y _1463_/B _1559_/A sg13g2_o21ai_1
+X_2050__73 _2050__73/L_HI VPWR VGND sg13g2_tiehi
+X_2042__29 _2042__29/L_HI VPWR VGND sg13g2_tiehi
+X_1690_ _1690_/Y VPWR _1690_/A VGND _1690_/B sg13g2_nand2_1
+X_1124_ vsync hold8/A VPWR _1998_/A VGND sg13g2_xnor2_1
+XFILLER_31_29 VPWR VGND sg13g2_decap_8
+X_1957_ VPWR VGND _1956_/Y _1955_/B _1955_/Y _2054_/D sg13g2_a21oi_1
+X_1888_ _2039_/D hold66/X VGND VPWR sg13g2_inv_1
+XFILLER_15_151 VPWR VGND sg13g2_decap_8
+X_1811_ _1811_/A VPWR _1811_/Y VGND _1811_/B sg13g2_nor2_1
+X_1673_ _1673_/X VPWR _1673_/B _1673_/A VGND sg13g2_xor2_1
+X_1742_ VGND VPWR _1743_/A _1741_/Y _1811_/B _1559_/A sg13g2_o21ai_1
+XFILLER_23_0 VPWR VGND sg13g2_decap_4
+X_1107_ _1944_/B VGND VPWR _1130_/A _1108_/A sg13g2_and2_2
+XFILLER_16_95 VPWR VGND sg13g2_decap_4
+XFILLER_32_83 VPWR VGND sg13g2_decap_8
+XFILLER_8_158 VPWR VGND sg13g2_decap_8
+X_2010_ VGND VPWR _2069_/D _1111_/Y _2016_/S _1475_/A sg13g2_o21ai_1
+X_1725_ VPWR VGND _1723_/Y _1219_/Y _1724_/Y _1726_/B sg13g2_a21oi_1
+X_1656_ _1656_/Y _1656_/B VPWR _1656_/A VGND sg13g2_xnor2_1
+X_1587_ _1588_/B _1732_/B VPWR _1893_/B VGND sg13g2_xnor2_1
+XFILLER_26_202 VPWR VGND sg13g2_decap_4
+X_1441_ VGND VPWR _1441_/Y _1409_/Y _1440_/Y _1133_/Y sg13g2_o21ai_1
+X_1510_ VGND VPWR _1510_/Y _1231_/Y _1509_/Y _1727_/A1 sg13g2_o21ai_1
+XFILLER_4_32 VPWR VGND sg13g2_decap_8
+X_1372_ VGND VPWR _1372_/Y _1130_/X _1773_/A1 input8/X sg13g2_o21ai_1
+XFILLER_2_109 VPWR VGND sg13g2_decap_8
+X_1708_ VGND VPWR _1708_/Y _1265_/Y _1707_/Y _1772_/A1 sg13g2_o21ai_1
+Xfanout424 _1970_/A VGND _1944_/B VPWR sg13g2_buf_4
+X_1639_ _1639_/X VGND VPWR _1639_/B _1639_/A sg13g2_and2_1
+Xfanout402 _1952_/A VGND hold55/X VPWR sg13g2_buf_4
+Xfanout413 _1657_/B VGND _2024_/Q VPWR sg13g2_buf_4
+XFILLER_13_52 VPWR VGND sg13g2_decap_8
+XFILLER_22_293 VPWR VGND sg13g2_decap_4
+X_1990_ VPWR VGND _1988_/B hold49/A _1862_/A _1991_/B sg13g2_a21oi_1
+XFILLER_9_286 VPWR VGND sg13g2_decap_4
+X_1355_ _1545_/B _1695_/A VPWR _1355_/Y VGND sg13g2_nor2b_1
+X_1424_ VGND _1425_/A _1424_/Y _1425_/B VPWR sg13g2_nand2b_1
+X_1286_ _1288_/A _1655_/B VPWR _1517_/A VGND sg13g2_xnor2_1
+Xclkload6 clkload6/Y clkload6/A VGND VPWR sg13g2_inv_1
+X_2039__35 _2039__35/L_HI VPWR VGND sg13g2_tiehi
+XFILLER_27_7 VPWR VGND sg13g2_decap_4
+X_1140_ _1176_/A VPWR _1178_/A VGND hold24/A sg13g2_nand2_1
+X_1071_ _1071_/Y input3/X VGND VPWR sg13g2_inv_1
+X_1973_ _1973_/Y _1973_/B VPWR _1996_/A VGND sg13g2_xnor2_1
+Xhold29 hold29/A VPWR VGND hold29/X sg13g2_dlygate4sd3_1
+Xhold18 hold18/A VPWR VGND hold18/X sg13g2_dlygate4sd3_1
+X_1407_ VGND VPWR _1407_/Y _1130_/X _1819_/A1 input9/X sg13g2_o21ai_1
+X_1338_ _1338_/Y _1201_/Y VPWR _1562_/A VGND _1885_/A _1467_/B2 sg13g2_a22oi_1
+X_1269_ VGND VPWR _1268_/Y _1270_/B hold68/A _1201_/Y _1649_/A _1526_/B sg13g2_a221oi_1
+X_1123_ _1123_/A VPWR _2020_/D VGND _1123_/B sg13g2_nor2_1
+X_1887_ VGND VPWR hold66/A _1886_/Y _1885_/Y _1889_/A sg13g2_o21ai_1
+X_1956_ VGND _1948_/A _1956_/Y _1956_/B VPWR sg13g2_nand2b_1
+X_1810_ VGND VPWR _1810_/Y _1505_/A _1460_/B _1596_/C sg13g2_o21ai_1
+XFILLER_15_174 VPWR VGND sg13g2_decap_8
+X_1741_ _1741_/Y _1375_/B VPWR _1562_/A VGND _1885_/A _1719_/B sg13g2_a22oi_1
+X_1672_ _1673_/B VPWR _1695_/B _1889_/A VGND sg13g2_xor2_1
+X_1106_ vblank _1097_/X VPWR _1998_/A _1105_/Y VGND sg13g2_a21oi_2
+X_1939_ VGND VPWR _1939_/Y _1938_/Y _1978_/A _1072_/Y sg13g2_o21ai_1
+XFILLER_32_73 VPWR VGND sg13g2_decap_4
+XFILLER_8_104 VPWR VGND sg13g2_decap_4
+XFILLER_35_214 VPWR VGND sg13g2_decap_8
+X_1724_ VGND VPWR _1724_/Y _1444_/B _1721_/Y _1629_/A sg13g2_o21ai_1
+X_1655_ _1656_/B _1655_/B VPWR _1885_/A VGND sg13g2_xnor2_1
+X_1586_ _1698_/A VPWR _1586_/Y VGND _1732_/B sg13g2_nor2_1
+X_2069_ _2069__63/L_HI _2069_/D hold26/A clkload0/A VGND VPWR _2069_/Q sg13g2_dfrbp_1
+X_1440_ VPWR VGND _1439_/Y _1438_/X _1624_/A _1440_/Y sg13g2_a21oi_1
+X_1371_ db[4] _1370_/Y VPWR _1773_/A1 _1334_/Y VGND sg13g2_a21oi_2
+X_1638_ _1639_/B _1638_/B VPWR _1638_/A VGND sg13g2_xnor2_1
+X_1707_ VPWR VGND _1706_/Y _1373_/B _1532_/A _1707_/Y sg13g2_a21oi_1
+X_1569_ _1569_/Y _1569_/B VPWR _1569_/A VGND sg13g2_xnor2_1
+Xfanout403 VGND VPWR _1840_/A hold55/A sg13g2_buf_2
+Xfanout414 VGND VPWR _1175_/A _2024_/Q sg13g2_buf_2
+X_1285_ _1285_/Y VPWR _1889_/C VGND _1655_/B sg13g2_nand2_1
+X_1354_ VGND _1695_/A _1354_/Y _1545_/B VPWR sg13g2_nand2b_1
+X_1423_ _1425_/B VPWR _1732_/B _1612_/A VGND sg13g2_xor2_1
+XFILLER_24_41 VPWR VGND sg13g2_decap_8
+XFILLER_6_268 VPWR VGND sg13g2_decap_8
+X_1070_ VGND VPWR _1475_/A _1476_/B sg13g2_inv_2
+X_1972_ _1996_/A VPWR _1977_/B VGND _1973_/B sg13g2_nor2_1
+Xhold19 hold19/A VPWR VGND hold19/X sg13g2_dlygate4sd3_1
+X_1268_ _1475_/A VPWR _1268_/Y VGND _1268_/B sg13g2_nor2_1
+X_1337_ _1562_/A hold61/A _1596_/A _1465_/A VPWR VGND _1464_/A hold43/A _1642_/A sg13g2_mux4_1
+X_1406_ db[5] _1405_/Y VPWR _1773_/A1 _1372_/Y VGND sg13g2_a21oi_2
+X_1199_ _1476_/B _1475_/B VPWR _1375_/B VGND sg13g2_nor2b_1
+X_1122_ VPWR VGND _2007_/B _2007_/A _1123_/B _2019_/D sg13g2_a21oi_1
+XFILLER_18_150 VPWR VGND sg13g2_decap_8
+X_1886_ VPWR VGND _1885_/Y _1889_/A _2017_/S _1886_/Y sg13g2_a21oi_1
+X_2041__31 _2041__31/L_HI VPWR VGND sg13g2_tiehi
+X_1955_ hold3/X VPWR _1955_/Y VGND _1955_/B sg13g2_nor2_1
+X_1671_ _1673_/A _1655_/B VPWR _1656_/A VGND _1889_/B _1656_/B sg13g2_a22oi_1
+X_1740_ VPWR VGND _1389_/X _1504_/C _1597_/A _1740_/Y sg13g2_a21oi_1
+X_1105_ VGND VPWR hold21/A _1105_/Y _1988_/A _1104_/Y _1103_/X _1997_/B sg13g2_a221oi_1
+X_1938_ VPWR _1938_/Y _1938_/B _1938_/C VGND _2066_/Q sg13g2_nand3_1
+X_1869_ hold19/X _1873_/C VPWR _1870_/C VGND sg13g2_nor2b_1
+XFILLER_29_234 VPWR VGND sg13g2_decap_4
+X_1654_ _1656_/A _1654_/A VGND VPWR sg13g2_inv_1
+X_1723_ VGND VPWR _1723_/Y _1722_/Y _1351_/A _1915_/A sg13g2_o21ai_1
+X_1585_ VGND VPWR _1588_/A _1584_/Y _1565_/B _1565_/A sg13g2_o21ai_1
+X_2068_ _2068__65/L_HI _2068_/D _2068_/Q_N _2073_/CLK VGND VPWR hold50/A sg13g2_dfrbp_1
+X_1370_ VGND VPWR _1370_/Y _1336_/Y _1369_/Y _1772_/A1 sg13g2_o21ai_1
+XFILLER_23_207 VPWR VGND sg13g2_decap_4
+X_1637_ _1638_/B _1637_/B VPWR _1637_/A VGND sg13g2_xnor2_1
+Xfanout404 VGND VPWR _1945_/C _2028_/Q sg13g2_buf_2
+X_1706_ VGND VPWR _1706_/Y _1705_/Y _1690_/B _1629_/A sg13g2_o21ai_1
+Xfanout415 VGND VPWR _2016_/S _1916_/B sg13g2_buf_2
+X_1499_ _1500_/B VPWR _1659_/B _1889_/C VGND sg13g2_xor2_1
+X_1568_ VPWR VGND _1541_/B _1541_/A _1538_/X _1569_/B sg13g2_a21oi_1
+XFILLER_13_10 VPWR VGND sg13g2_decap_8
+X_1422_ _1425_/A _1729_/B VPWR _1393_/A VGND _1893_/B _1393_/B sg13g2_a22oi_1
+X_1353_ _1357_/A _1174_/Y VPWR _1319_/A VGND _1544_/A _1319_/B sg13g2_a22oi_1
+X_1284_ _1284_/Y _1284_/B VPWR _1284_/A VGND sg13g2_xnor2_1
+X_1971_ _1971_/Y _1971_/A VGND VPWR sg13g2_inv_1
+X_1405_ VGND VPWR _1405_/Y _1374_/Y _1404_/Y _1772_/A1 sg13g2_o21ai_1
+Xinput1 VPWR VGND _1130_/A ena sg13g2_buf_1
+X_1267_ _1268_/B _1514_/A VGND VPWR sg13g2_inv_1
+X_1198_ _1482_/A hold51/A _1166_/B _1465_/A VPWR VGND _1464_/A hold11/A _1824_/A sg13g2_mux4_1
+X_1336_ VGND VPWR _1336_/Y _1748_/A1 _1369_/A _1196_/Y sg13g2_o21ai_1
+XFILLER_19_64 VPWR VGND sg13g2_decap_4
+X_1121_ _2007_/A VPWR _1123_/B VGND _1121_/B sg13g2_nor2_1
+X_1954_ _1955_/B _1948_/Y VPWR _1956_/B VGND _1947_/Y _1953_/Y sg13g2_a22oi_1
+XFILLER_21_316 VPWR VGND sg13g2_decap_4
+X_1885_ _1885_/A VPWR _1885_/Y VGND _1885_/B sg13g2_nor2_1
+X_1319_ _1319_/X VPWR _1319_/B _1319_/A VGND sg13g2_xor2_1
+XFILLER_15_121 VPWR VGND sg13g2_decap_4
+X_1670_ VGND VPWR _1670_/Y _1669_/Y _1811_/B _1504_/B sg13g2_o21ai_1
+X_1104_ hold16/A hold32/A VPWR _1104_/Y VGND sg13g2_nor2b_1
+X_1937_ hold34/X hold35/A _1940_/S VPWR VGND _1936_/Y sg13g2_mux2_1
+X_1868_ _2034_/Q VPWR _1870_/B VGND _1873_/C sg13g2_nor2_1
+X_1799_ _1799_/X VPWR _1804_/B hold64/A VGND sg13g2_xor2_1
+XFILLER_12_179 VPWR VGND sg13g2_decap_8
+X_1653_ _1654_/A VPWR _1889_/C VGND _1653_/B sg13g2_nand2_1
+X_1584_ VGND _1695_/A _1584_/Y _1729_/B VPWR sg13g2_nand2b_1
+X_1722_ _1722_/Y _1718_/Y VPWR _1721_/Y VGND _1390_/X _1690_/A sg13g2_a22oi_1
+X_2067_ _2067__67/L_HI _2067_/D _2067_/Q_N _2067_/CLK VGND VPWR hold12/A sg13g2_dfrbp_1
+XFILLER_27_31 VPWR VGND sg13g2_decap_4
+XFILLER_31_241 VPWR VGND sg13g2_decap_4
+X_1705_ _1705_/Y VPWR _1705_/A VGND _1705_/B sg13g2_nand2_1
+Xfanout416 VGND VPWR _1916_/B fanout422/X sg13g2_buf_2
+X_1636_ _1637_/B _1942_/B VPWR hold45/A VGND sg13g2_xnor2_1
+X_1567_ _1569_/A _1567_/B VPWR _1890_/A VGND sg13g2_xnor2_1
+Xfanout405 _1567_/B VGND _2028_/Q VPWR sg13g2_buf_4
+X_1498_ _1517_/A VPWR _1498_/Y VGND _1659_/B sg13g2_nor2_1
+XFILLER_22_274 VPWR VGND sg13g2_decap_8
+XFILLER_22_285 VPWR VGND sg13g2_decap_4
+XFILLER_1_112 VPWR VGND sg13g2_decap_4
+XFILLER_1_156 VPWR VGND sg13g2_decap_4
+X_1421_ VGND VPWR _1421_/Y _1615_/A1 _1420_/Y _1481_/B sg13g2_o21ai_1
+X_1283_ _1284_/B _1659_/B VPWR _1876_/A VGND sg13g2_xnor2_1
+X_1352_ VPWR VGND _1351_/Y _1246_/Y _1447_/B1 _1352_/Y sg13g2_a21oi_1
+X_1619_ VGND VPWR _1619_/Y _1618_/Y _1627_/B _1790_/A sg13g2_o21ai_1
+XFILLER_10_222 VPWR VGND sg13g2_decap_8
+XFILLER_10_255 VPWR VGND sg13g2_decap_8
+XFILLER_10_277 VPWR VGND sg13g2_decap_8
+XFILLER_6_237 VPWR VGND sg13g2_decap_8
+X_1970_ _1971_/A VPWR _1970_/A VGND _1970_/B sg13g2_nand2_2
+X_1335_ input7/X VPWR _1369_/A VGND _1335_/B sg13g2_nor2_1
+X_1404_ _1404_/A _1403_/Y VPWR _1404_/Y VGND sg13g2_nor2b_1
+Xinput2 VPWR VGND _1108_/A rst_n sg13g2_buf_1
+X_1197_ VGND VPWR _1197_/Y _1332_/A1 _1196_/Y _1487_/A sg13g2_o21ai_1
+X_1266_ _1514_/A hold43/A _1824_/A _1465_/A VPWR VGND _1464_/A hold51/A _1596_/A sg13g2_mux4_1
+XFILLER_19_43 VPWR VGND sg13g2_decap_8
+XFILLER_25_7 VPWR VGND sg13g2_decap_4
+X_1120_ _1120_/A VPWR _2067_/D VGND _2007_/B sg13g2_nor2_1
+X_1884_ _2017_/S VPWR _2038_/D VGND _1884_/B sg13g2_nor2_1
+X_1953_ VPWR VGND _1952_/Y _1949_/X _1998_/A _1953_/Y sg13g2_a21oi_1
+X_1318_ _1319_/B _1695_/B VPWR _1889_/B VGND sg13g2_xnor2_1
+X_1249_ _1504_/B VPWR _1249_/Y VGND _1463_/B sg13g2_nor2_1
+X_1103_ _1103_/X VGND VPWR _2001_/C _1858_/C sg13g2_and2_1
+X_1936_ VGND VPWR _1936_/Y _1935_/Y _1938_/B _1299_/A sg13g2_o21ai_1
+X_1867_ _1958_/A _1958_/B VPWR _1873_/C VGND sg13g2_nor2b_2
+X_1798_ r6 _1797_/Y VPWR _1128_/Y _1407_/Y VGND sg13g2_a21oi_2
+XFILLER_12_125 VPWR VGND sg13g2_decap_4
+XFILLER_12_136 VPWR VGND sg13g2_decap_4
+XFILLER_32_98 VPWR VGND sg13g2_decap_4
+XFILLER_32_32 VPWR VGND sg13g2_decap_8
+X_1721_ _1721_/Y _1763_/B VPWR _1698_/B _1720_/Y VGND sg13g2_a21oi_2
+XFILLER_7_195 VPWR VGND sg13g2_decap_8
+X_1583_ _1583_/A VPWR _1583_/Y VGND _1631_/B sg13g2_nor2_1
+X_1652_ _1652_/X VGND VPWR _1652_/B _1690_/A sg13g2_and2_1
+X_2066_ _2066__22/L_HI hold27/X _2066_/Q_N clkload0/A VGND VPWR _2066_/Q sg13g2_dfrbp_1
+X_1919_ _1919_/X VGND VPWR _1919_/B _2020_/Q sg13g2_and2_1
+XFILLER_27_76 VPWR VGND sg13g2_decap_8
+XFILLER_16_250 VPWR VGND sg13g2_decap_4
+XFILLER_16_283 VPWR VGND sg13g2_decap_8
+X_1704_ VGND VPWR _1705_/B _1690_/Y _1703_/Y _1702_/Y sg13g2_o21ai_1
+Xfanout417 VGND VPWR _1938_/B _1919_/B sg13g2_buf_2
+X_1497_ _1497_/Y VPWR _1517_/A VGND _1659_/B sg13g2_nand2_1
+X_1635_ VGND VPWR _1637_/A _1604_/Y _1608_/B _1605_/Y sg13g2_o21ai_1
+X_1566_ _1566_/Y VPWR _1890_/A VGND _1567_/B sg13g2_nand2_1
+Xfanout406 _1692_/B VGND _2027_/Q VPWR sg13g2_buf_4
+X_2049_ _2049__17/L_HI hold29/X _2049_/Q_N clkload2/A VGND VPWR hold28/A sg13g2_dfrbp_1
+X_1351_ _1351_/Y _1351_/A VGND VPWR sg13g2_inv_1
+X_1420_ _1420_/Y _1763_/A VPWR _1950_/A VGND sg13g2_xnor2_1
+X_1282_ _1282_/Y VPWR _1876_/A VGND _1659_/B sg13g2_nand2_1
+X_1618_ _1618_/Y _1434_/X VPWR _1628_/B1 VGND _2008_/A _1698_/A sg13g2_a22oi_1
+X_1549_ _1824_/A VPWR _1549_/Y VGND _1642_/B sg13g2_nor2_1
+XFILLER_24_33 VPWR VGND sg13g2_decap_4
+X_1334_ VGND VPWR _1334_/Y _1130_/X _1687_/A1 input7/X sg13g2_o21ai_1
+X_1403_ VGND VPWR _1403_/Y _1127_/Y _1402_/Y _1379_/Y sg13g2_o21ai_1
+X_1265_ VGND VPWR _1265_/Y _1748_/A1 _1532_/A _1196_/Y sg13g2_o21ai_1
+Xinput3 VGND VPWR input3/X ui_in[0] sg13g2_buf_2
+X_1196_ VPWR _1196_/Y _1196_/B _1196_/C VGND _1196_/A sg13g2_nand3_1
+X_2029__50 _2029__50/L_HI VPWR VGND sg13g2_tiehi
+XFILLER_27_186 VPWR VGND sg13g2_decap_4
+XFILLER_2_263 VPWR VGND sg13g2_decap_8
+X_1883_ _1884_/B VPWR _1885_/B _1889_/B VGND sg13g2_xor2_1
+X_2026__53 _2026__53/L_HI VPWR VGND sg13g2_tiehi
+X_1952_ VGND VPWR _1952_/B _1952_/C _1952_/Y _1952_/A _1952_/D sg13g2_nor4_1
+X_1317_ VGND VPWR _1319_/A _1285_/Y _1288_/B _1288_/A sg13g2_o21ai_1
+X_1248_ _1447_/B1 _1483_/A VPWR VGND _1241_/Y _1246_/Y sg13g2_a21o_1
+XFILLER_24_189 VPWR VGND sg13g2_decap_4
+X_1179_ _1833_/B VGND VPWR _1180_/B _1657_/B sg13g2_and2_1
+X_2023__56 _2023__56/L_HI VPWR VGND sg13g2_tiehi
+X_1102_ hold60/A VPWR _2001_/C VGND _1996_/C sg13g2_nor2_1
+X_1935_ VPWR _1935_/Y _1938_/B _1938_/C VGND _2023_/Q sg13g2_nand3_1
+X_1866_ _1993_/A _1958_/B _1866_/B _1866_/C VPWR VGND sg13g2_nor3_1
+X_1797_ VGND VPWR _1797_/Y _1409_/Y _1796_/Y _1818_/A1 sg13g2_o21ai_1
+XFILLER_12_159 VPWR VGND sg13g2_decap_4
+XFILLER_20_170 VPWR VGND sg13g2_decap_8
+XFILLER_20_181 VPWR VGND sg13g2_decap_8
+XFILLER_7_152 VPWR VGND sg13g2_decap_4
+X_1720_ VGND VPWR _1720_/Y _1719_/Y _1463_/B _1542_/A sg13g2_o21ai_1
+X_1651_ VGND VPWR _1650_/Y _1652_/B _1482_/A _1719_/B _1649_/A hold19/A sg13g2_a221oi_1
+X_1582_ _1629_/A VGND _1582_/B _1582_/X VPWR sg13g2_or2_1
+X_2065_ _2065__24/L_HI _2065_/D _2065_/Q_N _2065_/CLK VGND VPWR hold8/A sg13g2_dfrbp_1
+XFILLER_19_281 VPWR VGND sg13g2_decap_4
+X_1918_ VPWR VGND _1934_/A1 _1076_/Y _1917_/Y hold25/A sg13g2_a21oi_1
+X_1849_ VPWR _1852_/B _1942_/B _1849_/C VGND _1952_/B sg13g2_nand3_1
+XFILLER_4_155 VPWR VGND sg13g2_decap_4
+XFILLER_4_133 VPWR VGND sg13g2_decap_8
+X_1634_ _1638_/A _1811_/A VPWR _1898_/A VGND sg13g2_xnor2_1
+X_1703_ VGND VPWR _1703_/Y _1505_/A _1701_/Y _1352_/Y sg13g2_o21ai_1
+Xfanout418 VPWR VGND _1919_/B _2017_/S sg13g2_buf_1
+X_1496_ _1500_/A VPWR _1876_/A VGND _1657_/B sg13g2_nand2_1
+X_1565_ _1565_/X VPWR _1565_/B _1565_/A VGND sg13g2_xor2_1
+Xfanout407 VGND VPWR _1945_/A _2027_/Q sg13g2_buf_2
+X_2048_ _2048__19/L_HI hold13/X _2048_/Q_N clkload1/A VGND VPWR _2048_/Q sg13g2_dfrbp_1
+XFILLER_9_214 VPWR VGND sg13g2_decap_4
+X_1281_ _1284_/A VPWR _1873_/A VGND _1657_/B sg13g2_nand2_1
+X_1350_ _1351_/A _1698_/B VPWR _1692_/B VGND sg13g2_xnor2_1
+XFILLER_5_80 VPWR VGND sg13g2_decap_4
+X_1617_ VPWR VGND _1616_/Y _1790_/A _1597_/A _1617_/Y sg13g2_a21oi_1
+X_1548_ VGND VPWR _1548_/Y _1537_/Y _1547_/Y _1615_/A1 sg13g2_o21ai_1
+X_1479_ VGND _1478_/Y _1479_/Y _1690_/A VPWR sg13g2_nand2b_1
+X_1402_ VPWR VGND _1401_/Y _1380_/Y _1438_/A _1402_/Y sg13g2_a21oi_1
+Xinput4 VGND VPWR input4/X ui_in[1] sg13g2_buf_2
+X_1333_ db[3] _1332_/Y VPWR _1687_/A1 _1297_/Y VGND sg13g2_a21oi_2
+X_1264_ input5/X VPWR _1532_/A VGND _1335_/B sg13g2_nor2_2
+X_1195_ VGND VPWR _1196_/C _1088_/C _1194_/Y _1187_/Y sg13g2_o21ai_1
+X_2035__43 _2035__43/L_HI VPWR VGND sg13g2_tiehi
+X_1882_ _1885_/B VPWR _1889_/C VGND _1889_/D sg13g2_nand2_1
+X_1951_ VPWR VGND _1950_/Y _1949_/X _1985_/A _1956_/B sg13g2_a21oi_1
+X_1178_ _1480_/B hold24/A VPWR _1178_/A VGND sg13g2_xnor2_1
+X_1316_ VGND VPWR _1515_/A _1915_/B _1702_/B _1481_/B sg13g2_o21ai_1
+X_1247_ _1246_/A _1481_/B VPWR VGND _1247_/B sg13g2_nand2b_2
+XFILLER_7_48 VPWR VGND sg13g2_decap_8
+X_1101_ _1101_/Y _1997_/B VGND VPWR sg13g2_inv_1
+X_1934_ VGND VPWR hold15/A _1933_/Y _1932_/Y _1934_/A1 sg13g2_o21ai_1
+X_1865_ _1866_/C _1865_/A VGND VPWR sg13g2_inv_1
+X_1796_ VPWR VGND _1795_/Y _1794_/X _1624_/A _1796_/Y sg13g2_a21oi_1
+XFILLER_11_171 VPWR VGND sg13g2_decap_4
+XFILLER_11_182 VPWR VGND sg13g2_decap_4
+X_1581_ VGND VPWR _1580_/X _1582_/B _1695_/A _1628_/B1 _1201_/Y _1763_/A sg13g2_a221oi_1
+X_1650_ _1653_/B VPWR _1650_/Y VGND _1811_/B sg13g2_nor2_1
+X_2064_ _2064__28/L_HI hold22/X _1993_/A _2065_/CLK VGND VPWR hold21/A sg13g2_dfrbp_1
+X_1917_ VGND VPWR _1934_/A1 _1917_/Y _1916_/X _1938_/C _1912_/C _1970_/A sg13g2_a221oi_1
+X_1779_ VPWR _1779_/Y _1779_/B _1779_/C VGND _1779_/A sg13g2_nand3_1
+X_1848_ _1854_/A VPWR _2031_/D VGND hold62/X sg13g2_nor2_1
+XFILLER_25_241 VPWR VGND sg13g2_decap_8
+XFILLER_4_189 VPWR VGND sg13g2_decap_8
+X_1564_ _1565_/B _1729_/B VPWR _1889_/A VGND sg13g2_xnor2_1
+X_1633_ VGND VPWR _1639_/A _1610_/Y _1611_/Y _1613_/A sg13g2_o21ai_1
+X_1702_ _1915_/A VPWR _1702_/Y VGND _1702_/B sg13g2_nor2_1
+Xfanout419 _2017_/S VGND fanout422/X VPWR sg13g2_buf_4
+Xfanout408 _1675_/B VGND hold69/A VPWR sg13g2_buf_4
+X_1495_ _1495_/Y _1495_/B VPWR _1495_/A VGND sg13g2_xnor2_1
+X_2047_ _2047__20/L_HI hold10/X _2047_/Q_N clkload2/A VGND VPWR hold9/A sg13g2_dfrbp_1
+X_2059__60 _2059__60/L_HI VPWR VGND sg13g2_tiehi
+XFILLER_22_222 VPWR VGND sg13g2_decap_4
+X_1280_ VGND VPWR _1280_/Y _1615_/A1 _1279_/Y _1481_/B sg13g2_o21ai_1
+X_2048__19 _2048__19/L_HI VPWR VGND sg13g2_tiehi
+X_1547_ _1547_/Y _1547_/B VPWR _1547_/A VGND sg13g2_xnor2_1
+X_1616_ hold61/A VPWR _1616_/Y VGND _1642_/B sg13g2_nor2_1
+X_1478_ VGND VPWR _1477_/Y _1478_/Y hold19/A _1763_/B _1482_/A _1475_/B sg13g2_a221oi_1
+XFILLER_10_214 VPWR VGND sg13g2_decap_4
+X_1401_ VGND VPWR _1401_/Y _1400_/Y _1388_/Y _1596_/C sg13g2_o21ai_1
+Xinput5 VGND VPWR input5/X ui_in[2] sg13g2_buf_2
+X_1263_ VGND VPWR _1263_/Y _1130_/X _1687_/A1 input5/X sg13g2_o21ai_1
+X_1332_ VGND VPWR _1332_/Y _1557_/A _1331_/Y _1332_/A1 sg13g2_o21ai_1
+X_1194_ VGND VPWR _1194_/Y _1193_/Y _1559_/A _1835_/B sg13g2_o21ai_1
+XFILLER_10_59 VPWR VGND sg13g2_decap_4
+XFILLER_27_155 VPWR VGND sg13g2_decap_4
+XFILLER_27_100 VPWR VGND sg13g2_decap_8
+X_1950_ VGND VPWR _1950_/B _1952_/C _1950_/Y _1950_/A _1952_/D sg13g2_nor4_1
+X_1881_ _2037_/D _1881_/A VGND VPWR sg13g2_inv_1
+X_1315_ _1702_/B _1695_/B VPWR _1320_/B VGND sg13g2_xnor2_1
+X_1177_ _1220_/B VPWR hold24/A _1178_/A VGND sg13g2_xor2_1
+XFILLER_24_125 VPWR VGND sg13g2_decap_4
+X_1246_ _1246_/A _1247_/B VPWR _1246_/Y VGND sg13g2_nor2b_2
+X_2032__47 _2032__47/L_HI VPWR VGND sg13g2_tiehi
+XFILLER_21_69 VPWR VGND sg13g2_decap_8
+XFILLER_15_114 VPWR VGND sg13g2_decap_8
+XFILLER_15_158 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_9_0_clk VGND VPWR clkload3/A clkbuf_0_clk/X sg13g2_buf_2
+X_1100_ hold53/A _1100_/C _1997_/B VPWR VGND hold21/A sg13g2_nor3_2
+X_1933_ _1933_/Y VPWR hold14/X VGND _1940_/S sg13g2_nand2_1
+X_1864_ VGND VPWR _1865_/A _1863_/Y _1862_/X _1856_/D sg13g2_o21ai_1
+X_1795_ VPWR VGND _1791_/Y _1438_/A _1913_/B _1795_/Y sg13g2_a21oi_1
+X_1229_ VGND VPWR _1229_/Y _1130_/X _1687_/A1 input4/X sg13g2_o21ai_1
+XFILLER_7_143 VPWR VGND sg13g2_decap_4
+X_1580_ _1580_/X VGND VPWR _1583_/A _2008_/A sg13g2_and2_1
+X_2063_ _2063__32/L_HI hold7/X _2063_/Q_N _2063_/CLK VGND VPWR hold6/A sg13g2_dfrbp_1
+X_1916_ _1916_/X VGND VPWR _1916_/B _2019_/Q sg13g2_and2_1
+X_1847_ hold62/A _1847_/B VPWR _1942_/B VGND sg13g2_xnor2_1
+X_1778_ VPWR _1778_/Y _1779_/B _1779_/C VGND _1778_/A sg13g2_nand3_1
+XFILLER_27_24 VPWR VGND sg13g2_decap_8
+XFILLER_25_220 VPWR VGND sg13g2_decap_8
+XFILLER_4_39 VPWR VGND sg13g2_decap_4
+X_1701_ VPWR VGND _1699_/X _1694_/Y _1700_/Y _1701_/Y sg13g2_a21oi_1
+XFILLER_16_297 VPWR VGND sg13g2_decap_4
+X_1563_ VPWR VGND _1546_/B _1546_/A _1544_/X _1565_/A sg13g2_a21oi_1
+X_1632_ _1632_/A VGND _1632_/B _1632_/X VPWR sg13g2_or2_1
+Xfanout409 VGND VPWR _1945_/B hold69/X sg13g2_buf_2
+X_1494_ _1495_/B _1655_/B VPWR hold68/A VGND sg13g2_xnor2_1
+X_2046_ _2046__21/L_HI hold25/X _2046_/Q_N clkload1/A VGND VPWR hold24/A sg13g2_dfrbp_1
+XFILLER_22_201 VPWR VGND sg13g2_decap_8
+XFILLER_22_267 VPWR VGND sg13g2_decap_8
+X_1546_ _1547_/B _1546_/B VPWR _1546_/A VGND sg13g2_xnor2_1
+X_1615_ VGND VPWR _1615_/Y _1603_/Y _1614_/Y _1615_/A1 sg13g2_o21ai_1
+X_1477_ _1653_/B VPWR _1477_/Y VGND _1627_/B sg13g2_nor2_1
+X_2047__20 _2047__20/L_HI VPWR VGND sg13g2_tiehi
+X_2029_ _2029__50/L_HI _2029_/D _1596_/A clkload3/A VGND VPWR hold55/A sg13g2_dfrbp_1
+X_1331_ _1726_/A VPWR _1331_/Y VGND _1331_/B sg13g2_nor2_1
+X_1400_ VPWR VGND _1399_/Y _1390_/X _1597_/A _1400_/Y sg13g2_a21oi_1
+Xinput6 VGND VPWR input6/X ui_in[3] sg13g2_buf_2
+X_1262_ db[1] _1261_/Y VPWR _1749_/A1 _1229_/Y VGND sg13g2_a21oi_2
+X_1193_ _1193_/Y _1189_/Y VPWR _1763_/A VGND _1172_/Y _1942_/C sg13g2_a22oi_1
+X_1529_ VGND VPWR _1529_/Y _1528_/Y _1513_/Y _1766_/A1 sg13g2_o21ai_1
+XFILLER_2_277 VPWR VGND sg13g2_decap_8
+XFILLER_18_123 VPWR VGND sg13g2_decap_4
+X_1880_ VGND VPWR _1881_/A _1879_/Y _1878_/Y _1889_/C sg13g2_o21ai_1
+X_1314_ _1314_/Y _1314_/B VPWR _1314_/A VGND sg13g2_xnor2_1
+X_1176_ _1176_/X VPWR _1176_/B _1176_/A VGND sg13g2_xor2_1
+X_1245_ VGND VPWR _1245_/Y _1244_/Y _1241_/Y _1240_/Y sg13g2_o21ai_1
+XFILLER_21_26 VPWR VGND sg13g2_decap_8
+X_1932_ _1932_/Y _2013_/B VPWR _1938_/C VGND input5/X _1931_/X sg13g2_a22oi_1
+X_1863_ VPWR _1863_/Y _1863_/B _1988_/A VGND _1979_/A _1863_/D sg13g2_nand4_1
+XFILLER_21_118 VPWR VGND sg13g2_decap_4
+X_1794_ _1793_/Y _1794_/X VPWR VGND _1788_/Y _1789_/Y sg13g2_a21o_1
+X_1228_ db[0] _1227_/Y VPWR _1687_/A1 _1131_/Y VGND sg13g2_a21oi_2
+X_1159_ VGND VPWR _1185_/C _1188_/A _1158_/B _1158_/A sg13g2_o21ai_1
+XFILLER_16_37 VPWR VGND sg13g2_decap_4
+X_2020__18 _2020__18/L_HI VPWR VGND sg13g2_tiehi
+X_2062_ _2062__36/L_HI _2062_/D _2062_/Q_N _2063_/CLK VGND VPWR hold49/A sg13g2_dfrbp_1
+X_1777_ VPWR VGND _1779_/C _1779_/B _1779_/A _1777_/Y sg13g2_a21oi_1
+X_1846_ hold61/X _1847_/B _1846_/B _1846_/C VPWR VGND sg13g2_nor3_1
+X_1915_ _1938_/C VPWR _1915_/A VGND _1915_/B sg13g2_nand2_2
+Xclkbuf_4_8_0_clk VGND VPWR _2043_/CLK clkbuf_0_clk/X sg13g2_buf_2
+XFILLER_4_169 VPWR VGND sg13g2_decap_8
+XFILLER_16_265 VPWR VGND sg13g2_decap_8
+XFILLER_17_91 VPWR VGND sg13g2_decap_4
+X_1700_ VGND VPWR _1700_/Y _1809_/A1 _1699_/X _1694_/Y sg13g2_o21ai_1
+X_1631_ _1631_/A VPWR _1632_/B VGND _1631_/B sg13g2_nor2_1
+X_1493_ _1495_/A VGND VPWR _1653_/B _1873_/A sg13g2_and2_1
+X_1562_ _1562_/A VPWR _1562_/Y VGND _1631_/B sg13g2_nor2_1
+X_2045_ _2045__23/L_HI hold38/X _2045_/Q_N _2045_/CLK VGND VPWR hold36/A sg13g2_dfrbp_1
+XFILLER_22_257 VPWR VGND sg13g2_decap_4
+X_1829_ _1978_/A VPWR _1992_/B VGND _1976_/B sg13g2_nor2_2
+XFILLER_0_183 VPWR VGND sg13g2_decap_4
+XFILLER_0_194 VPWR VGND sg13g2_decap_8
+X_1614_ _1614_/Y _1614_/B VPWR _1614_/A VGND sg13g2_xnor2_1
+X_1545_ _1546_/B _1545_/B VPWR _1885_/A VGND sg13g2_xnor2_1
+X_1476_ _2008_/A _1811_/B VPWR VGND _1476_/B sg13g2_nand2b_2
+X_2028_ _2028__51/L_HI _2028_/D hold43/A _2045_/CLK VGND VPWR _2028_/Q sg13g2_dfrbp_1
+X_1330_ _1531_/A VPWR _1331_/B VGND _1330_/B sg13g2_nor2_1
+X_1261_ VGND VPWR _1261_/Y _1231_/Y _1260_/Y _1748_/A1 sg13g2_o21ai_1
+Xinput7 VGND VPWR input7/X ui_in[4] sg13g2_buf_2
+X_1192_ _1192_/Y _1192_/B VPWR _1192_/A VGND sg13g2_xnor2_1
+XFILLER_27_124 VPWR VGND sg13g2_decap_4
+X_1459_ _1460_/B _1811_/A VPWR _1942_/B VGND sg13g2_xnor2_1
+X_1528_ VGND VPWR _1528_/Y _1527_/Y _1525_/Y _1515_/Y sg13g2_o21ai_1
+XFILLER_35_14 VPWR VGND sg13g2_decap_8
+X_1313_ _1314_/B _1313_/B VPWR _1313_/A VGND sg13g2_xnor2_1
+X_1244_ VPWR VGND _1241_/Y _1240_/Y _1915_/B _1244_/Y sg13g2_a21oi_1
+X_1175_ _1175_/A _1180_/B VPWR _1942_/C VGND sg13g2_nor2b_1
+XFILLER_2_0 VPWR VGND sg13g2_decap_4
+Xfanout390 _1889_/A VGND hold65/X VPWR sg13g2_buf_4
+Xinput10 VPWR VGND _1444_/A ui_in[7] sg13g2_buf_1
+X_1931_ _1931_/X VGND VPWR _1938_/B _2022_/Q sg13g2_and2_1
+X_1862_ _1862_/X _1862_/C _1863_/B VPWR VGND _1862_/A hold49/A sg13g2_or4_1
+X_1793_ VGND VPWR _1793_/Y _1792_/Y _1791_/Y _1813_/A sg13g2_o21ai_1
+XFILLER_35_0 VPWR VGND sg13g2_decap_8
+X_1158_ _1158_/A VPWR _1188_/B VGND _1158_/B sg13g2_nor2_1
+X_1227_ VGND VPWR _1227_/Y _1197_/Y _1226_/Y _1332_/A1 sg13g2_o21ai_1
+X_1089_ VPWR VGND _1083_/Y hold64/A _2033_/Q _1089_/Y sg13g2_a21oi_1
+XFILLER_22_81 VPWR VGND sg13g2_decap_4
+X_2061_ _2061__40/L_HI _2061_/D _2061_/Q_N clkload6/A VGND VPWR hold32/A sg13g2_dfrbp_1
+X_1914_ _1919_/B VPWR _1914_/Y VGND _1929_/C sg13g2_nor2_1
+X_1776_ VGND VPWR _1779_/C _1905_/A _1775_/C _1775_/B sg13g2_o21ai_1
+X_1845_ VPWR VGND _1849_/C _1952_/B _1844_/Y _2030_/D sg13g2_a21oi_1
+XFILLER_4_148 VPWR VGND sg13g2_decap_8
+XFILLER_17_70 VPWR VGND sg13g2_decap_8
+X_1630_ VGND VPWR _1632_/A _1788_/A1 _1460_/B _1481_/B sg13g2_o21ai_1
+X_1492_ _1492_/A VPWR _1492_/Y VGND _1631_/B sg13g2_nor2_1
+X_1561_ _1629_/A VGND _1561_/B _1561_/X VPWR sg13g2_or2_1
+X_2044_ _2044__25/L_HI _2044_/D _1905_/A _2045_/CLK VGND VPWR hold41/A sg13g2_dfrbp_1
+X_1759_ VGND _1757_/Y _1760_/B _1759_/B VPWR sg13g2_nand2b_1
+X_1828_ VPWR _1958_/A _1828_/B _1828_/C VGND _1828_/A sg13g2_nand3_1
+XFILLER_9_207 VPWR VGND sg13g2_decap_8
+X_2056__66 _2056__66/L_HI VPWR VGND sg13g2_tiehi
+XFILLER_5_62 VPWR VGND sg13g2_decap_8
+X_1544_ _1544_/X VGND VPWR _1545_/B _1544_/A sg13g2_and2_1
+X_1613_ _1614_/B _1613_/B VPWR _1613_/A VGND sg13g2_xnor2_1
+XFILLER_8_273 VPWR VGND sg13g2_decap_4
+Xclkbuf_4_7_0_clk VGND VPWR clkload2/A clkbuf_0_clk/X sg13g2_buf_2
+X_1475_ _1475_/A VPWR _1475_/Y VGND _1475_/B sg13g2_nor2_1
+X_2027_ _2027__52/L_HI _2027_/D _1824_/A _2043_/CLK VGND VPWR _2027_/Q sg13g2_dfrbp_1
+X_2062__36 _2062__36/L_HI VPWR VGND sg13g2_tiehi
+Xinput8 VGND VPWR input8/X ui_in[5] sg13g2_buf_2
+X_1191_ _1191_/Y _1191_/B VPWR _1191_/A VGND sg13g2_xnor2_1
+X_1260_ _1509_/A VPWR _1260_/Y VGND _1260_/B sg13g2_nor2_1
+X_2044__25 _2044__25/L_HI VPWR VGND sg13g2_tiehi
+X_1527_ _1527_/A VPWR _1527_/Y VGND _1527_/B sg13g2_nor2_1
+X_1458_ _1460_/A _1458_/B VPWR hold73/A VGND sg13g2_xnor2_1
+X_1389_ _1389_/X VPWR _1559_/A _1567_/B VGND sg13g2_xor2_1
+X_1174_ VGND VPWR _1174_/Y _1695_/B sg13g2_inv_2
+X_1312_ _1313_/A VPWR _1312_/Y VGND _1313_/B sg13g2_nor2_1
+X_1243_ _1243_/Y VPWR hold42/A VGND _1243_/B sg13g2_nand2_1
+XFILLER_17_180 VPWR VGND sg13g2_decap_8
+XFILLER_15_139 VPWR VGND sg13g2_decap_4
+XFILLER_7_305 VPWR VGND sg13g2_decap_4
+XFILLER_23_150 VPWR VGND sg13g2_decap_8
+Xfanout380 VGND VPWR _1862_/A hold6/X sg13g2_buf_2
+Xfanout391 VGND VPWR _1539_/A hold65/A sg13g2_buf_2
+X_1930_ VPWR _2050_/D _1930_/B _1930_/C VGND _1930_/A sg13g2_nand3_1
+X_1861_ _1861_/D _1866_/B _1861_/C _1872_/D VPWR VGND _1993_/A sg13g2_nor4_2
+X_1792_ VPWR VGND _1791_/Y _1690_/A _1257_/B _1792_/Y sg13g2_a21oi_1
+X_1157_ _1158_/B VPWR _1157_/A VGND _1157_/B sg13g2_nand2_1
+X_1226_ VPWR VGND _1225_/Y _1216_/Y _1487_/A _1226_/Y sg13g2_a21oi_1
+X_1088_ VPWR _1088_/Y _1947_/A _1088_/C VGND _1088_/A sg13g2_nand3_1
+XFILLER_28_242 VPWR VGND sg13g2_decap_4
+X_2060_ _2060__44/L_HI hold17/X hold16/A _2065_/CLK VGND VPWR _2060_/Q sg13g2_dfrbp_1
+X_1913_ _1913_/A _1929_/C _1913_/B _1913_/C VPWR VGND sg13g2_nor3_1
+X_1775_ VPWR VGND _1775_/C _1775_/B _1905_/A _1779_/B sg13g2_or3_1
+X_1844_ VGND VPWR _1844_/Y _1992_/B _1849_/C _1952_/B sg13g2_o21ai_1
+XFILLER_25_234 VPWR VGND sg13g2_decap_8
+X_1209_ _1482_/A _1213_/B _1209_/S VPWR VGND hold11/A sg13g2_mux2_2
+XFILLER_4_116 VPWR VGND sg13g2_decap_4
+X_1560_ VGND VPWR _1559_/Y _1561_/B _1885_/A _1628_/B1 _1562_/A _2008_/A sg13g2_a221oi_1
+X_1491_ VGND VPWR _1491_/Y _1490_/Y _1627_/B _1504_/B sg13g2_o21ai_1
+X_2043_ _2043__27/L_HI _2043_/D _1752_/A _2043_/CLK VGND VPWR hold45/A sg13g2_dfrbp_1
+XFILLER_22_215 VPWR VGND sg13g2_decap_8
+X_2074__34 _2074__34/L_HI VPWR VGND sg13g2_tiehi
+X_1827_ _1976_/B _1828_/B VPWR VGND _1828_/C _1828_/A sg13g2_and3_2
+X_1758_ VGND VPWR _1759_/B _1757_/B _1757_/C _1757_/A sg13g2_o21ai_1
+X_1689_ VGND VPWR _1690_/B _1688_/Y _1463_/B hold68/A sg13g2_o21ai_1
+X_2071__59 _2071__59/L_HI VPWR VGND sg13g2_tiehi
+XFILLER_8_230 VPWR VGND sg13g2_decap_4
+X_1543_ VGND VPWR _1546_/A _1542_/X _1518_/B _1518_/A sg13g2_o21ai_1
+X_1612_ _1613_/B _1790_/A VPWR _1612_/A VGND sg13g2_xnor2_1
+X_1474_ b7 _1473_/Y VPWR _1819_/A1 _1443_/Y VGND sg13g2_a21oi_2
+XFILLER_10_0 VPWR VGND sg13g2_decap_4
+XFILLER_10_207 VPWR VGND sg13g2_decap_8
+X_2026_ _2026__53/L_HI _2026_/D hold51/A clkload3/A VGND VPWR hold69/A sg13g2_dfrbp_1
+XFILLER_10_229 VPWR VGND sg13g2_decap_8
+XFILLER_30_71 VPWR VGND sg13g2_decap_4
+XFILLER_5_255 VPWR VGND sg13g2_decap_8
+XFILLER_5_211 VPWR VGND sg13g2_decap_8
+Xinput9 VGND VPWR input9/X ui_in[6] sg13g2_buf_2
+X_1190_ VPWR VGND _1149_/X _1192_/A _1148_/X _1191_/B sg13g2_a21oi_1
+X_1457_ _1411_/X _1458_/B VPWR VGND _1189_/Y _1413_/B sg13g2_a21o_1
+X_1526_ hold51/A _1527_/B _1526_/B _1596_/C VPWR VGND sg13g2_nor3_1
+XFILLER_19_17 VPWR VGND sg13g2_decap_4
+XFILLER_27_148 VPWR VGND sg13g2_decap_8
+XFILLER_27_137 VPWR VGND sg13g2_decap_8
+X_1388_ _1388_/Y _1388_/B VPWR _1388_/A VGND sg13g2_xnor2_1
+X_2009_ VPWR VGND _2016_/S _1071_/Y _2008_/Y _2068_/D sg13g2_a21oi_1
+Xclkbuf_4_6_0_clk VGND VPWR _2075_/CLK clkbuf_0_clk/X sg13g2_buf_2
+X_1311_ _1311_/Y VPWR _1313_/A VGND _1313_/B sg13g2_nand2_1
+X_1173_ _1173_/Y _1173_/B VPWR _1173_/A VGND sg13g2_xnor2_1
+X_1242_ _1242_/X VGND VPWR _1243_/B hold42/A sg13g2_and2_1
+X_1509_ _1509_/A VPWR _1509_/Y VGND _1509_/B sg13g2_nor2_1
+XFILLER_23_140 VPWR VGND sg13g2_decap_4
+XFILLER_7_317 VPWR VGND sg13g2_decap_4
+Xfanout381 VGND VPWR _1862_/C _2060_/Q sg13g2_buf_2
+Xfanout370 _1998_/A VGND hold58/X VPWR sg13g2_buf_4
+Xfanout392 _1889_/B VGND hold63/X VPWR sg13g2_buf_4
+X_1860_ _1861_/D VGND VPWR _1860_/B _1862_/C sg13g2_and2_1
+X_1791_ VGND VPWR _1790_/Y _1791_/Y _1719_/B _1434_/X _1649_/A _1698_/A sg13g2_a221oi_1
+X_1156_ VGND VPWR _1157_/B _1148_/X hold14/A _1862_/C sg13g2_o21ai_1
+X_1087_ _1087_/A VPWR _1088_/C VGND _1945_/B sg13g2_nor2_1
+X_1225_ VGND VPWR _1531_/A _1225_/Y _1224_/Y _1239_/A _1257_/B _1212_/A sg13g2_a221oi_1
+X_1989_ _1991_/A _1992_/B VPWR _1971_/Y VGND hold6/X _1993_/B sg13g2_a22oi_1
+XFILLER_11_121 VPWR VGND sg13g2_decap_4
+XFILLER_19_232 VPWR VGND sg13g2_decap_8
+X_1912_ _1912_/A _1913_/C _1912_/B _1912_/C VPWR VGND sg13g2_nor3_1
+X_1843_ _1854_/A _2029_/D _1849_/C hold56/X VPWR VGND sg13g2_nor3_1
+X_1774_ _1905_/A _1774_/Y _1775_/B _1775_/C VPWR VGND sg13g2_nor3_1
+X_1208_ hold21/A VPWR _1209_/S VGND _1862_/A sg13g2_nor2_1
+X_1139_ _1139_/Y VPWR _1999_/B VGND hold9/A sg13g2_nand2_1
+X_2068__65 _2068__65/L_HI VPWR VGND sg13g2_tiehi
+X_1490_ _1490_/Y _1492_/A VPWR _1763_/B VGND _1475_/B _1669_/A1 sg13g2_a22oi_1
+Xhold1 hold1/A VPWR VGND hold1/X sg13g2_dlygate4sd3_1
+X_2042_ _2042__29/L_HI _2042_/D _1898_/A _2043_/CLK VGND VPWR hold74/A sg13g2_dfrbp_1
+X_1826_ VGND VPWR _1828_/C _1320_/B _1825_/Y _2033_/Q sg13g2_o21ai_1
+X_1757_ _1757_/A _1757_/Y _1757_/B _1757_/C VPWR VGND sg13g2_nor3_1
+X_1688_ _1688_/Y _1763_/B VPWR _1719_/B VGND _1174_/Y _1268_/B sg13g2_a22oi_1
+X_2065__24 _2065__24/L_HI VPWR VGND sg13g2_tiehi
+X_1611_ _1790_/A _1612_/A VPWR _1611_/Y VGND sg13g2_nor2b_1
+X_1473_ VGND VPWR _1473_/Y _1445_/Y _1472_/Y _1818_/A1 sg13g2_o21ai_1
+XFILLER_5_42 VPWR VGND sg13g2_decap_4
+X_1542_ _1542_/A VGND _1695_/B _1542_/X VPWR sg13g2_or2_1
+X_2025_ _2025__54/L_HI _2025_/D _1166_/B clkload3/A VGND VPWR hold71/A sg13g2_dfrbp_1
+X_1809_ VPWR VGND _1808_/Y _1809_/A1 _1800_/Y _1809_/Y sg13g2_a21oi_1
+XFILLER_5_278 VPWR VGND sg13g2_decap_4
+XFILLER_5_223 VPWR VGND sg13g2_decap_8
+X_2052__71 _2052__71/L_HI VPWR VGND sg13g2_tiehi
+X_1525_ VPWR VGND _1523_/Y _1518_/Y _1524_/Y _1525_/Y sg13g2_a21oi_1
+X_1387_ _1388_/B _1387_/B VPWR _1387_/A VGND sg13g2_xnor2_1
+X_1456_ VPWR VGND _1418_/B _1418_/A _1415_/Y _1461_/A sg13g2_a21oi_1
+X_2008_ _2008_/A VPWR _2008_/Y VGND _2016_/S sg13g2_nor2_1
+XFILLER_18_116 VPWR VGND sg13g2_decap_8
+X_1310_ _1272_/X _1313_/B VPWR VGND _1695_/B _1274_/B sg13g2_a21o_1
+X_1241_ _1241_/Y _1653_/B VPWR _1241_/A VGND sg13g2_xnor2_1
+X_1172_ _1241_/A VPWR _1172_/Y VGND _1180_/B sg13g2_nor2_1
+X_1508_ _1531_/A VPWR _1509_/B VGND _1508_/B sg13g2_nor2_1
+X_1439_ VPWR VGND _1436_/B _1257_/B _1913_/B _1439_/Y sg13g2_a21oi_1
+XFILLER_11_41 VPWR VGND sg13g2_decap_8
+XFILLER_11_96 VPWR VGND sg13g2_decap_4
+Xfanout382 VPWR VGND _1979_/A _2060_/Q sg13g2_buf_1
+Xfanout371 VPWR VGND _1863_/B hold58/A sg13g2_buf_1
+Xfanout393 VGND VPWR _1520_/A hold63/A sg13g2_buf_2
+Xfanout360 _1527_/A VGND _1206_/X VPWR sg13g2_buf_4
+X_1790_ _1790_/A VPWR _1790_/Y VGND _1811_/B sg13g2_nor2_1
+X_1224_ VPWR VGND _1220_/Y _1241_/A _1915_/A _1224_/Y sg13g2_a21oi_1
+X_1155_ VGND VPWR _1154_/Y _1158_/A _1146_/Y _1145_/Y _1073_/Y _1996_/A sg13g2_a221oi_1
+X_1086_ _1175_/A _1947_/A _1180_/B _1943_/C VPWR VGND sg13g2_nor3_1
+X_1988_ _1993_/B VPWR _1988_/A VGND _1988_/B sg13g2_nand2_1
+XFILLER_20_188 VPWR VGND sg13g2_decap_4
+Xclkbuf_4_5_0_clk VGND VPWR clkload1/A clkbuf_0_clk/X sg13g2_buf_2
+XFILLER_0_0 VPWR VGND sg13g2_decap_8
+XFILLER_34_225 VPWR VGND sg13g2_decap_8
+X_1911_ _1912_/C VPWR input7/X hold48/A VGND sg13g2_xor2_1
+X_1842_ VPWR VGND _1183_/Y _1945_/C _1952_/A hold56/A sg13g2_a21oi_1
+X_1773_ VPWR VGND _1772_/Y _1773_/A1 _1372_/Y dr[5] sg13g2_a21oi_1
+XFILLER_33_0 VPWR VGND sg13g2_decap_8
+XFILLER_6_192 VPWR VGND sg13g2_decap_8
+X_1207_ _1505_/A VPWR _1246_/A VGND _1247_/B sg13g2_nand2_2
+X_1138_ _1188_/A _1138_/A VGND VPWR sg13g2_inv_1
+X_1069_ _1069_/Y _1596_/A VGND VPWR sg13g2_inv_1
+XFILLER_17_84 VPWR VGND sg13g2_decap_8
+Xhold2 hold2/A VPWR VGND hold2/X sg13g2_dlygate4sd3_1
+X_2041_ _2041__31/L_HI _2041_/D _1467_/A1 _2043_/CLK VGND VPWR hold73/A sg13g2_dfrbp_1
+X_1756_ VGND VPWR _1713_/X _1757_/C _1716_/B _1716_/A _1840_/A hold74/A sg13g2_a221oi_1
+X_1825_ VPWR _1825_/Y _1952_/B _1825_/C VGND _1998_/A sg13g2_nand3_1
+X_1687_ VPWR VGND _1686_/Y _1687_/A1 _1229_/Y dr[1] sg13g2_a21oi_1
+X_1610_ VGND _1612_/A _1610_/Y _1790_/A VPWR sg13g2_nand2b_1
+X_1541_ _1547_/A VPWR _1541_/B _1541_/A VGND sg13g2_xor2_1
+X_1472_ VPWR VGND _1471_/Y _1470_/Y _1444_/Y _1472_/Y sg13g2_a21oi_1
+X_2024_ _2024__55/L_HI _2024_/D hold11/A _2063_/CLK VGND VPWR _2024_/Q sg13g2_dfrbp_1
+X_2070__61 _2070__61/L_HI VPWR VGND sg13g2_tiehi
+X_1739_ VGND VPWR _1739_/Y _1421_/Y _1738_/Y _1788_/A1 sg13g2_o21ai_1
+X_1808_ _1808_/Y _1808_/B VPWR _1808_/A VGND sg13g2_xnor2_1
+X_1524_ VGND VPWR _1524_/Y _1809_/A1 _1523_/Y _1518_/Y sg13g2_o21ai_1
+X_1386_ _1386_/Y VPWR _1387_/A VGND _1387_/B sg13g2_nand2_1
+X_1455_ VPWR VGND _1454_/Y _1809_/A1 _1447_/Y _1455_/Y sg13g2_a21oi_1
+X_2007_ _2007_/A VPWR hold27/A VGND _2007_/B sg13g2_nor2_1
+X_1171_ _1171_/Y _1171_/B VPWR _1171_/A VGND sg13g2_xnor2_1
+X_1240_ _1240_/Y _1873_/A VPWR _1876_/A VGND sg13g2_xnor2_1
+X_1507_ _1508_/B _1491_/Y VPWR _1506_/Y VGND _1258_/Y _1705_/A sg13g2_a22oi_1
+X_1369_ _1369_/A VPWR _1369_/Y VGND _1369_/B sg13g2_nor2_1
+X_1438_ VPWR VGND _1438_/C _1438_/B _1438_/A _1438_/X sg13g2_or3_1
+Xfanout383 VGND VPWR _2000_/A hold70/X sg13g2_buf_2
+Xfanout372 VGND VPWR _1246_/A _1814_/A1 sg13g2_buf_2
+Xfanout350 VGND VPWR _1809_/A1 _1242_/X sg13g2_buf_2
+Xfanout361 _1655_/B VGND _1176_/X VPWR sg13g2_buf_4
+Xfanout394 VGND VPWR _1889_/C _1517_/A sg13g2_buf_2
+XFILLER_14_186 VPWR VGND sg13g2_decap_8
+X_1154_ _1154_/Y _1154_/A VGND VPWR sg13g2_inv_1
+X_1223_ _1642_/B VPWR hold42/A VGND _1223_/B sg13g2_nand2_2
+X_1085_ VGND _2033_/Q _1943_/C hold64/A VPWR sg13g2_nand2b_1
+X_1987_ _1987_/A VPWR _2062_/D VGND _1987_/B sg13g2_nor2_1
+XFILLER_9_190 VPWR VGND sg13g2_decap_4
+X_1910_ _1912_/B VPWR input8/X hold54/A VGND sg13g2_xor2_1
+XFILLER_8_54 VPWR VGND sg13g2_decap_8
+X_1841_ _1846_/B VPWR _1849_/C VGND _1846_/C sg13g2_nor2_2
+X_1772_ VGND VPWR _1772_/Y _1374_/Y _1771_/Y _1772_/A1 sg13g2_o21ai_1
+X_1137_ _1138_/A hold34/A VPWR hold32/A VGND sg13g2_xnor2_1
+X_1206_ _1206_/X VGND VPWR _1247_/B _1246_/A sg13g2_and2_1
+X_1068_ _1952_/C _1825_/C VGND VPWR sg13g2_inv_1
+XFILLER_17_63 VPWR VGND sg13g2_decap_8
+X_2040_ _2040__33/L_HI _2040_/D _1698_/A _2070_/CLK VGND VPWR hold76/A sg13g2_dfrbp_1
+Xhold3 hold3/A VPWR VGND hold3/X sg13g2_dlygate4sd3_1
+Xclkbuf_4_4_0_clk VGND VPWR _2067_/CLK clkbuf_0_clk/X sg13g2_buf_2
+X_1755_ _1757_/B _1755_/B VPWR hold45/A VGND sg13g2_xnor2_1
+X_1824_ VGND VPWR hold39/A _1835_/B _1828_/B _1824_/A _1824_/D sg13g2_nor4_1
+X_1686_ VGND VPWR _1686_/Y _1231_/Y _1685_/Y _1727_/A1 sg13g2_o21ai_1
+Xcontroller_74 uio_oe[0] VPWR VGND sg13g2_tiehi
+XFILLER_12_262 VPWR VGND sg13g2_decap_8
+XFILLER_5_55 VPWR VGND sg13g2_decap_8
+X_1540_ _1519_/X _1541_/B VPWR VGND _1521_/B _1523_/B sg13g2_a21o_1
+XFILLER_8_266 VPWR VGND sg13g2_decap_8
+X_1471_ VPWR VGND _1468_/B _1257_/B _1913_/B _1471_/Y sg13g2_a21oi_1
+X_2023_ _2023__56/L_HI _2023_/D _2023_/Q_N _2067_/CLK VGND VPWR _2023_/Q sg13g2_dfrbp_1
+X_1807_ _1808_/B _1807_/B VPWR _1807_/A VGND sg13g2_xnor2_1
+X_1738_ _1738_/Y _1738_/B VPWR _1738_/A VGND sg13g2_xnor2_1
+X_1669_ _1669_/Y _1649_/A VPWR _1492_/A VGND _1669_/A1 _1719_/B sg13g2_a22oi_1
+X_2038__37 _2038__37/L_HI VPWR VGND sg13g2_tiehi
+X_2061__40 _2061__40/L_HI VPWR VGND sg13g2_tiehi
+X_1454_ _1454_/Y _1454_/B VPWR _1454_/A VGND sg13g2_xnor2_1
+X_1523_ _1523_/Y _1523_/B VPWR _1523_/A VGND sg13g2_xnor2_1
+XFILLER_27_107 VPWR VGND sg13g2_decap_8
+X_1385_ VGND VPWR _1387_/B _1341_/Y _1342_/Y _1729_/B sg13g2_o21ai_1
+XFILLER_35_173 VPWR VGND sg13g2_decap_4
+X_2006_ VPWR VGND _2005_/Y _2004_/B _2004_/Y _2065_/D sg13g2_a21oi_1
+XFILLER_2_206 VPWR VGND sg13g2_decap_8
+XFILLER_25_96 VPWR VGND sg13g2_decap_4
+X_1170_ VPWR VGND _1173_/B _1173_/A _1143_/X _1171_/B sg13g2_a21oi_1
+XFILLER_17_173 VPWR VGND sg13g2_decap_8
+X_1506_ VGND VPWR _1506_/Y _1505_/Y _1491_/Y _1766_/A1 sg13g2_o21ai_1
+X_1437_ VPWR VGND _1436_/B _1766_/A1 _1436_/Y _1438_/C sg13g2_a21oi_1
+X_1368_ _1531_/A VPWR _1369_/B VGND _1368_/B sg13g2_nor2_1
+X_1299_ _1299_/Y VPWR _1299_/A VGND _1531_/A sg13g2_nand2_1
+Xfanout384 VGND VPWR _1999_/B hold60/X sg13g2_buf_2
+Xfanout340 VPWR VGND _1749_/A1 fanout341/A sg13g2_buf_1
+Xfanout395 _1517_/A VGND _2037_/Q VPWR sg13g2_buf_4
+Xfanout362 VGND VPWR _1504_/B _1176_/X sg13g2_buf_2
+Xfanout351 VGND VPWR _1447_/B1 _1242_/X sg13g2_buf_2
+Xfanout373 _1465_/A VGND hold23/A VPWR sg13g2_buf_4
+XFILLER_14_176 VPWR VGND sg13g2_decap_4
+X_1153_ _1192_/B VPWR _1154_/A VGND _1191_/A sg13g2_nor2_1
+X_1222_ _1504_/C VGND VPWR _1223_/B hold42/A sg13g2_and2_2
+X_1084_ _1657_/B VPWR hold72/A VGND _1180_/B sg13g2_nor2_1
+X_1986_ _1987_/B _1986_/B VPWR hold49/X VGND sg13g2_xnor2_1
+XFILLER_20_124 VPWR VGND sg13g2_decap_4
+XFILLER_20_157 VPWR VGND sg13g2_decap_4
+X_1840_ _1846_/C VPWR _1840_/A VGND _1945_/C sg13g2_nand2_1
+X_1771_ VPWR VGND _1770_/Y _1768_/Y _1404_/A _1771_/Y sg13g2_a21oi_1
+X_1136_ _1185_/B VPWR hold32/A VGND hold34/A sg13g2_nand2_1
+XFILLER_25_227 VPWR VGND sg13g2_decap_8
+X_1205_ hold48/A hold54/A VPWR _1247_/B VGND sg13g2_nor2b_2
+X_1067_ _1950_/B _1952_/B VGND VPWR sg13g2_inv_1
+XFILLER_19_0 VPWR VGND sg13g2_decap_8
+X_1969_ _1969_/Y VPWR hold47/X VGND _1992_/B sg13g2_nand2_1
+XFILLER_31_208 VPWR VGND sg13g2_decap_4
+Xhold4 hold4/A VPWR VGND hold4/X sg13g2_dlygate4sd3_1
+X_1823_ _1824_/D VPWR _1950_/A VGND _1945_/C sg13g2_nand2_1
+XFILLER_22_208 VPWR VGND sg13g2_decap_8
+X_1754_ _1760_/A VPWR _1778_/A _1754_/A VGND sg13g2_xor2_1
+X_1685_ VPWR VGND _1684_/Y _1373_/B _1509_/A _1685_/Y sg13g2_a21oi_1
+Xcontroller_75 uio_oe[1] VPWR VGND sg13g2_tiehi
+X_1119_ _2023_/D _2007_/B VGND VPWR sg13g2_inv_1
+X_1470_ VGND VPWR _1470_/Y _1469_/Y _1462_/X _1214_/B sg13g2_o21ai_1
+X_2022_ _2022__57/L_HI _2022_/D _2022_/Q_N _2067_/CLK VGND VPWR _2022_/Q sg13g2_dfrbp_1
+X_1806_ VGND VPWR _1807_/B _1805_/Y _1778_/Y _1754_/A sg13g2_o21ai_1
+X_1668_ dr[0] _1667_/Y VPWR _1728_/A1 _1131_/Y VGND sg13g2_a21oi_2
+X_1737_ _1738_/B _1737_/B VPWR _1737_/A VGND sg13g2_xnor2_1
+X_1599_ VGND VPWR _1599_/Y _1582_/X _1598_/Y _1438_/A sg13g2_o21ai_1
+XFILLER_30_53 VPWR VGND sg13g2_decap_4
+Xclkbuf_4_3_0_clk VGND VPWR clkload0/A clkbuf_0_clk/X sg13g2_buf_2
+X_1453_ _1454_/B _1453_/B VPWR _1453_/A VGND sg13g2_xnor2_1
+X_1522_ VGND VPWR _1523_/B _1497_/Y _1498_/Y _1500_/A sg13g2_o21ai_1
+X_2005_ VGND _1998_/B _2005_/Y _2005_/B VPWR sg13g2_nand2b_1
+X_1384_ _1387_/A VPWR _1384_/B _1732_/B VGND sg13g2_xor2_1
+XFILLER_17_130 VPWR VGND sg13g2_decap_8
+XFILLER_32_133 VPWR VGND sg13g2_decap_8
+X_2040__33 _2040__33/L_HI VPWR VGND sg13g2_tiehi
+X_1505_ VPWR _1505_/Y _1505_/B _1505_/C VGND _1505_/A sg13g2_nand3_1
+X_1367_ _1368_/B _1339_/Y VPWR _1366_/Y VGND _1258_/Y _1219_/Y sg13g2_a22oi_1
+X_1436_ _1436_/A VPWR _1436_/Y VGND _1436_/B sg13g2_nor2_1
+X_1298_ input6/X VPWR _1726_/A VGND _1335_/B sg13g2_nor2_1
+Xfanout385 VGND VPWR _1996_/C _1178_/A sg13g2_buf_2
+Xfanout341 _1687_/A1 VGND fanout341/A VPWR sg13g2_buf_4
+Xfanout352 VGND VPWR _1596_/C _1915_/A sg13g2_buf_2
+Xfanout396 VGND VPWR _1876_/A hold75/X sg13g2_buf_2
+Xfanout374 _1464_/A VGND _2011_/A VPWR sg13g2_buf_4
+Xfanout330 _1690_/A VGND _1213_/Y VPWR sg13g2_buf_4
+Xfanout363 VGND VPWR _1373_/B _1444_/B sg13g2_buf_2
+X_1221_ _1220_/Y _1239_/A VPWR VGND _1657_/B sg13g2_nand2b_2
+X_1152_ _1191_/A hold14/A VPWR _1862_/C VGND sg13g2_xnor2_1
+X_1083_ VPWR VGND _1088_/A _1087_/A _1082_/Y _1083_/Y sg13g2_a21oi_1
+X_1985_ _1985_/A _2061_/D hold33/X _1986_/B VPWR VGND sg13g2_nor3_1
+X_1419_ _1596_/C VPWR _1419_/Y VGND _1419_/B sg13g2_nor2_1
+XFILLER_19_225 VPWR VGND sg13g2_decap_8
+XFILLER_8_67 VPWR VGND sg13g2_decap_4
+X_1770_ _1770_/Y _1770_/A VGND VPWR sg13g2_inv_1
+X_1204_ VGND VPWR _1203_/Y _1212_/A _1480_/B _1649_/A _1482_/A _1476_/B sg13g2_a221oi_1
+X_1135_ _1185_/A hold30/A VPWR hold49/A VGND sg13g2_xnor2_1
+X_1066_ VGND VPWR _1950_/A _1840_/A sg13g2_inv_2
+X_1968_ _1987_/A VPWR _2057_/D VGND _1968_/B sg13g2_nor2_1
+X_1899_ hold45/X VPWR hold46/A VGND _1899_/B sg13g2_nor2_1
+XFILLER_0_316 VPWR VGND sg13g2_decap_4
+Xhold5 hold5/A VPWR VGND hold5/X sg13g2_dlygate4sd3_1
+XFILLER_15_250 VPWR VGND sg13g2_decap_8
+X_1753_ VGND _1754_/A _1753_/Y _1778_/A VPWR sg13g2_nand2b_1
+X_1822_ VGND VPWR _1828_/A _1945_/B _1821_/Y _1998_/A sg13g2_o21ai_1
+XFILLER_31_0 VPWR VGND sg13g2_decap_8
+X_1684_ _1684_/Y _1684_/A VGND VPWR sg13g2_inv_1
+X_1118_ _1123_/A VGND _1121_/B _2007_/B VPWR sg13g2_or2_1
+XFILLER_28_86 VPWR VGND sg13g2_decap_8
+XFILLER_28_75 VPWR VGND sg13g2_decap_4
+X_2021_ _2021__58/L_HI hold2/X _2021_/Q_N clkload0/A VGND VPWR _2021_/Q sg13g2_dfrbp_1
+X_1736_ _1737_/B VPWR _1840_/A hold74/A VGND sg13g2_xor2_1
+X_1805_ VPWR VGND _1779_/C _1779_/A _1774_/Y _1805_/Y sg13g2_a21oi_1
+X_1667_ VGND VPWR _1667_/Y _1197_/Y _1666_/Y _1727_/A1 sg13g2_o21ai_1
+X_1598_ _1598_/Y _1582_/B VPWR _1595_/Y VGND _1380_/A _1597_/Y sg13g2_a22oi_1
+X_1383_ _1384_/B VPWR _1952_/A _1539_/A VGND sg13g2_xor2_1
+X_1452_ _1453_/B _1452_/B VPWR _1452_/A VGND sg13g2_xnor2_1
+X_1521_ VGND _1519_/X _1523_/A _1521_/B VPWR sg13g2_nand2b_1
+X_2004_ hold8/X VPWR _2004_/Y VGND _2004_/B sg13g2_nor2_1
+X_1719_ VGND _1303_/X _1719_/Y _1719_/B VPWR sg13g2_nand2b_1
+XFILLER_26_186 VPWR VGND sg13g2_decap_8
+X_1504_ _1166_/B _1505_/C VPWR VGND _1504_/B _1504_/C sg13g2_nand3b_1
+X_1435_ VGND VPWR _1433_/Y _1436_/B _1467_/B2 _1434_/X _1201_/Y _1698_/A sg13g2_a221oi_1
+X_1366_ VGND VPWR _1366_/Y _1365_/X _1339_/Y _1214_/Y sg13g2_o21ai_1
+X_1297_ VGND VPWR _1297_/Y _1130_/X _1728_/A1 input6/X sg13g2_o21ai_1
+XFILLER_23_101 VPWR VGND sg13g2_decap_4
+Xclkbuf_4_2_0_clk VGND VPWR _2070_/CLK clkbuf_0_clk/X sg13g2_buf_2
+Xfanout320 VGND VPWR _1940_/S _1914_/Y sg13g2_buf_2
+XFILLER_11_34 VPWR VGND sg13g2_decap_8
+XFILLER_11_89 VPWR VGND sg13g2_decap_8
+Xfanout331 VGND VPWR _1380_/A _1213_/Y sg13g2_buf_2
+Xfanout386 VGND VPWR _1178_/A hold67/X sg13g2_buf_2
+Xfanout375 VGND VPWR _2011_/A hold57/X sg13g2_buf_2
+Xfanout342 VPWR VGND _1728_/A1 fanout341/A sg13g2_buf_1
+Xfanout364 VGND VPWR _1335_/B _1444_/B sg13g2_buf_2
+Xfanout397 VGND VPWR _1873_/A hold4/A sg13g2_buf_2
+Xfanout353 _1915_/A VGND _1642_/B VPWR sg13g2_buf_4
+XFILLER_35_7 VPWR VGND sg13g2_decap_8
+X_1151_ _1157_/A VPWR _1862_/C VGND hold14/A sg13g2_nand2_1
+X_1220_ _1220_/Y _1220_/B VPWR _2034_/Q VGND sg13g2_xnor2_1
+X_1082_ VPWR VGND _1069_/Y _1952_/B _1825_/C _1082_/Y sg13g2_a21oi_1
+X_1984_ _1984_/A VPWR _1988_/B VGND _1984_/B sg13g2_nor2_1
+XFILLER_28_204 VPWR VGND sg13g2_decap_8
+X_1349_ _1349_/Y _1349_/B VPWR _1349_/A VGND sg13g2_xnor2_1
+X_1418_ _1418_/Y VPWR _1418_/A VGND _1418_/B sg13g2_nand2_1
+XFILLER_7_108 VPWR VGND sg13g2_decap_8
+X_1134_ input3/X VPWR _1487_/A VGND _1335_/B sg13g2_nor2_2
+X_1203_ _2034_/Q VPWR _1203_/Y VGND _1627_/B sg13g2_nor2_1
+X_1065_ _1065_/Y _1998_/A VGND VPWR sg13g2_inv_1
+X_1967_ _1968_/B _1967_/B VPWR _2000_/A VGND sg13g2_xnor2_1
+X_1898_ _1898_/A VPWR _1899_/B VGND _1902_/C sg13g2_nor2_1
+XFILLER_17_77 VPWR VGND sg13g2_decap_8
+Xhold6 hold6/A VPWR VGND hold6/X sg13g2_dlygate4sd3_1
+X_1752_ _1778_/A _1752_/B VPWR _1752_/A VGND sg13g2_xnor2_1
+X_1683_ _1684_/A _1670_/Y VPWR _1682_/Y VGND _1258_/Y _1705_/A sg13g2_a22oi_1
+X_1821_ VPWR _1821_/Y _1952_/C _2033_/Q VGND _1950_/B sg13g2_nand3_1
+XFILLER_24_0 VPWR VGND sg13g2_decap_4
+Xcontroller_11 uio_out2 VPWR VGND sg13g2_tielo
+X_1117_ _1120_/A VPWR hold2/A VGND _1121_/B sg13g2_nor2_1
+XFILLER_21_265 VPWR VGND sg13g2_decap_4
+XFILLER_28_65 VPWR VGND sg13g2_decap_8
+XFILLER_0_136 VPWR VGND sg13g2_decap_4
+XFILLER_5_14 VPWR VGND sg13g2_decap_8
+X_2020_ _2020__18/L_HI _2020_/D _2020_/Q_N _2067_/CLK VGND VPWR _2020_/Q sg13g2_dfrbp_1
+X_1735_ hold74/A VPWR _1757_/A VGND _1840_/A sg13g2_nor2_1
+X_1804_ _1808_/A _1804_/B VPWR hold36/A VGND sg13g2_xnor2_1
+X_1666_ VPWR VGND _1665_/Y _1373_/B _1487_/A _1666_/Y sg13g2_a21oi_1
+X_1597_ _1597_/A VPWR _1597_/Y VGND _1597_/B sg13g2_nor2_1
+X_1520_ _1520_/A VGND _1675_/B _1521_/B VPWR sg13g2_or2_1
+X_1382_ _1382_/X VGND VPWR _1952_/A _1539_/A sg13g2_and2_1
+X_1451_ _1452_/B VPWR _1755_/B hold73/A VGND sg13g2_xor2_1
+X_2003_ _2004_/B _1998_/Y VPWR _2005_/B VGND _1997_/Y _2002_/Y sg13g2_a22oi_1
+X_2028__51 _2028__51/L_HI VPWR VGND sg13g2_tiehi
+X_1718_ VGND VPWR _1718_/Y _1717_/Y _1716_/X _1712_/Y sg13g2_o21ai_1
+X_1649_ _1649_/A VPWR _1719_/B VGND _1763_/B sg13g2_nor2_2
+XFILLER_26_165 VPWR VGND sg13g2_decap_8
+XFILLER_2_15 VPWR VGND sg13g2_decap_4
+X_2025__54 _2025__54/L_HI VPWR VGND sg13g2_tiehi
+X_1503_ VGND VPWR _1505_/B _1502_/Y _1492_/Y _1280_/Y sg13g2_o21ai_1
+X_1365_ _1364_/Y _1365_/X VPWR VGND _1504_/C _1349_/Y sg13g2_a21o_1
+X_1434_ _1434_/X _1642_/A hold39/A _2011_/A VPWR VGND _1465_/A hold61/A _1434_/A3
++ sg13g2_mux4_1
+X_1296_ db[2] _1295_/Y VPWR _1773_/A1 _1263_/Y VGND sg13g2_a21oi_2
+XFILLER_23_157 VPWR VGND sg13g2_decap_4
+Xfanout343 VPWR VGND fanout341/A _1128_/Y sg13g2_buf_1
+Xfanout321 _1732_/B VGND _1191_/Y VPWR sg13g2_buf_4
+Xfanout332 _1695_/B VGND _1526_/B VPWR sg13g2_buf_4
+Xfanout354 VGND VPWR _1705_/A _1258_/B sg13g2_buf_2
+Xfanout365 VGND VPWR _1444_/B _1127_/Y sg13g2_buf_2
+Xfanout387 VGND VPWR _1612_/A _1467_/A1 sg13g2_buf_2
+Xfanout398 _1942_/B VGND _2031_/Q VPWR sg13g2_buf_4
+Xfanout376 VGND VPWR _1476_/B _2069_/Q sg13g2_buf_2
+X_2022__57 _2022__57/L_HI VPWR VGND sg13g2_tiehi
+X_1150_ _1192_/B hold18/A VPWR hold53/A VGND sg13g2_xnor2_1
+X_1081_ _2028_/Q VPWR _1088_/A VGND _1946_/A sg13g2_nor2_1
+X_1983_ _1984_/A _1978_/C VPWR _1986_/B VGND sg13g2_nor2b_1
+XFILLER_9_150 VPWR VGND sg13g2_decap_8
+XFILLER_20_138 VPWR VGND sg13g2_decap_4
+X_1417_ _1418_/A VPWR _1419_/B VGND _1418_/B sg13g2_nor2_1
+X_1348_ VGND _1346_/X _1349_/B _1348_/B VPWR sg13g2_nand2b_1
+X_1279_ _1279_/Y _1504_/B VPWR _1279_/A VGND sg13g2_xnor2_1
+XFILLER_19_205 VPWR VGND sg13g2_decap_4
+XFILLER_8_47 VPWR VGND sg13g2_decap_8
+X_1064_ VGND VPWR _1320_/B _1945_/B sg13g2_inv_2
+X_1202_ _1475_/B VGND _1476_/B _1627_/B VPWR sg13g2_or2_2
+X_1133_ _1946_/A VPWR _1133_/Y VGND _1952_/D sg13g2_nor2_2
+Xclkbuf_4_1_0_clk VGND VPWR _2073_/CLK clkbuf_0_clk/X sg13g2_buf_2
+X_1966_ VPWR _1973_/B _1999_/B _1996_/C VGND _2000_/A sg13g2_nand3_1
+X_1897_ _1985_/A VPWR _2042_/D VGND _1897_/B sg13g2_nor2_1
+XFILLER_17_34 VPWR VGND sg13g2_decap_8
+XFILLER_3_189 VPWR VGND sg13g2_decap_4
+XFILLER_3_156 VPWR VGND sg13g2_decap_4
+Xhold7 hold7/A VPWR VGND hold7/X sg13g2_dlygate4sd3_1
+X_1820_ _2067_/D _2022_/D VPWR VGND _1123_/A _1123_/B sg13g2_a21o_1
+X_1751_ _1752_/A _1752_/B VPWR _1779_/A VGND sg13g2_nor2b_1
+X_1682_ VGND VPWR _1682_/Y _1681_/Y _1670_/Y _1766_/A1 sg13g2_o21ai_1
+Xcontroller_12 uio_out3 VPWR VGND sg13g2_tielo
+X_1116_ _1121_/B _1916_/B VPWR input6/X _1115_/Y VGND sg13g2_a21oi_2
+X_1949_ _1949_/X VGND VPWR _1949_/B hold72/A sg13g2_and2_1
+XFILLER_8_259 VPWR VGND sg13g2_decap_8
+X_1803_ _1807_/A _1803_/B VPWR _1803_/A VGND sg13g2_xnor2_1
+X_1734_ VPWR VGND _1716_/B _1716_/A _1713_/X _1737_/A sg13g2_a21oi_1
+X_1596_ _1596_/A _1597_/B _1763_/A _1596_/C VPWR VGND sg13g2_nor3_1
+X_1665_ VGND VPWR _1665_/Y _1664_/Y _1652_/B _1629_/A sg13g2_o21ai_1
+X_1450_ VPWR VGND _1952_/A _1890_/A _1428_/Y _1452_/A sg13g2_a21oi_1
+X_1381_ VPWR VGND _1348_/B _1349_/A _1346_/X _1388_/A sg13g2_a21oi_1
+X_2002_ VPWR VGND _1999_/Y _2001_/B _1948_/B _2002_/Y sg13g2_a21oi_1
+X_1648_ g7 _1647_/Y VPWR _1819_/A1 _1443_/Y VGND sg13g2_a21oi_2
+X_1579_ VPWR VGND _1578_/Y _1773_/A1 _1334_/Y dg[4] sg13g2_a21oi_1
+X_1717_ VPWR VGND _1716_/X _1712_/Y _1788_/A1 _1717_/Y sg13g2_a21oi_1
+X_1502_ VGND VPWR _1502_/Y _1501_/Y _1500_/Y _1495_/Y sg13g2_o21ai_1
+X_1433_ _1790_/A VPWR _1433_/Y VGND _1463_/B sg13g2_nor2_1
+X_1364_ VGND VPWR _1364_/Y _1505_/A _1363_/Y _1352_/Y sg13g2_o21ai_1
+X_1295_ VGND VPWR _1295_/Y _1265_/Y _1294_/Y _1772_/A1 sg13g2_o21ai_1
+XFILLER_23_114 VPWR VGND sg13g2_decap_8
+Xfanout333 VGND VPWR _1526_/B _1173_/Y sg13g2_buf_2
+Xfanout344 _1819_/A1 VGND _1128_/Y VPWR sg13g2_buf_4
+Xfanout388 VGND VPWR _1895_/A hold73/X sg13g2_buf_2
+Xfanout322 VGND VPWR _1763_/A _1191_/Y sg13g2_buf_2
+Xfanout399 VPWR VGND _1825_/C _2031_/Q sg13g2_buf_1
+Xfanout377 VPWR VGND _1467_/B2 _2069_/Q sg13g2_buf_1
+Xfanout355 VGND VPWR _1258_/B _1219_/Y sg13g2_buf_2
+Xfanout366 VGND VPWR _1531_/A _1913_/B sg13g2_buf_2
+X_1080_ VPWR _1946_/A _1952_/B _1952_/C VGND _1840_/A sg13g2_nand3_1
+X_1982_ VPWR VGND _1978_/C _1862_/C hold32/X hold33/A sg13g2_a21oi_1
+X_1347_ _1347_/A VGND _1347_/B _1348_/B VPWR sg13g2_or2_1
+X_1416_ _1418_/B VPWR _1416_/B _1416_/A VGND sg13g2_xor2_1
+X_1278_ _1278_/X VPWR _1278_/B _1278_/A VGND sg13g2_xor2_1
+XFILLER_22_57 VPWR VGND sg13g2_decap_4
+X_1201_ _1476_/B VPWR _1201_/Y VGND _1475_/B sg13g2_nor2_2
+X_1063_ VGND VPWR _1087_/A _1945_/A sg13g2_inv_2
+X_1132_ hold64/A _1952_/D VPWR VGND _2033_/Q _1945_/C sg13g2_nand3b_1
+X_1965_ _1999_/D VPWR _2000_/A VGND _1996_/C sg13g2_nand2_1
+X_1896_ _1897_/B _1902_/C VPWR _1902_/B VGND sg13g2_xnor2_1
+Xhold8 hold8/A VPWR VGND hold8/X sg13g2_dlygate4sd3_1
+X_1750_ _1754_/A _1733_/B VPWR _1733_/A _1731_/Y VGND sg13g2_a21oi_2
+X_1681_ VGND VPWR _1681_/Y _1680_/Y _1279_/Y _1915_/A sg13g2_o21ai_1
+Xcontroller_13 uio_out4 VPWR VGND sg13g2_tielo
+X_1115_ hold1/X VPWR _1115_/Y VGND _1938_/B sg13g2_nor2_1
+X_1879_ VPWR VGND _1878_/Y _1889_/C _2017_/S _1879_/Y sg13g2_a21oi_1
+X_1948_ _1948_/A VPWR _1948_/Y VGND _1948_/B sg13g2_nor2_1
+Xclkbuf_4_0_0_clk VGND VPWR _2038_/CLK clkbuf_0_clk/X sg13g2_buf_2
+X_1733_ _1738_/A _1733_/B VPWR _1733_/A VGND sg13g2_xnor2_1
+X_1802_ _1803_/B hold64/A VPWR hold36/A VGND sg13g2_xnor2_1
+X_1595_ VGND VPWR _1595_/Y _1594_/Y _1583_/Y _1421_/Y sg13g2_o21ai_1
+X_1664_ VGND VPWR _1664_/Y _1705_/A _1663_/Y _1652_/X sg13g2_o21ai_1
+X_1380_ VPWR _1380_/Y _1380_/B _1380_/C VGND _1380_/A sg13g2_nand3_1
+X_2001_ VPWR _2005_/B _2001_/B _2001_/C VGND hold47/A _2001_/D sg13g2_nand4_1
+X_1716_ _1716_/X VPWR _1716_/B _1716_/A VGND sg13g2_xor2_1
+X_1647_ VGND VPWR _1647_/Y _1445_/Y _1646_/Y _1818_/A1 sg13g2_o21ai_1
+X_1578_ VGND VPWR _1578_/Y _1336_/Y _1577_/Y _1772_/A1 sg13g2_o21ai_1
+X_2034__45 _2034__45/L_HI VPWR VGND sg13g2_tiehi
+XFILLER_17_156 VPWR VGND sg13g2_decap_8
+X_1363_ VPWR VGND _1361_/Y _1357_/Y _1362_/Y _1363_/Y sg13g2_a21oi_1
+X_1432_ VGND VPWR _1597_/A _1438_/B _1431_/Y _1421_/Y _1419_/Y _1418_/Y sg13g2_a221oi_1
+X_1501_ VPWR VGND _1500_/Y _1495_/Y _1915_/B _1501_/Y sg13g2_a21oi_1
+X_1294_ VPWR VGND _1293_/Y _1373_/B _1532_/A _1294_/Y sg13g2_a21oi_1
+XFILLER_11_48 VPWR VGND sg13g2_decap_4
+X_2031__48 _2031__48/L_HI VPWR VGND sg13g2_tiehi
+Xfanout367 VGND VPWR _1913_/B _1126_/X sg13g2_buf_2
+Xfanout389 _1890_/A VGND hold76/X VPWR sg13g2_buf_4
+Xfanout378 VGND VPWR _1475_/B _2008_/A sg13g2_buf_2
+Xfanout345 _1763_/B VGND _1475_/Y VPWR sg13g2_buf_4
+Xfanout323 _1790_/A VGND _1188_/Y VPWR sg13g2_buf_4
+Xfanout334 VGND VPWR _1772_/A1 _1818_/A1 sg13g2_buf_2
+Xfanout356 VGND VPWR _1438_/A _1257_/B sg13g2_buf_2
+XFILLER_22_192 VPWR VGND sg13g2_decap_4
+XFILLER_7_0 VPWR VGND sg13g2_decap_8
+X_1981_ VGND VPWR hold17/A _1979_/Y _1980_/Y _1971_/A sg13g2_o21ai_1
+XFILLER_20_107 VPWR VGND sg13g2_decap_8
+XFILLER_3_60 VPWR VGND sg13g2_decap_8
+X_1346_ _1346_/X VGND VPWR _1347_/B _1347_/A sg13g2_and2_1
+X_1415_ _1416_/A VPWR _1415_/Y VGND _1416_/B sg13g2_nor2_1
+X_1277_ _1278_/B _1277_/B VPWR _1277_/A VGND sg13g2_xnor2_1
+XFILLER_0_7 VPWR VGND sg13g2_decap_8
+XFILLER_19_218 VPWR VGND sg13g2_decap_8
+XFILLER_10_140 VPWR VGND sg13g2_decap_4
+XFILLER_33_7 VPWR VGND sg13g2_decap_4
+X_1200_ _1463_/B VPWR _1475_/A VGND _1475_/B sg13g2_nand2_2
+X_1131_ VGND VPWR _1131_/Y _1130_/X _1728_/A1 input3/X sg13g2_o21ai_1
+XFILLER_18_262 VPWR VGND sg13g2_decap_8
+X_1062_ VGND VPWR _1241_/A _1175_/A sg13g2_inv_2
+X_1964_ VGND _1873_/C _1987_/A _1970_/A VPWR sg13g2_nand2b_1
+X_1895_ VPWR _1902_/C hold76/A _1895_/C VGND _1895_/A sg13g2_nand3_1
+X_1329_ _1330_/B _1305_/Y VPWR _1328_/Y VGND _1258_/Y _1258_/B sg13g2_a22oi_1
+Xhold9 hold9/A VPWR VGND hold9/X sg13g2_dlygate4sd3_1
+X_1680_ VPWR VGND _1679_/Y _1515_/A _1527_/A _1680_/Y sg13g2_a21oi_1
+Xcontroller_14 uio_out5 VPWR VGND sg13g2_tielo
+X_1114_ VGND VPWR _1120_/A _1111_/Y _1916_/B hold26/X sg13g2_o21ai_1
+X_2058__62 _2058__62/L_HI VPWR VGND sg13g2_tiehi
+X_1878_ hold68/X _1876_/B VPWR _1878_/Y VGND sg13g2_nor2b_1
+X_1947_ _1947_/Y VPWR _1947_/A VGND _1947_/B sg13g2_nand2_1
+XFILLER_0_117 VPWR VGND sg13g2_decap_4
+X_1801_ VGND VPWR _1803_/A _1782_/Y _1786_/B _1783_/Y sg13g2_o21ai_1
+X_1732_ _1733_/B VPWR _1732_/B _1898_/A VGND sg13g2_xor2_1
+X_1663_ VGND VPWR _1527_/A _1663_/Y _1662_/Y _1280_/Y _1241_/Y _1504_/C sg13g2_a221oi_1
+X_1594_ VGND VPWR _1594_/Y _1593_/Y _1592_/X _1588_/Y sg13g2_o21ai_1
+XFILLER_22_0 VPWR VGND sg13g2_decap_8
+X_2146_ VPWR VGND dr[7] r7 sg13g2_buf_1
+X_2046__21 _2046__21/L_HI VPWR VGND sg13g2_tiehi
+XFILLER_4_242 VPWR VGND sg13g2_decap_8
+X_2000_ _2000_/A VPWR _2001_/D VGND _2000_/B sg13g2_nor2_1
+X_1646_ VPWR VGND _1645_/Y _1444_/B _1444_/Y _1646_/Y sg13g2_a21oi_1
+X_1715_ VGND VPWR _1716_/B _1691_/Y _1694_/B _1694_/A sg13g2_o21ai_1
+X_1577_ VPWR VGND _1576_/Y _1373_/B _1369_/A _1577_/Y sg13g2_a21oi_1
+X_1500_ _1500_/Y _1500_/B VPWR _1500_/A VGND sg13g2_xnor2_1
+X_1362_ VGND VPWR _1362_/Y _1809_/A1 _1361_/Y _1357_/Y sg13g2_o21ai_1
+X_1431_ VGND VPWR _1431_/Y _1430_/Y _1429_/Y _1425_/X sg13g2_o21ai_1
+X_1293_ VGND VPWR _1293_/Y _1292_/Y _1270_/B _1629_/A sg13g2_o21ai_1
+XFILLER_11_27 VPWR VGND sg13g2_decap_8
+X_1629_ _1629_/A VGND _1629_/B _1629_/X VPWR sg13g2_or2_1
+Xfanout379 _2008_/A VGND hold50/X VPWR sg13g2_buf_4
+Xfanout346 VPWR VGND _1628_/B1 _1475_/Y sg13g2_buf_1
+Xfanout368 VGND VPWR _1649_/A _1375_/B sg13g2_buf_2
+Xfanout324 VGND VPWR _1752_/B _1188_/Y sg13g2_buf_2
+Xfanout335 VPWR VGND _1748_/A1 _1818_/A1 sg13g2_buf_1
+Xfanout357 VGND VPWR _1257_/B _1218_/X sg13g2_buf_2
+X_1980_ _1980_/Y _1984_/B VPWR hold16/X VGND sg13g2_xnor2_1
+XFILLER_3_83 VPWR VGND sg13g2_decap_8
+X_1414_ VPWR VGND _1384_/B _1732_/B _1382_/X _1416_/B sg13g2_a21oi_1
+X_1345_ VGND VPWR _1347_/B _1308_/Y _1087_/A _1320_/A sg13g2_o21ai_1
+X_1276_ _1277_/A _1277_/B VPWR _1276_/Y VGND sg13g2_nor2b_1
+XFILLER_22_48 VPWR VGND sg13g2_decap_4
+XFILLER_27_241 VPWR VGND sg13g2_decap_8
+XFILLER_8_28 VPWR VGND sg13g2_decap_8
+X_1130_ _1130_/X VGND VPWR _1130_/B _1130_/A sg13g2_and2_2
+X_1061_ _1299_/A input6/X VGND VPWR sg13g2_inv_1
+X_1963_ _1978_/A _2056_/D _1963_/B _1967_/B VPWR VGND sg13g2_nor3_1
+X_1894_ _1985_/A _2041_/D _1894_/B _1894_/C VPWR VGND sg13g2_nor3_1
+X_1328_ VGND VPWR _1328_/Y _1327_/Y _1305_/Y _1766_/A1 sg13g2_o21ai_1
+X_1259_ VGND VPWR _1531_/A _1260_/B _1254_/A _1258_/Y _1256_/Y _1258_/B sg13g2_a221oi_1
+XFILLER_30_203 VPWR VGND sg13g2_decap_8
+Xcontroller_15 uio_out6 VPWR VGND sg13g2_tielo
+X_1113_ VPWR VGND _2016_/S input4/X _1112_/Y _2007_/A sg13g2_a21oi_1
+XFILLER_21_236 VPWR VGND sg13g2_decap_4
+X_1877_ _2017_/S _2036_/D _1877_/B _1889_/D VPWR VGND sg13g2_nor3_1
+X_1946_ _1946_/A VPWR _1947_/B VGND _1946_/B sg13g2_nor2_1
+X_1800_ VPWR VGND _1799_/X _1246_/Y _1809_/A1 _1800_/Y sg13g2_a21oi_1
+X_1731_ _1898_/A VPWR _1731_/Y VGND _1732_/B sg13g2_nor2_1
+X_1662_ VGND VPWR _1662_/Y _1661_/Y _1660_/X _1656_/Y sg13g2_o21ai_1
+X_1593_ VPWR VGND _1592_/X _1588_/Y _1788_/A1 _1593_/Y sg13g2_a21oi_1
+X_2145_ VPWR VGND dr[6] r6 sg13g2_buf_1
+XFILLER_15_0 VPWR VGND sg13g2_decap_8
+X_1929_ VPWR _1930_/C _2013_/B _1929_/C VGND input4/X sg13g2_nand3_1
+X_1714_ _1716_/A VPWR _1945_/C _1895_/A VGND sg13g2_xor2_1
+X_1576_ VGND VPWR _1576_/Y _1561_/X _1575_/Y _1438_/A sg13g2_o21ai_1
+X_1645_ VGND VPWR _1645_/Y _1629_/X _1644_/Y _1438_/A sg13g2_o21ai_1
+X_2059_ _2059__60/L_HI _2059_/D _2059_/Q_N _2065_/CLK VGND VPWR hold53/A sg13g2_dfrbp_1
+XFILLER_1_224 VPWR VGND sg13g2_decap_4
+XFILLER_15_92 VPWR VGND sg13g2_decap_8
+XFILLER_31_91 VPWR VGND sg13g2_decap_4
+X_1430_ VPWR VGND _1429_/Y _1425_/X _1788_/A1 _1430_/Y sg13g2_a21oi_1
+X_1361_ _1361_/Y _1361_/B VPWR _1361_/A VGND sg13g2_xnor2_1
+X_1292_ VGND VPWR _1292_/Y _1705_/A _1291_/Y _1270_/X sg13g2_o21ai_1
+Xfanout336 VGND VPWR _1727_/A1 _1332_/A1 sg13g2_buf_2
+Xfanout325 _1729_/B VGND _1192_/Y VPWR sg13g2_buf_4
+X_1559_ _1559_/A VPWR _1559_/Y VGND _1627_/B sg13g2_nor2_1
+X_1628_ VGND VPWR _1627_/Y _1629_/B _1612_/A _1628_/B1 _1631_/A _2008_/A sg13g2_a221oi_1
+Xfanout347 _1915_/B VGND _1615_/A1 VPWR sg13g2_buf_4
+Xfanout369 _1653_/B VGND _1220_/B VPWR sg13g2_buf_4
+Xfanout358 VGND VPWR _1597_/A _1527_/A sg13g2_buf_2
+XFILLER_26_91 VPWR VGND sg13g2_decap_8
+X_1413_ _1416_/A VPWR _1413_/B _1790_/A VGND sg13g2_xor2_1
+X_1344_ _1347_/A _1344_/B VPWR _1729_/B VGND sg13g2_xnor2_1
+X_1275_ VGND VPWR _1277_/B _1232_/Y _1233_/Y _1655_/B sg13g2_o21ai_1
+XFILLER_6_168 VPWR VGND sg13g2_decap_8
+X_1060_ _1060_/Y input5/X VGND VPWR sg13g2_inv_1
+XFILLER_19_7 VPWR VGND sg13g2_decap_4
+X_1962_ _1967_/B _1996_/C VPWR VGND _1976_/B _1999_/B sg13g2_and3_1
+X_1893_ _1894_/C _1893_/B VPWR VGND _1895_/C _1895_/A sg13g2_and3_1
+XFILLER_24_223 VPWR VGND sg13g2_decap_4
+X_1189_ _1189_/Y _1752_/B VGND VPWR sg13g2_inv_1
+X_1327_ VGND VPWR _1327_/Y _1326_/Y _1314_/Y _1915_/A sg13g2_o21ai_1
+X_1258_ _1258_/Y VPWR _1813_/A VGND _1258_/B sg13g2_nand2_2
+XFILLER_15_201 VPWR VGND sg13g2_decap_8
+XFILLER_2_193 VPWR VGND sg13g2_decap_8
+Xcontroller_16 uio_out7 VPWR VGND sg13g2_tielo
+X_1112_ hold26/X VPWR _1112_/Y VGND _2016_/S sg13g2_nor2_1
+X_1945_ VPWR _1946_/B _1945_/B _1945_/C VGND _1945_/A sg13g2_nand3_1
+X_1876_ _1889_/D VGND VPWR _1876_/B _1876_/A sg13g2_and2_1
+X_1592_ _1592_/X VPWR _1592_/B _1592_/A VGND sg13g2_xor2_1
+X_1730_ VGND VPWR _1733_/A _1729_/Y _1712_/B _1712_/A sg13g2_o21ai_1
+X_1661_ VPWR VGND _1660_/X _1656_/Y _1915_/B _1661_/Y sg13g2_a21oi_1
+X_2144_ VGND VPWR dg[7] g7 sg13g2_buf_2
+X_2075_ _2075__30/L_HI _2075_/D _2075_/Q_N _2075_/CLK VGND VPWR hold58/A sg13g2_dfrbp_1
+X_1928_ _1930_/B VPWR hold18/X VGND _1940_/S sg13g2_nand2_1
+X_1859_ VPWR _1860_/B _1988_/A _1863_/D VGND _1863_/B sg13g2_nand3_1
+XFILLER_4_233 VPWR VGND sg13g2_decap_4
+X_1713_ _1713_/X VGND VPWR _1945_/C _1895_/A sg13g2_and2_1
+X_1575_ _1575_/Y _1561_/B VPWR _1572_/Y VGND _1380_/A _1574_/Y sg13g2_a22oi_1
+X_1644_ _1644_/Y _1629_/B VPWR _1641_/Y VGND _1380_/A _1643_/Y sg13g2_a22oi_1
+X_2058_ _2058__62/L_HI _2058_/D _2058_/Q_N clkload6/A VGND VPWR hold47/A sg13g2_dfrbp_1
+XFILLER_17_137 VPWR VGND sg13g2_decap_4
+X_1360_ _1361_/B _1323_/B VPWR _1323_/A _1320_/Y VGND sg13g2_a21oi_2
+X_1291_ VGND VPWR _1527_/A _1291_/Y _1290_/Y _1280_/Y _1278_/X _1504_/C sg13g2_a221oi_1
+X_1558_ dg[3] _1557_/Y VPWR _1687_/A1 _1297_/Y VGND sg13g2_a21oi_2
+X_1489_ dg[0] _1488_/Y VPWR _1687_/A1 _1131_/Y VGND sg13g2_a21oi_2
+Xfanout348 VGND VPWR _1788_/A1 _1615_/A1 sg13g2_buf_2
+Xfanout326 VGND VPWR _1559_/A _1192_/Y sg13g2_buf_2
+X_1627_ _1811_/A VPWR _1627_/Y VGND _1627_/B sg13g2_nor2_1
+Xfanout359 VGND VPWR _1214_/B _1527_/A sg13g2_buf_2
+Xfanout337 VPWR VGND _1332_/A1 _1818_/A1 sg13g2_buf_1
+XFILLER_6_317 VPWR VGND sg13g2_decap_4
+X_1412_ _1413_/B VPWR _1755_/B hold76/A VGND sg13g2_xor2_1
+X_1343_ _1344_/B VPWR _1567_/B _1520_/A VGND sg13g2_xor2_1
+X_1274_ _1277_/A _1274_/B VPWR _1526_/B VGND sg13g2_xnor2_1
+XFILLER_5_0 VPWR VGND sg13g2_decap_8
+XFILLER_18_232 VPWR VGND sg13g2_decap_4
+X_1961_ VPWR VGND _1976_/B _1996_/C _1999_/B _1963_/B sg13g2_a21oi_1
+X_1892_ VPWR VGND _1895_/C _1893_/B _1895_/A _1894_/B sg13g2_a21oi_1
+X_1326_ VPWR VGND _1325_/Y _1515_/A _1527_/A _1326_/Y sg13g2_a21oi_1
+X_1188_ _1188_/Y _1188_/B VPWR _1188_/A VGND sg13g2_xnor2_1
+X_1257_ _1436_/A VPWR _1629_/A VGND _1257_/B sg13g2_nor2_2
+XFILLER_31_7 VPWR VGND sg13g2_decap_4
+X_1111_ _1111_/Y VPWR input4/X VGND _2016_/S sg13g2_nand2_1
+XFILLER_9_84 VPWR VGND sg13g2_decap_8
+XFILLER_9_95 VPWR VGND sg13g2_decap_8
+X_1875_ _1876_/A VPWR _1877_/B VGND _1875_/B sg13g2_nor2_1
+X_1944_ _1948_/B VPWR _1998_/A VGND _1944_/B sg13g2_nand2_2
+Xclkbuf_4_15_0_clk VGND VPWR clkload6/A clkbuf_0_clk/X sg13g2_buf_2
+X_1309_ _1313_/A _1309_/B VPWR _1545_/B VGND sg13g2_xnor2_1
+XFILLER_18_82 VPWR VGND sg13g2_decap_4
+X_2055__68 _2055__68/L_HI VPWR VGND sg13g2_tiehi
+X_1660_ _1660_/X VPWR _1660_/B _1660_/A VGND sg13g2_xor2_1
+X_1591_ VGND VPWR _1592_/B _1566_/Y _1569_/B _1569_/A sg13g2_o21ai_1
+X_2143_ VGND VPWR dg[6] g6 sg13g2_buf_2
+X_2074_ _2074__34/L_HI _2074_/D _1814_/A1 _2075_/CLK VGND VPWR hold42/A sg13g2_dfrbp_1
+X_1858_ _1863_/D _1996_/C VPWR VGND _1858_/C _1999_/B sg13g2_and3_1
+X_1927_ VPWR VGND _1940_/S _1073_/Y _1926_/Y hold29/A sg13g2_a21oi_1
+X_1789_ VPWR VGND _1446_/Y _1504_/C _1597_/A _1789_/Y sg13g2_a21oi_1
+XFILLER_29_157 VPWR VGND sg13g2_decap_8
+Xhold70 hold70/A VPWR VGND hold70/X sg13g2_dlygate4sd3_1
+XFILLER_35_105 VPWR VGND sg13g2_decap_4
+X_1712_ _1712_/Y _1712_/B VPWR _1712_/A VGND sg13g2_xnor2_1
+X_2043__27 _2043__27/L_HI VPWR VGND sg13g2_tiehi
+X_1643_ VPWR VGND _1642_/Y _1811_/A _1597_/A _1643_/Y sg13g2_a21oi_1
+X_1574_ VPWR VGND _1573_/Y _1559_/A _1597_/A _1574_/Y sg13g2_a21oi_1
+X_2057_ _2057__64/L_HI _2057_/D _2057_/Q_N clkload6/A VGND VPWR hold70/A sg13g2_dfrbp_1
+XFILLER_20_0 VPWR VGND sg13g2_decap_4
+X_1290_ VGND VPWR _1290_/Y _1289_/Y _1288_/X _1284_/Y sg13g2_o21ai_1
+XFILLER_31_163 VPWR VGND sg13g2_decap_4
+XFILLER_16_193 VPWR VGND sg13g2_decap_4
+X_1626_ g6 _1625_/Y VPWR _1819_/A1 _1407_/Y VGND sg13g2_a21oi_2
+Xfanout338 VGND VPWR _1818_/A1 _1133_/Y sg13g2_buf_2
+X_1557_ _1557_/Y VPWR _1557_/A VGND _1557_/B sg13g2_nand2_1
+X_1488_ VGND VPWR _1488_/Y _1197_/Y _1487_/Y _1727_/A1 sg13g2_o21ai_1
+Xfanout327 VGND VPWR _1545_/B _1698_/B sg13g2_buf_2
+Xfanout349 VGND VPWR _1615_/A1 _1243_/Y sg13g2_buf_2
+XFILLER_22_185 VPWR VGND sg13g2_decap_8
+XFILLER_26_82 VPWR VGND sg13g2_decap_4
+X_1411_ _1411_/X VGND VPWR _1755_/B _1890_/A sg13g2_and2_1
+X_1342_ _1520_/A VPWR _1342_/Y VGND _1567_/B sg13g2_nor2_1
+X_1273_ _1274_/B VPWR _1675_/B hold75/A VGND sg13g2_xor2_1
+X_1609_ VPWR VGND _1588_/B _1588_/A _1586_/Y _1613_/A sg13g2_a21oi_1
+XFILLER_6_115 VPWR VGND sg13g2_decap_8
+XFILLER_10_188 VPWR VGND sg13g2_decap_4
+XFILLER_33_236 VPWR VGND sg13g2_decap_4
+XFILLER_33_247 VPWR VGND sg13g2_decap_4
+X_1960_ VPWR VGND _1976_/B _1996_/C _1959_/Y _2055_/D sg13g2_a21oi_1
+X_1891_ _2017_/S VPWR _2040_/D VGND _1891_/B sg13g2_nor2_1
+X_1325_ VGND VPWR _1325_/Y _1324_/Y _1323_/Y _1319_/X sg13g2_o21ai_1
+X_1256_ VGND VPWR _1256_/Y _1255_/Y _1239_/Y _1915_/A sg13g2_o21ai_1
+X_1187_ _1811_/A hold72/A VPWR _1187_/Y VGND sg13g2_nor2b_1
+XFILLER_15_225 VPWR VGND sg13g2_decap_8
+XFILLER_23_94 VPWR VGND sg13g2_decap_8
+X_1110_ VPWR VGND _1938_/B input5/X _1109_/Y _1123_/A sg13g2_a21oi_1
+XFILLER_2_151 VPWR VGND sg13g2_decap_8
+XFILLER_0_32 VPWR VGND sg13g2_decap_4
+X_1874_ _2017_/S _2035_/D hold5/X _1875_/B VPWR VGND sg13g2_nor3_1
+X_1943_ VGND VPWR _1945_/C _1943_/C _1948_/A _1950_/A _1943_/D sg13g2_nor4_1
+X_1308_ VGND _1545_/B _1308_/Y _1309_/B VPWR sg13g2_nand2b_1
+X_1239_ _1239_/Y _1239_/B VPWR _1239_/A VGND sg13g2_xnor2_1
+X_1590_ _1592_/A VPWR _1952_/A _1895_/A VGND sg13g2_xor2_1
+X_2073_ _2073__38/L_HI _2073_/D _2073_/Q_N _2073_/CLK VGND VPWR hold54/A sg13g2_dfrbp_1
+X_2142_ VGND VPWR db[7] b7 sg13g2_buf_2
+X_1926_ VGND VPWR _1934_/A1 _1926_/Y _1925_/X _1938_/C _1970_/A input3/X sg13g2_a221oi_1
+X_1857_ _1862_/C VPWR _1861_/C VGND _1857_/B sg13g2_nor2_1
+X_1788_ VGND VPWR _1788_/Y _1632_/A _1787_/Y _1788_/A1 sg13g2_o21ai_1
+Xhold60 hold60/A VPWR VGND hold60/X sg13g2_dlygate4sd3_1
+Xhold71 hold71/A VPWR VGND hold71/X sg13g2_dlygate4sd3_1
+X_2051__72 _2051__72/L_HI VPWR VGND sg13g2_tiehi
+Xclkbuf_4_14_0_clk VGND VPWR _2063_/CLK clkbuf_0_clk/X sg13g2_buf_2
+X_1711_ _1712_/B _1729_/B VPWR _1895_/A VGND sg13g2_xnor2_1
+X_1642_ _1642_/A VPWR _1642_/Y VGND _1642_/B sg13g2_nor2_1
+XFILLER_6_97 VPWR VGND sg13g2_decap_8
+X_1573_ hold43/A VPWR _1573_/Y VGND _1596_/C sg13g2_nor2_1
+X_2056_ _2056__66/L_HI _2056_/D _2056_/Q_N clkload5/A VGND VPWR hold60/A sg13g2_dfrbp_1
+XFILLER_13_0 VPWR VGND sg13g2_decap_4
+X_1909_ _1912_/A VPWR input9/X hold42/A VGND sg13g2_xor2_1
+XFILLER_0_282 VPWR VGND sg13g2_decap_8
+X_1625_ VGND VPWR _1625_/Y _1409_/Y _1624_/Y _1818_/A1 sg13g2_o21ai_1
+X_1556_ VGND _1727_/A1 _1557_/B _1556_/B VPWR sg13g2_nand2b_1
+Xfanout328 _1698_/B VGND _1171_/Y VPWR sg13g2_buf_4
+Xfanout339 VGND VPWR _1773_/A1 fanout341/A sg13g2_buf_2
+X_1487_ _1487_/A VPWR _1487_/Y VGND _1487_/B sg13g2_nor2_1
+X_2039_ _2039__35/L_HI _2039_/D _1695_/A _2070_/CLK VGND VPWR hold65/A sg13g2_dfrbp_1
+XFILLER_9_102 VPWR VGND sg13g2_decap_8
+XFILLER_9_157 VPWR VGND sg13g2_decap_8
+X_1410_ VGND VPWR _1418_/A _1386_/Y _1388_/B _1388_/A sg13g2_o21ai_1
+XFILLER_3_98 VPWR VGND sg13g2_decap_4
+XFILLER_3_76 VPWR VGND sg13g2_decap_8
+X_1341_ _1341_/Y VPWR _1520_/A VGND _1567_/B sg13g2_nand2_1
+X_1272_ _1272_/X VGND VPWR _1675_/B hold75/A sg13g2_and2_1
+XFILLER_8_190 VPWR VGND sg13g2_decap_4
+X_1608_ _1614_/A _1608_/B VPWR _1608_/A VGND sg13g2_xnor2_1
+X_1539_ _1541_/A VPWR _1692_/B _1539_/A VGND sg13g2_xor2_1
+XFILLER_27_234 VPWR VGND sg13g2_decap_8
+X_1890_ _1891_/B _1895_/C VPWR _1890_/A VGND sg13g2_xnor2_1
+X_1324_ VPWR VGND _1323_/Y _1319_/X _1915_/B _1324_/Y sg13g2_a21oi_1
+X_1186_ _1775_/B VPWR _1811_/A VGND _1775_/C sg13g2_nor2_2
+X_1255_ _1255_/Y _1483_/A VPWR _1254_/Y VGND _1245_/Y _1690_/A sg13g2_a22oi_1
+X_2067__67 _2067__67/L_HI VPWR VGND sg13g2_tiehi
+X_1942_ VPWR _1943_/D _1942_/B _1942_/C VGND _1950_/B _1949_/B sg13g2_nand4_1
+X_1873_ _1876_/B _2034_/Q VPWR VGND _1873_/C _1873_/A sg13g2_and3_1
+X_1169_ _1171_/A VPWR hold28/A hold47/A VGND sg13g2_xor2_1
+X_1307_ _1309_/B VPWR _1692_/B _1517_/A VGND sg13g2_xor2_1
+X_1238_ _1239_/B _1238_/B VPWR _1238_/A VGND sg13g2_xnor2_1
+XFILLER_34_94 VPWR VGND sg13g2_decap_4
+X_2141_ VGND VPWR db[6] b6 sg13g2_buf_2
+X_2072_ _2072__42/L_HI _2072_/D _2072_/Q_N _2073_/CLK VGND VPWR hold48/A sg13g2_dfrbp_1
+X_1925_ _1925_/X VGND VPWR _1938_/B _2021_/Q sg13g2_and2_1
+X_1856_ VGND VPWR hold49/A _1863_/B _1857_/B _1862_/A _1856_/D sg13g2_nor4_1
+X_1787_ _1787_/Y _1787_/B VPWR _1787_/A VGND sg13g2_xnor2_1
+Xhold50 hold50/A VPWR VGND hold50/X sg13g2_dlygate4sd3_1
+Xhold72 hold72/A VPWR VGND hold72/X sg13g2_dlygate4sd3_1
+Xhold61 hold61/A VPWR VGND hold61/X sg13g2_dlygate4sd3_1
+X_1710_ VPWR VGND _1699_/B _1699_/A _1697_/X _1712_/A sg13g2_a21oi_1
+X_1641_ VGND VPWR _1641_/Y _1632_/X _1640_/Y _1639_/X sg13g2_o21ai_1
+X_1572_ VGND VPWR _1572_/Y _1571_/Y _1562_/Y _1390_/X sg13g2_o21ai_1
+X_2055_ _2055__68/L_HI _2055_/D _2055_/Q_N clkload5/A VGND VPWR hold67/A sg13g2_dfrbp_1
+X_2019__26 _2019__26/L_HI VPWR VGND sg13g2_tiehi
+X_1908_ hold37/X _1907_/Y VPWR hold38/A VGND sg13g2_nor2b_1
+X_1839_ _1854_/A VPWR _2028_/D VGND _1839_/B sg13g2_nor2_1
+X_1624_ _1624_/A VPWR _1624_/Y VGND _1624_/B sg13g2_nor2_1
+Xfanout329 VGND VPWR _1766_/A1 _1214_/Y sg13g2_buf_2
+X_1555_ VGND VPWR _1556_/B _1299_/Y _1554_/Y _1553_/Y sg13g2_o21ai_1
+X_1486_ VGND VPWR _1531_/A _1487_/B _1705_/A _1485_/Y _1478_/Y _1258_/Y sg13g2_a221oi_1
+X_2038_ _2038__37/L_HI _2038_/D _1885_/A _2038_/CLK VGND VPWR hold63/A sg13g2_dfrbp_1
+Xclkbuf_4_13_0_clk VGND VPWR clkload5/A clkbuf_0_clk/X sg13g2_buf_2
+X_1340_ VGND VPWR _1349_/A _1311_/Y _1312_/Y _1314_/A sg13g2_o21ai_1
+X_1271_ VGND VPWR _1278_/A _1237_/Y _1239_/B _1239_/A sg13g2_o21ai_1
+X_1607_ VPWR VGND _1592_/B _1592_/A _1589_/X _1608_/B sg13g2_a21oi_1
+X_1538_ _1538_/X VGND VPWR _1692_/B _1539_/A sg13g2_and2_1
+X_1469_ VGND VPWR _1468_/Y _1469_/Y _1380_/A _1468_/B _1243_/B _1814_/A1 sg13g2_a221oi_1
+X_1323_ _1323_/Y _1323_/B VPWR _1323_/A VGND sg13g2_xnor2_1
+X_1254_ _1254_/Y _1254_/A VGND VPWR sg13g2_inv_1
+X_1185_ _1775_/C _1185_/B VPWR VGND _1185_/C _1185_/A sg13g2_and3_2
+XFILLER_3_0 VPWR VGND sg13g2_decap_4
+XFILLER_2_142 VPWR VGND sg13g2_decap_4
+X_2073__38 _2073__38/L_HI VPWR VGND sg13g2_tiehi
+X_1941_ _1945_/A VPWR _1949_/B VGND _1945_/B sg13g2_nor2_1
+X_1872_ _1875_/B _2034_/Q _1873_/A VPWR VGND _1976_/B _1872_/D sg13g2_and4_1
+X_1306_ VPWR VGND _1278_/B _1278_/A _1276_/Y _1314_/A sg13g2_a21oi_1
+X_1099_ VPWR _1100_/C _1979_/A _1988_/A VGND hold32/A sg13g2_nand3_1
+X_1237_ _1237_/Y VPWR _1238_/A VGND _1238_/B sg13g2_nand2_1
+X_1168_ VGND VPWR _1196_/A _1087_/A _1167_/Y _1164_/Y sg13g2_o21ai_1
+XFILLER_20_252 VPWR VGND sg13g2_decap_8
+XFILLER_7_212 VPWR VGND sg13g2_decap_4
+X_2071_ _2071__59/L_HI _2071_/D hold1/A clkload1/A VGND VPWR hold23/A sg13g2_dfrbp_1
+X_1855_ VPWR _1856_/D _2000_/A _2001_/C VGND hold47/A sg13g2_nand3_1
+X_1924_ hold13/A _1934_/A1 VPWR _1930_/A VGND _1074_/Y _1923_/Y sg13g2_a22oi_1
+X_1786_ _1787_/B _1786_/B VPWR _1786_/A VGND sg13g2_xnor2_1
+XFILLER_4_226 VPWR VGND sg13g2_decap_8
+XFILLER_4_204 VPWR VGND sg13g2_decap_4
+XFILLER_4_259 VPWR VGND sg13g2_decap_4
+Xhold40 hold40/A VPWR VGND hold40/X sg13g2_dlygate4sd3_1
+XFILLER_28_182 VPWR VGND sg13g2_decap_4
+Xhold73 hold73/A VPWR VGND hold73/X sg13g2_dlygate4sd3_1
+Xhold51 hold51/A VPWR VGND hold51/X sg13g2_dlygate4sd3_1
+Xhold62 hold62/A VPWR VGND hold62/X sg13g2_dlygate4sd3_1
+XFILLER_6_33 VPWR VGND sg13g2_decap_4
+X_1571_ VGND VPWR _1571_/Y _1570_/Y _1569_/Y _1565_/X sg13g2_o21ai_1
+X_1640_ VGND VPWR _1640_/Y _1809_/A1 _1639_/B _1639_/A sg13g2_o21ai_1
+X_2054_ _2054__69/L_HI _2054_/D hsync _2063_/CLK VGND VPWR hold3/A sg13g2_dfrbp_1
+X_1907_ VPWR VGND _1906_/B hold36/X _1985_/A _1907_/Y sg13g2_a21oi_1
+X_1838_ _1839_/B _1846_/B VPWR hold43/X VGND sg13g2_xnor2_1
+X_1769_ VGND VPWR _1770_/A _1444_/B _1765_/Y _1219_/Y sg13g2_o21ai_1
+XFILLER_17_119 VPWR VGND sg13g2_decap_4
+XFILLER_15_31 VPWR VGND sg13g2_decap_4
+Xfanout319 VGND VPWR _1934_/A1 _1914_/Y sg13g2_buf_2
+X_1485_ VGND VPWR _1485_/Y _1479_/Y _1484_/Y _1527_/A sg13g2_o21ai_1
+X_1554_ VGND VPWR _1554_/Y _1444_/B _1536_/Y _1705_/A sg13g2_o21ai_1
+X_1623_ _1623_/A VPWR _1624_/B VGND _1623_/B sg13g2_nor2_1
+.ends
+

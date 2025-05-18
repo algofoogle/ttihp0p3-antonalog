@@ -1,0 +1,163 @@
+
+Circuit 1 cell sg13_lv_nmos and Circuit 2 cell sg13_lv_nmos are black boxes.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_nmos                    |Circuit 2: sg13_lv_nmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_nmos and sg13_lv_nmos are equivalent.
+
+Circuit 1 cell sg13_lv_pmos and Circuit 2 cell sg13_lv_pmos are black boxes.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_pmos                    |Circuit 2: sg13_lv_pmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_pmos and sg13_lv_pmos are equivalent.
+
+Class sg13g2_decap_8 (0):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: sg13g2_decap_8                  |Circuit 2: sg13g2_decap_8                  
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (2->1)                        |sg13_lv_nmos (2->1)                        
+sg13_lv_pmos (2->1)                        |sg13_lv_pmos (2->1)                        
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13g2_decap_8                  |Circuit 2: sg13g2_decap_8                  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_decap_8 and sg13g2_decap_8 are equivalent.
+
+Class sg13g2_buf_8 (0):  Merged 18 parallel devices.
+Subcircuit summary:
+Circuit 1: sg13g2_buf_8                    |Circuit 2: sg13g2_buf_8                    
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (11->2)                       |sg13_lv_nmos (2)                           
+sg13_lv_pmos (11->2)                       |sg13_lv_pmos (2)                           
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13g2_buf_8                    |Circuit 2: sg13g2_buf_8                    
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+X                                          |X                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_buf_8 and sg13g2_buf_8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sg13g2_decap_4                  |Circuit 2: sg13g2_decap_4                  
+-------------------------------------------|-------------------------------------------
+sg13_lv_pmos (1)                           |sg13_lv_pmos (1)                           
+sg13_lv_nmos (1)                           |sg13_lv_nmos (1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13g2_decap_4                  |Circuit 2: sg13g2_decap_4                  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_decap_4 and sg13g2_decap_4 are equivalent.
+Flattening unmatched subcell sg13g2_fill_1 in circuit rgb_buffers (1)(22 instances)
+Flattening unmatched subcell sg13g2_fill_2 in circuit rgb_buffers (1)(2 instances)
+
+Subcircuit summary:
+Circuit 1: rgb_buffers                     |Circuit 2: rgb_buffers                     
+-------------------------------------------|-------------------------------------------
+sg13g2_decap_8 (52)                        |sg13g2_decap_8 (52)                        
+sg13g2_buf_8 (24)                          |sg13g2_buf_8 (24)                          
+sg13g2_decap_4 (3)                         |sg13g2_decap_4 (3)                         
+Number of devices: 79                      |Number of devices: 79                      
+Number of nets: 50                         |Number of nets: 50                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 2 symmetries.
+
+Subcircuit pins:
+Circuit 1: rgb_buffers                     |Circuit 2: rgb_buffers                     
+-------------------------------------------|-------------------------------------------
+dg[5]                                      |dg[5]                                      
+db[5]                                      |db[5]                                      
+dr[4]                                      |dr[4]                                      
+dg[7]                                      |dg[7]                                      
+db[7]                                      |db[7]                                      
+dr[6]                                      |dr[6]                                      
+dr[1]                                      |dr[1]                                      
+dg[1]                                      |dg[1]                                      
+dr[3]                                      |dr[3]                                      
+db[0]                                      |db[0]                                      
+dg[2]                                      |dg[2]                                      
+db[2]                                      |db[2]                                      
+dg[4]                                      |dg[4]                                      
+db[4]                                      |db[4]                                      
+dg[6]                                      |dg[6]                                      
+db[6]                                      |db[6]                                      
+dr[5]                                      |dr[5]                                      
+dr[0]                                      |dr[0]                                      
+dg[0]                                      |dg[0]                                      
+dr[7]                                      |dr[7]                                      
+dr[2]                                      |dr[2]                                      
+db[1]                                      |db[1]                                      
+dg[3]                                      |dg[3]                                      
+db[3]                                      |db[3]                                      
+g[5]                                       |g[5]                                       
+b[5]                                       |b[5]                                       
+r[4]                                       |r[4]                                       
+g[7]                                       |g[7]                                       
+b[7]                                       |b[7]                                       
+r[6]                                       |r[6]                                       
+r[1]                                       |r[1]                                       
+g[1]                                       |g[1]                                       
+r[3]                                       |r[3]                                       
+b[0]                                       |b[0]                                       
+g[2]                                       |g[2]                                       
+b[2]                                       |b[2]                                       
+g[4]                                       |g[4]                                       
+b[4]                                       |b[4]                                       
+g[6]                                       |g[6]                                       
+b[6]                                       |b[6]                                       
+r[5]                                       |r[5]                                       
+r[0]                                       |r[0]                                       
+g[0]                                       |g[0]                                       
+r[7]                                       |r[7]                                       
+r[2]                                       |r[2]                                       
+b[1]                                       |b[1]                                       
+g[3]                                       |g[3]                                       
+b[3]                                       |b[3]                                       
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes rgb_buffers and rgb_buffers are equivalent.
+
+Final result: Circuits match uniquely.
+.

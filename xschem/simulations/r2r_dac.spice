@@ -1,29 +1,36 @@
+.subckt rhigh 1 2
+*.param w=0.5e-6 l=0.96e-6 b=0 trise=0 m=1 sw_et=0
+R 1 2 8660
+*X0 1 2 rhigh l=6u w=1u
+.ends
+
 ** sch_path: /home/anton/projects/antonalog--REPO/xschem/r2r_dac.sch
 .subckt r2r_dac IN[7] IN[6] IN[5] IN[4] IN[3] IN[2] IN[1] IN[0] OUT GND
 *.PININFO IN[7:0]:I GND:B OUT:O
-XR0a wi0 IN[0] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR0b wJ0 wi0 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR1c wJ0 wJ1 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR0c wg0 wJ0 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR0d GND wg0 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR1a wi1 IN[1] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR1b wJ1 wi1 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR2c wJ1 wJ2 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR2a wi2 IN[2] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR2b wJ2 wi2 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR3c wJ2 wJ3 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR3a wi3 IN[3] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR3b wJ3 wi3 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR4c wJ3 wJ4 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR4a wi4 IN[4] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR4b wJ4 wi4 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR5c wJ4 wJ5 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR5a wi5 IN[5] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR5b wJ5 wi5 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR6c wJ5 wJ6 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR6a wi6 IN[6] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR6b wJ6 wi6 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR7c wJ6 OUT rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR7a wi7 IN[7] rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
-XR7b OUT wi7 rhigh w=1.0e-6 l=6.0e-6 m=1 b=0
+*  w=1.0e-6 l=6.0e-6 m=1 b=0
+XR0a wi0 IN[0] rhigh
+XR0b wJ0 wi0 rhigh
+XR1c wJ0 wJ1 rhigh
+XR0c wg0 wJ0 rhigh
+XR0d GND wg0 rhigh
+XR1a wi1 IN[1] rhigh
+XR1b wJ1 wi1 rhigh
+XR2c wJ1 wJ2 rhigh
+XR2a wi2 IN[2] rhigh
+XR2b wJ2 wi2 rhigh
+XR3c wJ2 wJ3 rhigh
+XR3a wi3 IN[3] rhigh
+XR3b wJ3 wi3 rhigh
+XR4c wJ3 wJ4 rhigh
+XR4a wi4 IN[4] rhigh
+XR4b wJ4 wi4 rhigh
+XR5c wJ4 wJ5 rhigh
+XR5a wi5 IN[5] rhigh
+XR5b wJ5 wi5 rhigh
+XR6c wJ5 wJ6 rhigh
+XR6a wi6 IN[6] rhigh
+XR6b wJ6 wi6 rhigh
+XR7c wJ6 OUT rhigh
+XR7a wi7 IN[7] rhigh
+XR7b OUT wi7 rhigh
 .ends

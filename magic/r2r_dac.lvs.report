@@ -1,430 +1,53 @@
 
-Circuit 2 cell rhigh is a black box; will not flatten Circuit 1
+Subcircuit summary:
+Circuit 1: rhigh                           |Circuit 2: rhigh                           
+-------------------------------------------|-------------------------------------------
+r (1)                                      |r (1)                                      
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: rhigh                           |Circuit 2: rhigh                           
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |1                                          
-(no matching pin)                          |2                                          
+1                                          |1                                          
+2                                          |2                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes rhigh and rhigh are equivalent.
 
+Class r2r_dac (0):  Merged 9 series devices.
+Class r2r_dac (1):  Merged 9 series devices.
 Subcircuit summary:
 Circuit 1: r2r_dac                         |Circuit 2: r2r_dac                         
 -------------------------------------------|-------------------------------------------
-rhigh (25)                                 |rhigh (25)                                 
-Number of devices: 25                      |Number of devices: 25                      
-Number of nets: 76                         |Number of nets: 76                         
+rhigh (16)                                 |rhigh (16)                                 
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 17                         |Number of nets: 17                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: r2r_dac                         |Circuit 2: r2r_dac                         
-
----------------------------------------------------------------------------------------
-Net: wJ6                                   |Net: wJ6                                   
-  rhigh/a_0_n86# = 3                       |  rhigh/(1|2) = 3                          
-                                           |                                           
-Net: wJ0                                   |Net: wJ0                                   
-  rhigh/a_0_n86# = 3                       |  rhigh/(1|2) = 3                          
-                                           |                                           
-Net: wJ5                                   |Net: wJ5                                   
-  rhigh/a_0_1200# = 3                      |  rhigh/(1|2) = 3                          
-                                           |                                           
-Net: wJ4                                   |Net: wJ4                                   
-  rhigh/a_0_n86# = 3                       |  rhigh/(1|2) = 3                          
-                                           |                                           
-Net: wJ3                                   |Net: wJ3                                   
-  rhigh/a_0_1200# = 3                      |  rhigh/(1|2) = 3                          
-                                           |                                           
-Net: wJ2                                   |Net: wJ2                                   
-  rhigh/a_0_n86# = 3                       |  rhigh/(1|2) = 3                          
-                                           |                                           
-Net: wJ1                                   |Net: wJ1                                   
-  rhigh/a_0_1200# = 3                      |  rhigh/(1|2) = 3                          
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: dummy_76                              |Net: dummy_76                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_75                              |Net: dummy_75                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_74                              |Net: dummy_74                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_68                              |Net: dummy_68                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_62                              |Net: dummy_62                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_56                              |Net: dummy_56                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_50                              |Net: dummy_50                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_44                              |Net: dummy_44                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_38                              |Net: dummy_38                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_36                              |Net: dummy_36                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_28                              |Net: dummy_28                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_73                              |Net: dummy_73                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_67                              |Net: dummy_67                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_61                              |Net: dummy_61                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_55                              |Net: dummy_55                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_49                              |Net: dummy_49                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_43                              |Net: dummy_43                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_37                              |Net: dummy_37                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_35                              |Net: dummy_35                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_27                              |Net: dummy_27                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_72                              |Net: dummy_72                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_70                              |Net: dummy_70                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_64                              |Net: dummy_64                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_58                              |Net: dummy_58                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_52                              |Net: dummy_52                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_46                              |Net: dummy_46                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_40                              |Net: dummy_40                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_34                              |Net: dummy_34                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_30                              |Net: dummy_30                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_71                              |Net: dummy_71                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_69                              |Net: dummy_69                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_63                              |Net: dummy_63                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_57                              |Net: dummy_57                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_51                              |Net: dummy_51                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_45                              |Net: dummy_45                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_39                              |Net: dummy_39                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_33                              |Net: dummy_33                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_29                              |Net: dummy_29                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_66                              |Net: dummy_66                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_60                              |Net: dummy_60                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_54                              |Net: dummy_54                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_48                              |Net: dummy_48                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_42                              |Net: dummy_42                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_32                              |Net: dummy_32                              
-  rhigh/proxy2 = 1                         |  rhigh/proxya_0_n86# = 1                  
-                                           |                                           
-Net: dummy_65                              |Net: dummy_65                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_59                              |Net: dummy_59                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_53                              |Net: dummy_53                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_47                              |Net: dummy_47                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_41                              |Net: dummy_41                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: dummy_31                              |Net: dummy_31                              
-  rhigh/proxy1 = 1                         |  rhigh/proxya_0_1200# = 1                 
-                                           |                                           
-Net: IN[7]                                 |Net: IN[7]                                 
-  rhigh/a_0_1200# = 1                      |  rhigh/(1|2) = 1                          
-                                           |                                           
-Net: IN[6]                                 |Net: IN[6]                                 
-  rhigh/a_0_n86# = 1                       |  rhigh/(1|2) = 1                          
-                                           |                                           
-Net: IN[5]                                 |Net: IN[5]                                 
-  rhigh/a_0_1200# = 1                      |  rhigh/(1|2) = 1                          
-                                           |                                           
-Net: IN[4]                                 |Net: IN[4]                                 
-  rhigh/a_0_n86# = 1                       |  rhigh/(1|2) = 1                          
-                                           |                                           
-Net: IN[3]                                 |Net: IN[3]                                 
-  rhigh/a_0_1200# = 1                      |  rhigh/(1|2) = 1                          
-                                           |                                           
-Net: IN[2]                                 |Net: IN[2]                                 
-  rhigh/a_0_n86# = 1                       |  rhigh/(1|2) = 1                          
-                                           |                                           
-Net: IN[1]                                 |Net: IN[1]                                 
-  rhigh/a_0_1200# = 1                      |  rhigh/(1|2) = 1                          
-                                           |                                           
-Net: GND                                   |Net: GND                                   
-  rhigh/a_0_n86# = 1                       |  rhigh/(1|2) = 1                          
-                                           |                                           
-Net: IN[0]                                 |Net: IN[0]                                 
-  rhigh/a_0_n86# = 1                       |  rhigh/(1|2) = 1                          
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: wi7                                   |Net: wi7                                   
-  rhigh/a_0_n86# = 2                       |  rhigh/(1|2) = 2                          
-                                           |                                           
-Net: OUT                                   |Net: OUT                                   
-  rhigh/a_0_1200# = 2                      |  rhigh/(1|2) = 2                          
-                                           |                                           
-Net: wi6                                   |Net: wi6                                   
-  rhigh/a_0_1200# = 2                      |  rhigh/(1|2) = 2                          
-                                           |                                           
-Net: wi5                                   |Net: wi5                                   
-  rhigh/a_0_n86# = 2                       |  rhigh/(1|2) = 2                          
-                                           |                                           
-Net: wi4                                   |Net: wi4                                   
-  rhigh/a_0_1200# = 2                      |  rhigh/(1|2) = 2                          
-                                           |                                           
-Net: wi3                                   |Net: wi3                                   
-  rhigh/a_0_n86# = 2                       |  rhigh/(1|2) = 2                          
-                                           |                                           
-Net: wi2                                   |Net: wi2                                   
-  rhigh/a_0_1200# = 2                      |  rhigh/(1|2) = 2                          
-                                           |                                           
-Net: wi1                                   |Net: wi1                                   
-  rhigh/a_0_n86# = 2                       |  rhigh/(1|2) = 2                          
-                                           |                                           
-Net: wg0                                   |Net: wg0                                   
-  rhigh/a_0_1200# = 2                      |  rhigh/(1|2) = 2                          
-                                           |                                           
-Net: wi0                                   |Net: wi0                                   
-  rhigh/a_0_1200# = 2                      |  rhigh/(1|2) = 2                          
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: r2r_dac                         |Circuit 2: r2r_dac                         
-
----------------------------------------------------------------------------------------
-Instance: rhigh:res[24]                    |Instance: rhigh:R7b                        
-  a_0_1200# = 1                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 2                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (2,2)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[18]                    |Instance: rhigh:R7a                        
-  a_0_1200# = 1                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 2                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (2,1)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[12]                    |Instance: rhigh:R6a                        
-  a_0_1200# = 1                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 2                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (2,1)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[6]                     |Instance: rhigh:R5a                        
-  a_0_1200# = 1                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 2                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (2,1)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[23]                    |Instance: rhigh:R4a                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 2                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (2,1)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[22]                    |Instance: rhigh:R3a                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (2,1)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[20]                    |Instance: rhigh:R2a                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (2,1)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[14]                    |Instance: rhigh:R1a                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (2,1)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[8]                     |Instance: rhigh:R0d                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (2,1)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[2]                     |Instance: rhigh:R0a                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (2,1)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[1]                     |Instance: rhigh:R7c                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,2)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[21]                    |Instance: rhigh:R6b                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 1                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,2)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[15]                    |Instance: rhigh:R5b                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 1                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,2)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[9]                     |Instance: rhigh:R4b                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 1                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,2)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[3]                     |Instance: rhigh:R3b                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 1                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,2)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[0]                     |Instance: rhigh:R2b                        
-  a_0_1200# = 2                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 1                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,2)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[19]                    |Instance: rhigh:R1b                        
-  a_0_1200# = 3                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,2)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[16]                    |Instance: rhigh:R0c                        
-  a_0_1200# = 3                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,2)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[13]                    |Instance: rhigh:R0b                        
-  a_0_1200# = 3                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,2)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[10]                    |Instance: rhigh:R6c                        
-  a_0_1200# = 3                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,3)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[7]                     |Instance: rhigh:R5c                        
-  a_0_1200# = 3                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,3)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[4]                     |Instance: rhigh:R4c                        
-  a_0_1200# = 3                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 3                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,3)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[17]                    |Instance: rhigh:R3c                        
-  a_0_1200# = 3                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 2                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,3)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[11]                    |Instance: rhigh:R2c                        
-  a_0_1200# = 3                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 2                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,3)                            
-  proxy2 = 1                               |                                           
-                                           |                                           
-Instance: rhigh:res[5]                     |Instance: rhigh:R1c                        
-  a_0_1200# = 3                            |  proxya_0_1200# = 1                       
-  a_0_n86# = 2                             |  proxya_0_n86# = 1                        
-  proxy1 = 1                               |  (1,2) = (3,3)                            
-  proxy2 = 1                               |                                           
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: r2r_dac                         |Circuit 2: r2r_dac                         
 -------------------------------------------|-------------------------------------------
-IN[7]                                      |IN[7]                                      
-IN[5]                                      |IN[6] **Mismatch**                         
-IN[3]                                      |IN[5] **Mismatch**                         
-IN[1]                                      |IN[4] **Mismatch**                         
-IN[6]                                      |IN[3] **Mismatch**                         
-IN[4]                                      |IN[2] **Mismatch**                         
-IN[2]                                      |IN[1] **Mismatch**                         
-IN[0]                                      |GND **Mismatch**                           
-GND                                        |IN[0] **Mismatch**                         
 OUT                                        |OUT                                        
+IN[6]                                      |IN[6]                                      
+IN[1]                                      |IN[1]                                      
+IN[4]                                      |IN[4]                                      
+IN[3]                                      |IN[3]                                      
+IN[2]                                      |IN[2]                                      
+IN[5]                                      |IN[5]                                      
+IN[0]                                      |IN[0]                                      
+GND                                        |GND                                        
+IN[7]                                      |IN[7]                                      
 ---------------------------------------------------------------------------------------
-Cell pin lists for r2r_dac and r2r_dac altered to match.
+Cell pin lists are equivalent.
 Device classes r2r_dac and r2r_dac are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.

@@ -1,7 +1,14 @@
 * NGSPICE file created from r2r_dac.ext - technology: ihp-sg13g2
 
-.subckt rhigh a_0_1200# a_0_n86#
-X0 a_0_1200# a_0_n86# rhigh l=6u w=1u
+*.subckt rhigh a_0_1200# a_0_n86#
+*X0 a_0_1200# a_0_n86# rhigh l=6u w=1u
+*.ends
+
+.subckt rhigh 1 2
+*.param w=1.0e-6 l=6.0e-6 b=0 trise=0 m=1 sw_et=0
+*.param w=0.5e-6 l=0.96e-6 b=0 trise=0 m=1 sw_et=0
+R 1 2 8660
+*X0 1 2 rhigh l=6u w=1u
 .ends
 
 .subckt r2r_dac IN[0] IN[1] IN[2] IN[3] IN[4] IN[5] IN[6] IN[7] OUT GND

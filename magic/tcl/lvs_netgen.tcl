@@ -1,13 +1,9 @@
 set layout [readnet spice $project.lvs.spice]
 set source [readnet spice /dev/null]
 readnet spice $::env(PDK_ROOT)/$::env(PDK)/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice $source
-readnet spice $::env(PDK_ROOT)/$::env(PDK)/libs.tech/ngspice/models/resistors_mod.lib
+# readnet spice $::env(PDK_ROOT)/$::env(PDK)/libs.tech/ngspice/models/resistors_mod.lib
 # readnet spice $::env(PDK_ROOT)/$::env(PDK)/libs.tech/ngspice/models/resistors_stat.lib
 # readnet spice $::env(PDK_ROOT)/$::env(PDK)/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice $source
-
-#NOTE: For simplicity, ALL of the files below can be loaded for every
-# LVS run, because even if you're LVSing just one block, the last
-# 'lvs' command selects which one actually matters.
 
 if {$project eq "tt_um_algofoogle_antonalog"} {
 
@@ -24,7 +20,7 @@ if {$project eq "tt_um_algofoogle_antonalog"} {
     readnet verilog ../src/LVS-project.v $source
 
     lvs "$layout $project" "$source $project" \
-        $::env(PDK_ROOT)/$::env(PDK)/libs.tech/netgen/ihp-sg13g2_setup.tcl \
+        ../magic/tcl/lvs_setup_script.tcl \
         $report_file \
         -blackbox \
         -noflatten={sg13g2_tiehi}
@@ -39,10 +35,11 @@ if {$project eq "tt_um_algofoogle_antonalog"} {
     } else {
         # Load SPICE netlist:
         readnet spice ../xschem/simulations/$project.spice $source
+        # readnet spice ../magic/rhigh.spice $source
     }
     
     lvs "$layout $project" "$source $project" \
-        $::env(PDK_ROOT)/$::env(PDK)/libs.tech/netgen/ihp-sg13g2_setup.tcl \
+        ../magic/tcl/lvs_setup_script.tcl \
         $report_file \
         -blackbox
 

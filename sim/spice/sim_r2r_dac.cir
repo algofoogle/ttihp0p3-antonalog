@@ -1,0 +1,123 @@
+PEX simulation of r2r_dac layout
+
+*NOTE: libs are searched in `sourcepath` which is set by .spiceinit.
+* Load in resistor models (for rhigh):
+.lib cornerRES.lib res_typ
+
+.include "../../magic/r2r_dac.sim.spice"
+
+* Instantiate the PEX model of the r2r_dac layout,
+* as our Device Under Test. Ports below are given
+* in the order found in the r2r_dac.sim.spice model above.
+XDUT
++ IN[0]
++ IN[1]
++ IN[2]
++ IN[3]
++ IN[4]
++ IN[5]
++ IN[6]
++ IN[7]
++ OUT
++ GND
++ r2r_dac_parax
+
+* 2.2k sink to GND on output means we get lower effective impedance so faster slew:
+Rout OUT GND 2.2k
+* Output pin has some capacitive load. Maybe 5pF is normal, but assume the worst:
+Cout OUT GND 10p
+
+* IHP SG13G2 uses 1.2V core.
+.param vcc=1.2
+vcc vcc 0 {vcc}
+
+*NOTE: Can using .csparam (https://electronics.stackexchange.com/a/635638)
+* here be used to simplify this?
+.param rise=     1n
+.param fall=     1n
+* Duty cycle (high time) of each digital input:
+.param h0=   40n-1n
+.param h1=   80n-1n
+.param h2=  160n-1n
+.param h3=  320n-1n
+.param h4=  640n-1n
+.param h5= 1280n-1n
+.param h6= 2560n-1n
+.param h7= 5120n-1n
+* Period of each digital input:
+.param p0=   80n
+.param p1=  160n
+.param p2=  320n
+.param p3=  640n
+.param p4= 1280n
+.param p5= 2560n
+.param p6= 5120n
+.param p7=10240n
+
+* Generate digital signals that form an 8-bit binary counter
+* input for the DAC:
+Vin0 IN[0] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h0} {p0} ;NOTE: h0/p0 used on MSB!
+Vin1 IN[1] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h1} {p1}
+Vin2 IN[2] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h2} {p2}
+Vin3 IN[3] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h3} {p3}
+Vin4 IN[4] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h4} {p4}
+Vin5 IN[5] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h5} {p5}
+Vin6 IN[6] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h6} {p6}
+Vin7 IN[7] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h7} {p7}
+
+* * This version swaps the IO[0] and IN[7] inputs to deliberately cause
+* * huge swings, for checking slew rate:
+* Vin0 IN[0] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h7} {p7} ;NOTE: h0/p0 used on MSB!
+* Vin1 IN[1] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h1} {p1}
+* Vin2 IN[2] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h2} {p2}
+* Vin3 IN[3] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h3} {p3}
+* Vin4 IN[4] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h4} {p4}
+* Vin5 IN[5] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h5} {p5}
+* Vin6 IN[6] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h6} {p6}
+* Vin7 IN[7] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h0} {p0}
+
+.control
+    save
+    + vcc
+    + v(IN[0])
+    + v(IN[1])
+    + v(IN[2])
+    + v(IN[3])
+    + v(IN[4])
+    + v(IN[5])
+    + v(IN[6])
+    + v(IN[7])
+    + v(OUT)
+
+    tran 1n 20480n 0 8n UIC ; Should be enough for 2 ramps.
+
+    * WEIRD: 'save' command MUST NOT wrap/escape nets with "[*]" in the name,
+    * but 'write' command REQUIRES that they are wrapped in double-quotes.
+    write sim_out/r2r_dac_parax.raw
+    + vcc
+    + v("IN[0]")
+    + v("IN[1]")
+    + v("IN[2]")
+    + v("IN[3]")
+    + v("IN[4]")
+    + v("IN[5]")
+    + v("IN[6]")
+    + v("IN[7]")
+    + v(OUT)
+
+    set color0=black    ; Background.
+    set color1=white    ; Text/grid.
+    set color2=rgb:99/00/00 ; First data series.
+    set color3=rgb:00/99/00 ; Second data series, etc...
+    set color4=rgb:00/00/99
+    set color5=red
+    set color6=green
+    set color7=blue
+
+    let digital_in = (("IN[0]"+"IN[1]"*2+"IN[2]"*4+"IN[3]"*8+"IN[4]"*16+"IN[5]"*32+"IN[6]"*64+"IN[7]"*128)/256)
+    let analog_out = out
+
+    plot analog_out digital_in
+.endc
+
+.end

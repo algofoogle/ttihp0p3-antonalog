@@ -1,15 +1,19 @@
-PEX simulation of r2r_dac layout
+PEX simulation of r2r_dac layout being driven by rgb_buffers layout
 
 *NOTE: libs are searched in `sourcepath` which is set by .spiceinit.
 * Load in resistor models (for rhigh):
 .lib cornerRES.lib res_typ ; NOTE: Can use res_stat for statistical (Monte-Carlo-Like) modeling instead.
+.lib cornerMOSlv.lib mos_tt ; Or mos_tt_stat
 
 .include "../../magic/r2r_dac.sim.spice"
+.include "../../magic/rgb_buffers.sim.spice"
 
-* Instantiate the PEX model of the r2r_dac layout,
-* as our Device Under Test. Ports below are given
-* in the order found in the r2r_dac.sim.spice model above.
-XDUT
+* Instantiate the PEX model of the r2r_dac layout.
+* Ports below are given in the order found in the r2r_dac.sim.spice model above.
+*NOTE: This is called "direct" because it is driven directly by the 0-impedance
+* voltage sources for each counter bit, and it is included for comparison
+* with the "real" model we want, below.
+XDAC_direct
 + IN[0]
 + IN[1]
 + IN[2]
@@ -18,14 +22,57 @@ XDUT
 + IN[5]
 + IN[6]
 + IN[7]
-+ OUT
++ OUT_direct
 + GND
 + r2r_dac_parax
 
+* This is the same DAC PEX model as as above, but this one is driven by the
+* outputs from the rgb_buffers_parax model. It is expected to give different
+* performance since its inputs are higher impedance than the "direct" one above.
+XDAC_on_buffer
++ r[0]
++ r[1]
++ r[2]
++ r[3]
++ r[4]
++ r[5]
++ r[6]
++ r[7]
++ OUT_via_buffers
++ GND
++ r2r_dac_parax
+
+* Makes the input into rgb_buffers higher-impedance (10k; about 120uA)
+Rin0 IN[0] wi[0] 10k
+Rin1 IN[1] wi[1] 10k
+Rin2 IN[2] wi[2] 10k
+Rin3 IN[3] wi[3] 10k
+Rin4 IN[4] wi[4] 10k
+Rin5 IN[5] wi[5] 10k
+Rin6 IN[6] wi[6] 10k
+Rin7 IN[7] wi[7] 10k
+
+* Instantiate PEX model of rgb_buffers PnR block.
+*NOTE: It has 3 channels (R,G,B) but we only use R; the other inputs are wired to GND.
+XBUF
++ GND ; VGND
++ vcc ; VPWR
++  b[0]  b[1]  b[2]  b[3]  b[4]  b[5]  b[6]  b[7] ; UNUSED: Buffered blue 0..7 -- unused outputs.
++   GND   GND   GND   GND   GND   GND   GND   GND ; UNUSED: Digital blue 0..7 -- unused inputs.
++   GND   GND   GND   GND   GND   GND   GND   GND ; UNUSED: Digital green 0..7 -- unused inputs.
++ wi[0] wi[1] wi[2] wi[3] wi[4] wi[5] wi[6] wi[7] ; Digital red 0..7 -- MAIN INPUT.
++  g[0]  g[1]  g[2]  g[3]  g[4]  g[5]  g[6]  g[7] ; UNUSED: Buffered green 0..7 -- unused outputs.
++  r[0]  r[1]  r[2]  r[3]  r[4]  r[5]  r[6]  r[7] ; Buffered red 0..7 -- MAIN OUTPUT, goes into XDAC_on_buffer.
++ rgb_buffers_parax
+
+
+
 * 2.2k sink to GND on output means we get lower effective impedance so faster slew:
-Rout OUT GND 2.2k
+Routd OUT_direct        GND 2.2k
+Routb OUT_via_buffers   GND 2.2k
 * Output pin has some capacitive load. Maybe 5pF is normal, but assume the worst:
-Cout OUT GND 10p
+Coutd OUT_direct        GND 10p
+Coutb OUT_via_buffers   GND 10p
 
 * IHP SG13G2 uses 1.2V core.
 .param vcc=1.2
@@ -79,6 +126,7 @@ Vin7 IN[7] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h7} {p7}
 .control
     save
     + vcc
+    + i(vcc)
     + v(IN[0])
     + v(IN[1])
     + v(IN[2])
@@ -87,14 +135,24 @@ Vin7 IN[7] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h7} {p7}
     + v(IN[5])
     + v(IN[6])
     + v(IN[7])
-    + v(OUT)
+    + v(r[0])
+    + v(r[1])
+    + v(r[2])
+    + v(r[3])
+    + v(r[4])
+    + v(r[5])
+    + v(r[6])
+    + v(r[7])
+    + v(OUT_direct)
+    + v(OUT_via_buffers)
 
-    tran 1n 20480n 0 8n UIC ; Should be enough for 2 ramps.
+    tran 8n 20480n 0 8n UIC ; Should be enough for 2 ramps.
 
     * WEIRD: 'save' command MUST NOT wrap/escape nets with "[*]" in the name,
     * but 'write' command REQUIRES that they are wrapped in double-quotes.
-    write sim_out/r2r_dac_parax.raw
+    write sim_out/sim_buffer_r2r.raw
     + vcc
+    + i(vcc)
     + v("IN[0]")
     + v("IN[1]")
     + v("IN[2]")
@@ -103,21 +161,32 @@ Vin7 IN[7] GND     PULSE   0.0  {vcc}   120n {rise} {fall} {h7} {p7}
     + v("IN[5]")
     + v("IN[6]")
     + v("IN[7]")
-    + v(OUT)
+    + v("r[0]")
+    + v("r[1]")
+    + v("r[2]")
+    + v("r[3]")
+    + v("r[4]")
+    + v("r[5]")
+    + v("r[6]")
+    + v("r[7]")
+    + v(OUT_direct)
+    + v(OUT_via_buffers)
 
     set color0=black    ; Background.
     set color1=white    ; Text/grid.
-    set color2=rgb:ff/00/00 ; First data series.
-    set color3=rgb:00/00/cc ; Second data series, etc...
-    set color4=rgb:00/99/00
+    set color2=rgb:99/00/99 ; First data series.
+    set color3=rgb:00/99/00 ; Second data series, etc...
+    set color4=rgb:00/cc/cc
     set color5=red
-    set color6=green
-    set color7=blue
+    * set color6=green
+    * set color7=blue
 
     let digital_in = (("IN[0]"+"IN[1]"*2+"IN[2]"*4+"IN[3]"*8+"IN[4]"*16+"IN[5]"*32+"IN[6]"*64+"IN[7]"*128)/256)
-    let analog_out = out
+    let digital_buf = (("r[0]"+"r[1]"*2+"r[2]"*4+"r[3]"*8+"r[4]"*16+"r[5]"*32+"r[6]"*64+"r[7]"*128)/256)
+    let analog_out_direct = OUT_direct
+    let analog_out_via_buffers = OUT_via_buffers
 
-    plot analog_out digital_in
+    plot digital_in digital_buf analog_out_direct analog_out_via_buffers
 .endc
 
 .end

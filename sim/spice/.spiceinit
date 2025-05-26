@@ -10,8 +10,15 @@ setcs sourcepath = (  $sourcepath $PDK_ROOT/$PDK/libs.tech/ngspice/models $PDK_R
 *option tnom=28
 *option list
 
-* KLU solver still do not work correctly for every simulation
-*option klu
+* KLU solver still do not work correctly for every simulation,
+* BUT Anton turned it on anyway for this design, to speed it up.
+* Hopefully it works OK in this case...
+option klu             ; select KLU as matrix solver 
+set num_threads=20     ; CPU processor cores available
+*set ngbehavior=hsa     ; set compatibility for reading PDK libs
+*set ng_nomodcheck      ; don't check the model parameters
+*option noinit          ; don't print operating point data
+
 
 *option node
 *option opts

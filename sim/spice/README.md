@@ -15,5 +15,5 @@ Here are some high-level tips about running this:
     *   Do a `write` (with the vector parameters you want to write, as arguments)
     *   Save a snapshot of the simulation, e.g. `snsave blahblah.snap` -- allowing for resuming later.
     *   Do a `plot`
-    *   `continue`
+    *   `resume`
 *   `plot` can include `xlimit 0 800ns` (for example)

@@ -1,0 +1,4 @@
+*.subckt rhigh 1 2
+**.param w=0.5e-6 l=0.96e-6 b=0 trise=0 m=1 sw_et=0
+*R 1 2 8660
+*.ends

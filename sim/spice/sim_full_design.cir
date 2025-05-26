@@ -1,0 +1,282 @@
+PEX simulation of full tt_um_algofoogle_antonalog layout
+
+*NOTE: libs are searched in `sourcepath` which is set by .spiceinit.
+* Load in resistor models (for rhigh):
+.lib cornerRES.lib res_typ ; NOTE: Can use res_stat for statistical (Monte-Carlo-Like) modeling instead.
+.lib cornerMOSlv.lib mos_tt ; Or mos_tt_stat
+
+.include "../../magic/tt_um_algofoogle_antonalog.sim.spice"
+
+XTT
++ clk
++ ena ; 'ena' is always on
++ rst_n
++   ui_in[0]   ui_in[1]   ui_in[2]   ui_in[3]   ui_in[4]   ui_in[5]   ui_in[6]   ui_in[7]
++  uio_in[0]  uio_in[1]  uio_in[2]  uio_in[3]  uio_in[4]  uio_in[5]  uio_in[6]  uio_in[7]
++  uio_oe[0]  uio_oe[1]  uio_oe[2]  uio_oe[3]  uio_oe[4]  uio_oe[5]  uio_oe[6]  uio_oe[7]
++ uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7]
++  uo_out[0]  uo_out[1]  uo_out[2]  uo_out[3]  uo_out[4]  uo_out[5]  uo_out[6]  uo_out[7]
++ ua[0] ua[1] ua[2] ua[3]
++ GND vcc
++ tt_um_algofoogle_antonalog_parax
+
+* 2.2k sink to GND on output means we get lower effective impedance so faster slew:
+RoutR ua[0] GND 2.2k
+RoutG ua[1] GND 2.2k
+RoutB ua[2] GND 2.2k
+* Output pins have some capacitive load. Maybe 5pF is normal, but assume the worst:
+CoutR ua[0] GND 10p
+CoutG ua[1] GND 10p
+CoutB ua[2] GND 10p
+
+* IHP SG13G2 uses 1.2V core.
+.param vcc=1.2
+vcc vcc GND {vcc}
+vena ena GND PULSE 0.0 {vcc} 110n 1n 1n 34m 35m ; 'ena' starts low, goes high after 110ns, stays high for 34ms
+
+*NOTE: Can using .csparam (https://electronics.stackexchange.com/a/635638)
+* here be used to simplify this?
+.param rise=     1n
+.param fall=     1n
+* Duty cycle (high time) of each digital input:
+.param h0=   40n-1n
+.param h1=   80n-1n
+.param h2=  160n-1n
+.param h3=  320n-1n
+.param h4=  640n-1n
+.param h5= 1280n-1n
+.param h6= 2560n-1n
+.param h7= 5120n-1n
+* Period of each digital input:
+.param p0=   80n
+.param p1=  160n
+.param p2=  320n
+.param p3=  640n
+.param p4= 1280n
+.param p5= 2560n
+.param p6= 5120n
+.param p7=10240n
+
+.param safestart = 270n
+
+* Generate digital signals that form an 8-bit binary counter
+* input for the DAC:
+*NOTE! ui_in signals won't start changing until {safestart} has elapsed, at which point
+* they will all go high at the same time.
+Vin0 ui_in[0] GND     PULSE   0.0  {vcc}   {safestart} {rise} {fall} {h7} {p7} ;NOTE: h0/p0 used on MSB!
+Vin1 ui_in[1] GND     PULSE   0.0  {vcc}   {safestart} {rise} {fall} {h1} {p1}
+Vin2 ui_in[2] GND     PULSE   0.0  {vcc}   {safestart} {rise} {fall} {h2} {p2}
+Vin3 ui_in[3] GND     PULSE   0.0  {vcc}   {safestart} {rise} {fall} {h3} {p3}
+Vin4 ui_in[4] GND     PULSE   0.0  {vcc}   {safestart} {rise} {fall} {h4} {p4}
+Vin5 ui_in[5] GND     PULSE   0.0  {vcc}   {safestart} {rise} {fall} {h5} {p5}
+Vin6 ui_in[6] GND     PULSE   0.0  {vcc}   {safestart} {rise} {fall} {h6} {p6}
+Vin7 ui_in[7] GND     PULSE   0.0  {vcc}   {safestart} {rise} {fall} {h0} {p0}
+
+* * --- MODE 2: BARS (div-2):
+* Vin0 ui_in[0] GND dc {vcc}
+* Vin1 ui_in[1] GND dc 0.0
+* Vin2 ui_in[2] GND dc {vcc}
+* Vin3 ui_in[3] GND dc 0.0
+* Vin4 ui_in[4] GND dc 0.0
+* Vin5 ui_in[5] GND dc {vcc}
+* Vin6 ui_in[6] GND dc 0.0
+* Vin7 ui_in[7] GND dc 0.0
+
+* * --- MODE 1: RAMP, on all 3 channels:
+* Vin0 ui_in[0] GND dc {vcc}
+* Vin1 ui_in[1] GND dc {vcc}
+* Vin2 ui_in[2] GND dc 0.0
+* Vin3 ui_in[3] GND dc 0.0
+* Vin4 ui_in[4] GND dc {vcc}
+* Vin5 ui_in[5] GND dc 0.0
+* Vin6 ui_in[6] GND dc 0.0
+* Vin7 ui_in[7] GND dc 0.0
+
+* Pulse generators...
+*       net     ref fn     init   alt  dly  rise  fall  dut  period
+* 25MHz clock:
+Vclk    clk     GND PULSE   0.0 {vcc}   0n    1n    1n  20n  40n
+* reset signal
+Vreset  rst_n   GND PULSE {vcc}   0.0  50n    1n    1n  165n  34m
+* Vreset  rst_n   GND PULSE {vcc}   0.0  10n    1n    1n  80n  34m
+
+
+* Dummy nets to connect to test points in the circuit:
+RProbeDR0 xtt.rgb_buffers_0.dr[0] ProbeDR0 0.001
+RProbeDR1 xtt.rgb_buffers_0.dr[1] ProbeDR1 0.001
+RProbeDR2 xtt.rgb_buffers_0.dr[2] ProbeDR2 0.001
+RProbeDR3 xtt.rgb_buffers_0.dr[3] ProbeDR3 0.001
+RProbeDR4 xtt.rgb_buffers_0.dr[4] ProbeDR4 0.001
+RProbeDR5 xtt.rgb_buffers_0.dr[5] ProbeDR5 0.001
+RProbeDR6 xtt.rgb_buffers_0.dr[6] ProbeDR6 0.001
+RProbeDR7 xtt.rgb_buffers_0.dr[7] ProbeDR7 0.001
+
+
+.control
+    * WARNING: Don't put a space after `v(` or it won't understand what you mean.
+    save
+    + vcc
+    + i(vcc)
+    + clk
+    + ena
+    + rst_n
+    + v(ua[0]) v(ua[1]) v(ua[2]) v(ua[3])
+    +   v(ui_in[0])   v(ui_in[1])   v(ui_in[2])   v(ui_in[3])   v(ui_in[4])   v(ui_in[5])   v(ui_in[6])   v(ui_in[7])
+    +  v(uo_out[0])  v(uo_out[1])  v(uo_out[2])  v(uo_out[3])  v(uo_out[4])  v(uo_out[5])  v(uo_out[6])  v(uo_out[7])
+    + v(uio_out[0]) v(uio_out[1]) v(uio_out[2]) v(uio_out[3]) v(uio_out[4]) v(uio_out[5]) v(uio_out[6]) v(uio_out[7])
+    + v(xtt.rgb_buffers_0.dr[0]) ; R
+    + v(xtt.rgb_buffers_0.dr[1])
+    + v(xtt.rgb_buffers_0.dr[2])
+    + v(xtt.rgb_buffers_0.dr[3])
+    + v(xtt.rgb_buffers_0.dr[4])
+    + v(xtt.rgb_buffers_0.dr[5])
+    + v(xtt.rgb_buffers_0.dr[6])
+    + v(xtt.rgb_buffers_0.dr[7])
+    + v(xtt.rgb_buffers_0.dg[0]) ; G
+    + v(xtt.rgb_buffers_0.dg[1])
+    + v(xtt.rgb_buffers_0.dg[2])
+    + v(xtt.rgb_buffers_0.dg[3])
+    + v(xtt.rgb_buffers_0.dg[4])
+    + v(xtt.rgb_buffers_0.dg[5])
+    + v(xtt.rgb_buffers_0.dg[6])
+    + v(xtt.rgb_buffers_0.dg[7])
+    + v(xtt.rgb_buffers_0.db[0]) ; B
+    + v(xtt.rgb_buffers_0.db[1])
+    + v(xtt.rgb_buffers_0.db[2])
+    + v(xtt.rgb_buffers_0.db[3])
+    + v(xtt.rgb_buffers_0.db[4])
+    + v(xtt.rgb_buffers_0.db[5])
+    + v(xtt.rgb_buffers_0.db[6])
+    + v(xtt.rgb_buffers_0.db[7])
+    + v(ProbeDR0)
+    + v(ProbeDR1)
+    + v(ProbeDR2)
+    + v(ProbeDR3)
+    + v(ProbeDR4)
+    + v(ProbeDR5)
+    + v(ProbeDR6)
+    + v(ProbeDR7)
+    + v(xtt.controller_0._1597_.B) ; just for debug; otherwise unimportant.
+
+    tran 8n 8193u 0 8n UIC ; 8192u is about 256 lines.
+
+    * WEIRD: 'save' command MUST NOT wrap/escape nets with "[*]" in the name,
+    * but 'write' command REQUIRES that they are wrapped in double-quotes.
+    write sim_out/sim_full_design.raw
+    + vcc
+    + i(vcc)
+    + clk
+    + ena
+    + rst_n
+    + v("ua[0]") v("ua[1]") v("ua[2]") v("ua[3]")
+    +   v("ui_in[0]")   v("ui_in[1]")   v("ui_in[2]")   v("ui_in[3]")   v("ui_in[4]")   v("ui_in[5]")   v("ui_in[6]")   v("ui_in[7]")
+    +  v("uo_out[0]")  v("uo_out[1]")  v("uo_out[2]")  v("uo_out[3]")  v("uo_out[4]")  v("uo_out[5]")  v("uo_out[6]")  v("uo_out[7]")
+    + v("uio_out[0]") v("uio_out[1]") v("uio_out[2]") v("uio_out[3]") v("uio_out[4]") v("uio_out[5]") v("uio_out[6]") v("uio_out[7]")
+    + v("xtt.rgb_buffers_0.dr[0]") ; R
+    + v("xtt.rgb_buffers_0.dr[1]")
+    + v("xtt.rgb_buffers_0.dr[2]")
+    + v("xtt.rgb_buffers_0.dr[3]")
+    + v("xtt.rgb_buffers_0.dr[4]")
+    + v("xtt.rgb_buffers_0.dr[5]")
+    + v("xtt.rgb_buffers_0.dr[6]")
+    + v("xtt.rgb_buffers_0.dr[7]")
+    + v("xtt.rgb_buffers_0.dg[0]") ; G
+    + v("xtt.rgb_buffers_0.dg[1]")
+    + v("xtt.rgb_buffers_0.dg[2]")
+    + v("xtt.rgb_buffers_0.dg[3]")
+    + v("xtt.rgb_buffers_0.dg[4]")
+    + v("xtt.rgb_buffers_0.dg[5]")
+    + v("xtt.rgb_buffers_0.dg[6]")
+    + v("xtt.rgb_buffers_0.dg[7]")
+    + v("xtt.rgb_buffers_0.db[0]") ; B
+    + v("xtt.rgb_buffers_0.db[1]")
+    + v("xtt.rgb_buffers_0.db[2]")
+    + v("xtt.rgb_buffers_0.db[3]")
+    + v("xtt.rgb_buffers_0.db[4]")
+    + v("xtt.rgb_buffers_0.db[5]")
+    + v("xtt.rgb_buffers_0.db[6]")
+    + v("xtt.rgb_buffers_0.db[7]")
+    + v(ProbeDR0)
+    + v(ProbeDR1)
+    + v(ProbeDR2)
+    + v(ProbeDR3)
+    + v(ProbeDR4)
+    + v(ProbeDR5)
+    + v(ProbeDR6)
+    + v(ProbeDR7)
+    + v("xtt.controller_0._1597_.B") ; just for debug; otherwise unimportant.
+
+
+    set color0=black    ; Background.
+    set color1=white    ; Text/grid.
+    set color2=rgb:99/00/99  ; clk      (Dark magenta)
+    set color3=rgb:99/99/00  ; rst_n    (Dark yellow)
+    set color4=rgb:ff/00/00  ; rA       (Red)
+    set color5=rgb:00/ff/00  ; rG       (Green)
+    set color6=rgb:00/00/ff  ; rB       (Blue)
+    set color7=rgb:99/00/00  ; rD       (Dim Red)
+    set color8=rgb:00/99/00  ; gD       (Dim Green)
+    set color9=rgb:00/00/99  ; bD       (Dim Blue)
+    set color10=rgb:99/99/99 ; rBin     (Grey)
+    set color11=rgb:00/99/99 ; rBin     (Dark Cyan)
+    set color12=white        ; ena      (White)
+
+    let rA = ("ua[0]")
+    let gA = ("ua[1]")
+    let bA = ("ua[2]")
+
+    let dr0 = ("xtt.rgb_buffers_0.dr[0]")
+    let dr1 = ("xtt.rgb_buffers_0.dr[1]")
+    let dr2 = ("xtt.rgb_buffers_0.dr[2]")
+    let dr3 = ("xtt.rgb_buffers_0.dr[3]")
+    let dr4 = ("xtt.rgb_buffers_0.dr[4]")
+    let dr5 = ("xtt.rgb_buffers_0.dr[5]")
+    let dr6 = ("xtt.rgb_buffers_0.dr[6]")
+    let dr7 = ("xtt.rgb_buffers_0.dr[7]")
+
+    let dg0 = ("xtt.rgb_buffers_0.dg[0]")
+    let dg1 = ("xtt.rgb_buffers_0.dg[1]")
+    let dg2 = ("xtt.rgb_buffers_0.dg[2]")
+    let dg3 = ("xtt.rgb_buffers_0.dg[3]")
+    let dg4 = ("xtt.rgb_buffers_0.dg[4]")
+    let dg5 = ("xtt.rgb_buffers_0.dg[5]")
+    let dg6 = ("xtt.rgb_buffers_0.dg[6]")
+    let dg7 = ("xtt.rgb_buffers_0.dg[7]")
+
+    let db0 = ("xtt.rgb_buffers_0.db[0]")
+    let db1 = ("xtt.rgb_buffers_0.db[1]")
+    let db2 = ("xtt.rgb_buffers_0.db[2]")
+    let db3 = ("xtt.rgb_buffers_0.db[3]")
+    let db4 = ("xtt.rgb_buffers_0.db[4]")
+    let db5 = ("xtt.rgb_buffers_0.db[5]")
+    let db6 = ("xtt.rgb_buffers_0.db[6]")
+    let db7 = ("xtt.rgb_buffers_0.db[7]")
+
+    let pmR7 = ("uo_out[0]")
+    let pmG7 = ("uo_out[1]")
+    let pmB7 = ("uo_out[2]")
+    let vs   = ("uo_out[3]")
+    let pmR6 = ("uo_out[4]")
+    let pmG6 = ("uo_out[5]")
+    let pmB6 = ("uo_out[6]")
+    let hs   = ("uo_out[7]")
+
+    let rD = ((dr0*1 +dr1*2 +dr2*4 +dr3*8 +dr4*16 +dr5*32 +dr6*64 +dr7*128)/256)/{vcc}
+    let gD = ((dg0*1 +dg1*2 +dg2*4 +dg3*8 +dg4*16 +dg5*32 +dg6*64 +dg7*128)/256)/{vcc}
+    let bD = ((db0*1 +db1*2 +db2*4 +db3*8 +db4*16 +db5*32 +db6*64 +db7*128)/256)/{vcc}
+    let rin = (("ui_in[0]"+"ui_in[1]"*2+"ui_in[2]"*4+"ui_in[3]"*8+"ui_in[4]"*16+"ui_in[5]"*32+"ui_in[6]"*64+"ui_in[7]"*128)/256)/{vcc}*256/1000
+
+    let rBin = (rD*256)/1000
+
+    * plot clk rst_n v("ua[0]") v("ua[1]") v("ua[2]") v("ui_in[0]")   v("ui_in[1]")   v("ui_in[2]")   v("ui_in[3]")   v("ui_in[4]")   v("ui_in[5]")   v("ui_in[6]")   v("ui_in[7]") v("uo_out[0]")  v("uo_out[1]")  v("uo_out[2]")  v("uo_out[3]")  v("uo_out[4]")  v("uo_out[5]")  v("uo_out[6]")  v("uo_out[7]") v("xtt.controller_0._1597_.B")
+    plot clk rst_n   rA gA bA   rD gD bD   rBin rin   ena
+
+    * let digital_in = (("IN[0]"+"IN[1]"*2+"IN[2]"*4+"IN[3]"*8+"IN[4]"*16+"IN[5]"*32+"IN[6]"*64+"IN[7]"*128)/256)
+    * let digital_buf = (("r[0]"+"r[1]"*2+"r[2]"*4+"r[3]"*8+"r[4]"*16+"r[5]"*32+"r[6]"*64+"r[7]"*128)/256)
+    * let analog_out_direct = OUT_direct
+    * let analog_out_via_buffers = OUT_via_buffers
+
+    * plot digital_in digital_buf analog_out_direct analog_out_via_buffers
+.endc
+
+.end
